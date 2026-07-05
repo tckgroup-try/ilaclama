@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
 @theme {
   --color-brand: #10b981; /* Emerald 500 (Green) */
   --color-brand-hover: #059669; /* Emerald 600 */
