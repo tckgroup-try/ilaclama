@@ -6,6 +6,7 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { CostEstimator } from "@/components/CostEstimator";
 import { FAQ } from "@/components/FAQ";
 import { MobileAppPromo } from "@/components/MobileAppPromo";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
 
       <ServiceTab />
       
+      <Testimonials />
       <CostEstimator />
       <MobileAppPromo />
       <FAQ />
