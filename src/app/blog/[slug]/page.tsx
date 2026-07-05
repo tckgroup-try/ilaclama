@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${blog.title} | TCK İlaçlama`,
     description: blog.excerpt,
+    keywords: blog.tags || [],
     openGraph: {
       title: blog.title,
       description: blog.excerpt,
