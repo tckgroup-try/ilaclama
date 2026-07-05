@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -114,6 +115,7 @@ export default function RootLayout({
             })
           }}
         />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
