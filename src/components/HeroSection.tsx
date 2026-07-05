@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { RoseButton } from './ui/RoseButton';
-import { ShieldCheck, ArrowRight } from 'lucide-react';
+import { ShieldCheck, ArrowRight, Award, FileCheck, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 
 export function HeroSection() {
@@ -57,18 +57,33 @@ export function HeroSection() {
             </Link>
           </div>
 
-          <div className="pt-6 flex flex-wrap items-center justify-center md:justify-start gap-6 opacity-70">
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold tracking-wider text-slate-400">BRCGS</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold tracking-wider text-slate-400">HACCP</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold tracking-wider text-slate-400">IFS</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold tracking-wider text-slate-400">ISO 9001</span>
+          <div className="pt-8">
+            <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-widest">Sahip Olduğumuz Uluslararası Belgeler</p>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <Award className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">BRCGS</span>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <FileCheck className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">HACCP</span>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">IFS</span>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <Award className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">ISO 9001:2015</span>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <FileCheck className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">GMP</span>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-300">TSE</span>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -80,8 +95,8 @@ export function HeroSection() {
           className="hidden md:block relative h-[600px] w-full rounded-3xl overflow-hidden glass-panel border-white/5 shadow-2xl"
         >
           <Image 
-            src="/images/hero.png" 
-            alt="İleri Düzey Koruma Kalkanı Laboratuvarı" 
+            src="/images/tck_expert.png" 
+            alt="Tam Korumalı TCK İlaçlama Uzmanı" 
             fill 
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
