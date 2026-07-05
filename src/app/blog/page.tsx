@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { GlassCard } from '@/components/ui/GlassCard';
 
 export const metadata = {
-  title: 'TCK İlaçlama Ustalarından Esnaf Tavsiyeleri | Blog',
-  description: 'İstanbul böcek ilaçlama, fare, kene ve haşere çözümleri hakkında usta işi, şeffaf bilgiler. Ev ve işyeriniz için kesin çözüm rehberi.',
+  title: 'Blog | TCK İlaçlama Laboratuvarları',
+  description: 'İstanbul haşere kontrol ve biyosidal ilaçlama hizmetleri hakkında profesyonel makaleler, akademik rehberler ve çözüm analizleri.',
 };
 
 export default async function BlogPage({ searchParams }: { searchParams: { tag?: string } }) {
@@ -20,11 +20,11 @@ export default async function BlogPage({ searchParams }: { searchParams: { tag?:
     <div className="pt-32 pb-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Ustanın Not Defteri</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Operasyonel Çözüm Rehberi</h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             {tagFilter 
               ? \`"\${tagFilter}" etiketi için bulunan sonuçlar.\` 
-              : "Böcekle, fareyle başın dertteyse doğru yerdesin abi. İstanbul'un dört bir yanından derlediğimiz kesin çözümler ve esnaf tavsiyeleri."}
+              : "Haşere kontrolü ve entegre zararlı yönetimi konularında profesyonel mühendislik ekibimiz tarafından derlenen güncel analizler."}
           </p>
           {tagFilter && (
             <div className="mt-8">
@@ -37,7 +37,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { tag?:
 
         {filteredBlogs.length === 0 ? (
           <div className="text-center text-slate-500 py-12">
-            Bu etikete ait yazı bulunamadı kardo.
+            Bu etikete ait operasyonel makale bulunamadı.
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
