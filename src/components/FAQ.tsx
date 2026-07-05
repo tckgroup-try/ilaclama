@@ -7,10 +7,6 @@ import { GlassCard } from './ui/GlassCard';
 
 const faqs = [
   {
-    question: "Kurumsal işletmeler için BRCGS ve HACCP standartlarında raporlama yapıyor musunuz?",
-    answer: "Kesinlikle. TCK İlaçlama, endüstriyel tesisler ve gıda üretim zincirleri için Sağlık Bakanlığı, BRCGS, IFS ve HACCP denetimlerine tam uyumlu, QR kodlu ve dijital arşivli periyodik pest kontrol raporlaması sağlamaktadır."
-  },
-  {
     question: "İlaçlama sonrasında alanı terk etmemiz gerekiyor mu?",
     answer: "Hayır. Kullandığımız biyosidal ürünler kokusuzdur ve insan, çocuk veya evcil hayvan sağlığına zarar vermez. Yalnızca endüstriyel fümigasyon uygulamalarında alanın 4 saat kapalı kalması gerekmektedir."
   },
