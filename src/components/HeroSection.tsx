@@ -78,30 +78,24 @@ export function HeroSection() {
 
           <div className="pt-6">
             <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-widest">Sahip Olduğumuz Uluslararası Belgeler</p>
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <Award className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">BRCGS</span>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_brcgs.png" alt="BRCGS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.3)]" />
               </div>
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <FileCheck className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">HACCP</span>
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_haccp.png" alt="HACCP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]" />
               </div>
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">IFS</span>
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_ifs.png" alt="IFS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(239,68,68,0.3)]" />
               </div>
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <Award className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">ISO 9001:2015</span>
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_iso.png" alt="ISO 9001 Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" />
               </div>
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <FileCheck className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">GMP</span>
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_gmp.png" alt="GMP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(250,204,21,0.3)]" />
               </div>
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span className="text-xs font-bold tracking-wider text-slate-300">TSE</span>
+              <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
+                <Image src="/images/badge_tse.png" alt="TSE Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(220,38,38,0.3)]" />
               </div>
             </div>
           </div>
