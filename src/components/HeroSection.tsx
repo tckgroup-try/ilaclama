@@ -24,18 +24,18 @@ export function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-300">
             <ShieldCheck className="w-4 h-4 text-brand" />
-            <span>İstanbul'un Öncü İlaçlama Profesyonelleri</span>
+            <span>Entegre Zararlı Yönetimi (IPM) Uzmanları</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-            Kalıcı Çözüm, <br />
+            İşletmeniz İçin <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-400">
-              Profesyonel Yaklaşım
+              Proaktif Koruma
             </span>
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed">
-            Yaşam alanlarınızda veya işletmelerinizde karşılaştığınız haşere problemlerine profesyonel ve kalıcı çözümler sunuyoruz. Kokusuz ve garantili uygulamalarımızla, siz günlük işlerinize devam ederken biz sorunu tamamen ortadan kaldırıyoruz.
+            Zararlı kontrolünü sadece bir saha uygulaması olarak değil, marka itibarınızın ve kalite yönetiminizin temel unsuru olarak ele alıyoruz. BRCGS, HACCP ve IFS standartlarına tam uyumlu, kalıcı ve garantili çözümler.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 pt-4 w-full">
@@ -55,6 +55,21 @@ export function HeroSection() {
                 Hizmetlerimiz
               </RoseButton>
             </Link>
+          </div>
+
+          <div className="pt-6 flex flex-wrap items-center justify-center md:justify-start gap-6 opacity-70">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold tracking-wider text-slate-400">BRCGS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold tracking-wider text-slate-400">HACCP</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold tracking-wider text-slate-400">IFS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold tracking-wider text-slate-400">ISO 9001</span>
+            </div>
           </div>
         </motion.div>
         
@@ -76,7 +91,7 @@ export function HeroSection() {
           <div className="absolute bottom-8 left-8 right-8 z-20">
              <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="w-8 h-8 text-brand" />
-                <div className="text-xl font-light text-slate-200">TCK İlaçlama Operasyon Ekibi Sahada</div>
+                <div className="text-xl font-light text-slate-200">Uluslararası Denetim Standartlarına Tam Uyum</div>
              </div>
              <div className="h-1 w-full bg-slate-800/50 rounded-full overflow-hidden backdrop-blur-md">
                 <motion.div 
