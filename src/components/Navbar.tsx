@@ -19,10 +19,15 @@ export function Navbar() {
 
   return (
     <header 
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-nav py-4' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300`}
     >
+      {/* Top Urgent CTA Banner */}
+      <div className={`bg-brand text-white text-center py-2 px-4 text-xs md:text-sm font-bold tracking-wide flex items-center justify-center gap-2 transition-all duration-300 ${isScrolled ? 'h-0 py-0 opacity-0 overflow-hidden' : 'h-auto opacity-100'}`}>
+        <ShieldAlert className="w-4 h-4 animate-pulse" />
+        İstanbul İçi Acil Müdahale Ekiplerimiz Sahada: Bölgenize Özel İlk 45 Dakikada Kesin Çözüm Garantisi!
+      </div>
+
+      <div className={`transition-all duration-300 ${isScrolled ? 'glass-nav py-4' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 rounded-xl bg-brand/20 flex items-center justify-center group-hover:bg-brand/30 transition-colors">
@@ -82,6 +87,7 @@ export function Navbar() {
           </a>
         </div>
       )}
+      </div>
     </header>
   );
 }

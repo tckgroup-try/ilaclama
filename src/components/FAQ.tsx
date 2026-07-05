@@ -7,24 +7,24 @@ import { GlassCard } from './ui/GlassCard';
 
 const faqs = [
   {
+    question: "Kurumsal işletmeler için BRCGS ve HACCP standartlarında raporlama yapıyor musunuz?",
+    answer: "Kesinlikle. TCK İlaçlama, endüstriyel tesisler ve gıda üretim zincirleri için Sağlık Bakanlığı, BRCGS, IFS ve HACCP denetimlerine tam uyumlu, QR kodlu ve dijital arşivli periyodik pest kontrol raporlaması sağlamaktadır."
+  },
+  {
     question: "İlaçlama sonrasında alanı terk etmemiz gerekiyor mu?",
-    answer: "Hayır. Kullandığımız biyosidal ürünler kokusuzdur ve insan, çocuk veya evcil hayvan sağlığına zarar vermez. Yalnızca fümigasyon veya yoğun tahtakurusu/pire uygulamalarında alanın 4 saat kapalı kalması tavsiye edilmektedir."
+    answer: "Hayır. Kullandığımız biyosidal ürünler kokusuzdur ve insan, çocuk veya evcil hayvan sağlığına zarar vermez. Yalnızca endüstriyel fümigasyon uygulamalarında alanın 4 saat kapalı kalması gerekmektedir."
+  },
+  {
+    question: "Gıda üretim hatlarını veya otel odalarını mesai saatleri içinde ilaçlayabilir misiniz?",
+    answer: "Evet. Özel jel formülasyonlarımız ve kokusuz ULV sistemlerimiz sayesinde, üretim veya hizmet operasyonunuzu zerre kadar aksatmadan 7/24 gizlilik içerisinde (sivil araçlarla) ilaçlama yapabiliyoruz."
   },
   {
     question: "Kullanılan biyosidal ürünler evcil hayvanlara zarar verir mi?",
-    answer: "Kesinlikle hayır. TCK İlaçlama olarak, Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO) onaylı, memeli canlıların sağlığını tehdit etmeyen 1. sınıf profesyonel biyosidal ürünler kullanmaktayız."
+    answer: "Asla. TCK İlaçlama olarak, Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO) onaylı, sadece spesifik haşere ve kemirgenlerin sinir sistemini hedef alan ekolojik ürünler kullanmaktayız."
   },
   {
-    question: "İlaçlama uygulamasının etki süresi ne kadardır?",
-    answer: "Çevresel faktörlere bağlı olmakla birlikte uygulamalarımız 6 ay ile 1 yıl arasında tam koruma sağlamaktadır. Kurumsal işletmeler için önerdiğimiz periyodik bakım anlaşmaları ile kalıcı ve kesintisiz koruma sunuyoruz."
-  },
-  {
-    question: "İlaçlama işleminden sonra temizlik yapılmalı mı?",
-    answer: "Kokusuz ve leke bırakmayan formülasyonlar kullandığımız için detaylı bir eşya yıkamasına gerek yoktur. Uygulamanın tam etki gösterebilmesi adına, ıslak temizliğin dip köşelerde 1 hafta ertelenmesi tavsiye edilir."
-  },
-  {
-    question: "Acil durumlarda ve mesai saatleri dışında hizmetiniz var mı?",
-    answer: "Evet, 7/24 kesintisiz hizmet sunmaktayız. Özellikle restoran, otel ve üretim tesisleri gibi faaliyetin durmaması gereken kurumsal alanlar için acil müdahale ekiplerimiz daima hazırdır."
+    question: "Hizmetleriniz garantili mi? Sorun devam ederse ne yapıyorsunuz?",
+    answer: "Evet, tüm uygulamalarımız %100 memnuniyet ve kesin çözüm garantilidir. Belirlenen periyotlarda yapılan müdahalelere rağmen sorun devam ederse, ücretsiz ek müdahale ve acil SOS destek ekibimizi anında gönderiyoruz."
   }
 ];
 
