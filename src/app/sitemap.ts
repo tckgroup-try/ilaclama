@@ -1,10 +1,22 @@
 import { MetadataRoute } from 'next';
 import { blogs } from '@/data/blogs';
 import { legalPages } from '@/data/legal';
+import { tckBranches } from '@/data/branches';
 
-const DISTRICTS = ['sisli', 'kadikoy', 'besiktas', 'bakirkoy', 'pendik', 'maltepe'];
-const PLACES = ['fabrika', 'ofis', 'apartman', 'restoran', 'villa'];
-const PESTS = ['fare', 'bocek', 'pire', 'hamam-bocegi', 'akrep'];
+// Helper for Turkish characters to slug
+function slugify(text: string) {
+  return text.toLowerCase()
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ı/g, 'i')
+    .replace(/ö/g, 'o')
+    .replace(/ç/g, 'c')
+    .replace(/[^a-z0-9]/g, '-');
+}
+
+const PLACES = ['fabrika', 'ofis', 'apartman', 'restoran', 'villa', 'depo', 'gemi', 'otel', 'site'];
+const PESTS = ['fare', 'bocek', 'pire', 'hamam-bocegi', 'akrep', 'kene', 'tahtakurusu', 'sivrisinek'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.tckilaclama.com';
@@ -15,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/hizmetler',
     '/hakkimizda',
     '/hasereler',
+    '/subelerimiz',
     '/blog'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
@@ -23,18 +36,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // 2. Programmatic SEO (Local Niches)
+  // 2. Programmatic SEO (Local Niches) - 28 Branches * 9 Places * 8 Pests = 2016 URLs!
   const seoRoutes: MetadataRoute.Sitemap = [];
   
-  for (const district of DISTRICTS) {
+  for (const branch of tckBranches) {
+    const districtSlug = slugify(branch.district);
+    
+    // Add generic district-wide pest routes
+    seoRoutes.push({
+      url: `${baseUrl}/hizmet/istanbul-${districtSlug}-bocek-ilaclama`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    });
+
     for (const place of PLACES) {
       for (const pest of PESTS) {
         // Example: /hizmet/istanbul-kadikoy-fabrika-fare-ilaclama
         seoRoutes.push({
-          url: `${baseUrl}/hizmet/istanbul-${district}-${place}-${pest}-ilaclama`,
+          url: `${baseUrl}/hizmet/istanbul-${districtSlug}-${place}-${pest}-ilaclama`,
           lastModified: new Date(),
           changeFrequency: 'weekly' as const,
-          priority: 0.6,
+          priority: 0.5,
         });
       }
     }
@@ -44,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
     lastModified: new Date(blog.date),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
