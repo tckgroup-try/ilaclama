@@ -44,7 +44,7 @@ export function Navbar() {
           <Link href="/blog" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
             Blog
           </Link>
-          <Link href="/kurumsal" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/hakkimizda" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
             Kurumsal
           </Link>
           <a href="tel:+905300000000" className="text-sm font-medium text-brand hover:text-blue-400 transition-colors">
@@ -71,7 +71,7 @@ export function Navbar() {
         <div className="md:hidden glass-panel absolute top-full left-0 right-0 border-t border-white/5 p-6 flex flex-col gap-6 shadow-2xl">
           <Link href="/hizmetler" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Hizmetler</Link>
           <Link href="/hasereler" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Haşere Türleri</Link>
-          <Link href="/kurumsal" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Kurumsal</Link>
+          <Link href="/hakkimizda" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Kurumsal</Link>
           <a href="tel:+905300000000" className="text-brand font-medium p-3 hover:text-blue-400 transition-colors">0530 000 00 00</a>
           <a href="https://wa.me/905300000000?text=Merhaba,%20acil%20ila%C3%A7lama%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
             <RoseButton className="w-full py-4 text-lg">Acil Teklif Al</RoseButton>
