@@ -59,7 +59,24 @@ export function HeroSection() {
             </Link>
           </div>
 
-          <div className="pt-8">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-6 pt-6">
+            <div className="flex flex-col">
+              <span className="text-3xl md:text-4xl font-black text-brand">255+</span>
+              <span className="text-sm text-slate-400 font-medium mt-1">Ev / Apartman<br/>Mutlu Müşteri</span>
+            </div>
+            <div className="w-px h-12 bg-white/10 hidden sm:block" />
+            <div className="flex flex-col">
+              <span className="text-3xl md:text-4xl font-black text-emerald-400">115+</span>
+              <span className="text-sm text-slate-400 font-medium mt-1">Dükkan / İş Yeri<br/>Aktif Referans</span>
+            </div>
+            <div className="w-px h-12 bg-white/10 hidden sm:block" />
+            <div className="flex flex-col">
+              <span className="text-3xl md:text-4xl font-black text-blue-400">%100</span>
+              <span className="text-sm text-slate-400 font-medium mt-1">Kesin Çözüm<br/>Garantisi</span>
+            </div>
+          </div>
+
+          <div className="pt-6">
             <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-widest">Sahip Olduğumuz Uluslararası Belgeler</p>
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
               <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg shadow-sm">
