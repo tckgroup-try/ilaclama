@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { blogs } from '@/data/blogs';
+import { legalPages } from '@/data/legal';
 
 const DISTRICTS = ['sisli', 'kadikoy', 'besiktas', 'bakirkoy', 'pendik', 'maltepe'];
 const PLACES = ['fabrika', 'ofis', 'apartman', 'restoran', 'villa'];
@@ -12,8 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/hizmetler',
-    '/kurumsal',
+    '/hakkimizda',
     '/hasereler',
+    '/blog'
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -46,5 +48,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...routes, ...blogRoutes, ...seoRoutes];
+  // 4. Yasal Sayfalar
+  const legalRoutes: MetadataRoute.Sitemap = legalPages.map((page) => ({
+    url: `${baseUrl}/yasal/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'yearly' as const,
+    priority: 0.3,
+  }));
+
+  return [...routes, ...blogRoutes, ...seoRoutes, ...legalRoutes];
 }
