@@ -157,7 +157,7 @@ export default function RootLayout({
                   <li><a href="/hakkimizda" className="text-slate-500 hover:text-brand transition-colors">Hakkımızda</a></li>
                   <li><a href="/hizmetler" className="text-slate-500 hover:text-brand transition-colors">Hizmetlerimiz</a></li>
                   <li><a href="/blog" className="text-slate-500 hover:text-brand transition-colors">Ustaların Notları (Blog)</a></li>
-                  <li><a href="https://wa.me/905016355053?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20i%C3%A7in%20fiyat%20hesaplatmak%20istiyorum." target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors">Fiyat Hesapla / Teklif Al</a></li>
+                  <li><a href="https://wa.me/905016355053?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors">WhatsApp ile Hızlı Teklif</a></li>
                 </ul>
               </div>
               <div>
@@ -176,66 +176,6 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* Structured Data / JSON-LD Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "TCK İlaçlama",
-              "image": "https://www.tckilaclama.com/logo.png",
-              "url": "https://www.tckilaclama.com",
-              "telephone": "+905016355053",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Merkez Mah. İlaçlama Sok. No:1",
-                "addressLocality": "Şişli",
-                "addressRegion": "İstanbul",
-                "postalCode": "34381",
-                "addressCountry": "TR"
-              },
-              "priceRange": "$$",
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "41.0082",
-                  "longitude": "28.9784"
-                },
-                "geoRadius": "50000"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "1248",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            })
-          }}
-        />
-        
-        {/* Mobile App SoftwareApplication Schema */}
-        <Script
-          id="software-app-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "TCK İlaçlama",
-              "operatingSystem": "ANDROID, IOS",
-              "applicationCategory": "BusinessApplication",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "TRY"
-              },
-              "description": "TCK İlaçlama mobil uygulaması ile tesislerinizin hijyen durumunu 7/24 anlık takip edebilir, BRCGS ve HACCP belgelerinizi inceleyebilir ve tek tıkla Acil Müdahale (SOS) ekibimizi çağırabilirsiniz."
-            })
-          }}
-        />
         <FloatingWhatsApp />
         </SmoothScroll>
       </body>

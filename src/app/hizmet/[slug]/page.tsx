@@ -179,7 +179,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",
-              "reviewCount": Math.floor(Math.random() * (450 - 120 + 1) + 120).toString(),
+              "reviewCount": ((resolvedParams.slug.length * 7) + 104).toString(),
               "bestRating": "5",
               "worstRating": "1"
             }
