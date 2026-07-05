@@ -41,6 +41,9 @@ export function Navbar() {
           <Link href="/hasereler" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
             Haşere Türleri
           </Link>
+          <Link href="/blog" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+            Blog
+          </Link>
           <Link href="/kurumsal" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
             Kurumsal
           </Link>

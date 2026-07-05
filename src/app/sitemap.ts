@@ -14,31 +14,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
+    priority: route === '' ? 1 : 0.8,
   }));
 
-  // 2. Programatik SEO (Niş Kelimeler) Kombinasyonları
-  // Örnek: ilçe + tesis + haşere
-  const districts = ['sisli', 'kadikoy', 'besiktas', 'bakirkoy', 'pendik', 'maltepe'];
-  const places = ['fabrika', 'ofis', 'apartman', 'restoran', 'villa'];
-  const pests = ['fare', 'bocek', 'pire', 'hamam-bocegi', 'akrep'];
-
-  const dynamicRoutes = [];
-
-  // Gerçek senaryoda bu veriler veritabanından veya geniş bir JSON'dan gelir
-  for (const district of districts) {
-    for (const place of places) {
-      for (const pest of pests) {
-        dynamicRoutes.push({
-          url: `${baseUrl}/hizmet/${district}-${place}-${pest}-ilaclama`,
+  // 2. Programmatic SEO (Local Niches)
+  const seoRoutes: MetadataRoute.Sitemap = [];
+  
+  for (const district of DISTRICTS) {
+    for (const place of PLACES) {
+      for (const pest of PESTS) {
+        // Example: /hizmet/istanbul-kadikoy-fabrika-fare-ilaclama
+        seoRoutes.push({
+          url: `${baseUrl}/hizmet/istanbul-${district}-${place}-${pest}-ilaclama`,
           lastModified: new Date(),
           changeFrequency: 'weekly' as const,
-          priority: 0.7,
+          priority: 0.6,
         });
       }
     }
   }
 
-  // 3. Kombine et ve Google'a sun
-  return [...routes, ...dynamicRoutes];
+  // 3. Blog Routes
+  const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
+    url: `${baseUrl}/blog/${blog.slug}`,
+    lastModified: new Date(blog.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...routes, ...blogRoutes, ...seoRoutes];
 }

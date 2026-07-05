@@ -7,24 +7,24 @@ import { GlassCard } from './ui/GlassCard';
 
 const faqs = [
   {
-    question: "İlaçlama sonrası evi terk etmemiz gerekiyor mu?",
-    answer: "Uyguladığımız kokusuz ve yeni nesil biyolojik ajanlar sayesinde evinizi veya iş yerinizi terk etmenize gerek kalmaz. Ancak sisleme (fümigasyon) gibi özel operasyonlarda minimum 4 saat kapalı kalması gerekmektedir."
+    question: "Abi ilacı sıktıktan sonra evden çıkmamız lazım mı?",
+    answer: "Yok abi, bizim ilaçlar kokusuzdur. Çoluk çocuğa, kediye köpeğe zararı olmaz. Sadece bazı çok ağır pire, tahtakurusu durumlarında (fümigasyon) 4 saat kapalı kalması yeterli, onun dışında rahatsınız."
   },
   {
-    question: "Kullandığınız ilaçlar evcil hayvanlara zarar verir mi?",
-    answer: "Kesinlikle hayır. TCK İlaçlama laboratuvarlarında kullanılan tüm ürünler T.C. Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO) standartlarında olup, sıcakkanlı canlılara (insan, kedi, köpek vb.) zarar vermeyen özel formülasyonlardır."
+    question: "Kullandığınız ilaçlar hayvana falan zarar verir mi?",
+    answer: "Kesinlikle hayır yenge. Sağlık Bakanlığı onaylı, en kaliteli ilaçları kullanıyoruz. Canlılara zarar vermeyen özel, pahalı ilaçlardır. Merdiven altı mal kullanmayız."
   },
   {
-    question: "İlaçlamanın etkisi ne kadar sürer?",
-    answer: "Seçilen haşere türüne ve operasyonun yapıldığı alanın fiziksel şartlarına bağlı olarak koruma kalkanımız 6 ay ile 1 yıl arasında kesin etkinlik gösterir. Kurumsal anlaşmalarda bu koruma periyodik olarak ömür boyu sürdürülür."
+    question: "Bu ilaçlama ne kadar süre idare eder bizi?",
+    answer: "Mekanın durumuna göre 6 ay ile 1 yıl arası kesin garantili çözümdür abi. Zaten dükkan falan iş yapıyorsak periyodik anlaşırız, ömür boyu kafan rahat olur."
   },
   {
-    question: "İlaçlama sonrasında temizlik yapılmalı mı?",
-    answer: "Kokusuz ve leke bırakmayan özel jeller ve mikro kapsüller kullandığımız için eşyalarınızı yıkamanıza gerek yoktur. Sadece yüzeylerde ıslak temizliği 1 hafta ertelemeniz kalkanın kalıcılığını artırır."
+    question: "İlaçlama sonrasında temizlik yapalım mı usta?",
+    answer: "Kokusuz ve leke bırakmayan jel ve sıvı attığımız için eşyaları komple yıkamana gerek yok. Sadece ıslak bezle dip köşe silmeyi 1 hafta ertele ki ilacın etkisi kalsın."
   },
   {
-    question: "Acil durumlarda gece müdahalesi yapıyor musunuz?",
-    answer: "Evet. Özellikle restoran, otel ve fabrikalar için üretimi durdurmamak adına 7/24 gece operasyon ekibimiz mevcuttur."
+    question: "Gece acil dükkanı bassalar gelir misiniz?",
+    answer: "7/24 arkandayız abi. Özellikle lokanta, otel, fabrika gibi üretimin durmaması gereken yerler için gece ekibimiz arabada hazır bekler."
   }
 ];
 
@@ -42,9 +42,9 @@ export function FAQ() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand/10 mb-6">
             <HelpCircle className="w-8 h-8 text-brand" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Sıkça Sorulan Sorular</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Müşterilerin Çok Sorduğu Sorular</h2>
           <p className="text-zinc-400 text-lg">
-            Sürecimiz, güvenlik protokollerimiz ve garantilerimiz hakkında aklınıza takılan tüm cevaplar.
+            Abi aklına ne takılıyorsa burada cevabı var. Şeffaf esnafız, gizlimiz saklımız yok.
           </p>
         </div>
 

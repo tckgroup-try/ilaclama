@@ -27,9 +27,9 @@ export function CostEstimator() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand/10 mb-6">
             <Calculator className="w-8 h-8 text-brand" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Etkileşimli Maliyet Analizi</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Anında Fiyat Hesapla</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Alan büyüklüğü ve haşere türüne göre tahmini operasyon maliyetinizi saniyeler içinde hesaplayın.
+            Abi mekanın kaç metrekare olduğunu seç, böceğin türünü işaretle, tahmini fiyat cebine gelsin.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export function CostEstimator() {
             <div className="space-y-8">
               <div>
                 <label className="flex justify-between text-sm font-medium text-zinc-300 mb-4">
-                  <span>Tahmini Alan Büyüklüğü</span>
+                  <span>Mekan Kaç Metrekare Abi?</span>
                   <span className="text-brand font-bold">{area} m²</span>
                 </label>
                 <input 
@@ -93,7 +93,7 @@ export function CostEstimator() {
             <div className="relative">
               <div className="absolute inset-0 bg-brand/20 blur-3xl rounded-full z-0"></div>
               <div className="relative z-10 bg-zinc-900 border border-white/10 rounded-3xl p-8 text-center flex flex-col items-center justify-center h-full">
-                <span className="text-zinc-400 text-sm font-medium uppercase tracking-wider mb-2">Başlangıç Tahmini</span>
+                <span className="text-zinc-400 text-sm font-medium uppercase tracking-wider mb-2">Tahmini Hesap (Başlangıç)</span>
                 <motion.div 
                   key={estimatedTotal}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -103,11 +103,11 @@ export function CostEstimator() {
                   ₺{estimatedTotal.toLocaleString('tr-TR')}
                 </motion.div>
                 <p className="text-xs text-zinc-500 mb-8 max-w-xs mx-auto">
-                  * Kesin fiyatlandırma, alanda yapılacak profesyonel laboratuvar analizinden sonra belirlenir.
+                  * Kesin fiyatı mekanı görünce konuşuruz abi, ama üç aşağı beş yukarı bütçen bu olur.
                 </p>
                 <Link href={`/teklif-al?area=${area}&type=${pestType}`} className="w-full">
                   <RoseButton className="w-full py-4 text-lg">
-                    Bu Fiyatla Keşif İste
+                    Bu Fiyatla Usta Çağır
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </RoseButton>
                 </Link>

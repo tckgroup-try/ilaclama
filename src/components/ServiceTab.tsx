@@ -9,17 +9,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const b2bServices = [
-  { id: 'factory', slug: 'fabrika', title: 'Fabrika & Üretim Tesisleri', desc: 'Sıfır tolerans politikasıyla endüstriyel hijyen.' },
-  { id: 'warehouse', slug: 'depo', title: 'Depo & Lojistik', desc: 'Kemirgen ve zararlılara karşı 7/24 aktif koruma.' },
-  { id: 'restaurant', slug: 'restoran', title: 'Restoran & Gıda İşletmeleri', desc: 'Gıda güvenliği standartlarına %100 uyumlu çözümler.' },
-  { id: 'office', slug: 'ofis', title: 'Ofisler & Plazalar', desc: 'Çalışan sağlığını koruyan kokusuz, mesai dışı müdahale.' },
-  { id: 'marine', slug: 'gemi', title: 'Gemiler & Yatlar', desc: 'Kapalı devre sistemler için özel fümigasyon.' }
+  { id: 'factory', slug: 'fabrika', title: 'Fabrika ve İmalathane', desc: 'Üretim durmadan, malınıza zarar vermeden gizli gizli hallederiz abi.' },
+  { id: 'warehouse', slug: 'depo', title: 'Depo & Lojistik', desc: 'Fareye, kemirgene geçit yok. 7/24 arkandayız.' },
+  { id: 'restaurant', slug: 'restoran', title: 'Lokanta & Restoran', desc: 'Gıda işinde şaka olmaz. Tarım Bakanlığına uygun, temiz iş.' },
+  { id: 'office', slug: 'ofis', title: 'Ofis ve Plazalar', desc: 'Çalışanlar rahatsız olmaz, kokusuz temizler çıkarız.' },
+  { id: 'marine', slug: 'gemi', title: 'Gemi & Tekne', desc: 'Kuytu köşede ne varsa dumanla, fümigasyonla çözeriz.' }
 ];
 
 const b2cServices = [
-  { id: 'apartment', slug: 'daire', title: 'Ev / Daire İlaçlama', desc: 'Aileniz ve evcil hayvanlarınız için güvenli jel & sıvı uygulamalar.' },
-  { id: 'building', slug: 'apartman', title: 'Apartman & Site Ortak Alanları', desc: 'Kazan dairesi, sığınak ve otoparklar için periyodik koruma.' },
-  { id: 'garden', slug: 'bahce', title: 'Bahçe & Peyzaj', desc: 'Kene, sivrisinek ve haşerelere karşı açık alan kalkanı.' }
+  { id: 'apartment', slug: 'daire', title: 'Ev / Daire İlaçlama', desc: 'Çoluk çocuğa, kediye köpeğe zararı yok yenge, gönlünüz ferah olsun.' },
+  { id: 'building', slug: 'apartman', title: 'Apartman & Site', desc: 'Kazan dairesi, sığınak falan kökten temizleriz, apartmanca rahat edersiniz.' },
+  { id: 'garden', slug: 'bahce', title: 'Bahçe İlaçlama', desc: 'Keneye, sivrisineğe karşı yaz boyu rahat et abi.' }
 ];
 
 export function ServiceTab() {
@@ -31,9 +31,9 @@ export function ServiceTab() {
     <section className="py-24 relative z-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Premium Hizmet Kapsamımız</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Nereyi İlaçlıyoruz Abi?</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            İhtiyacınıza en uygun koruma kalkanını seçin. Her alan için özel geliştirilmiş protokoller uyguluyoruz.
+            Derdini söyle, derman olalım. Evi mi, dükkanı mı hallediyoruz? Sen seç, gerisini ustalara bırak.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export function ServiceTab() {
               }`}
             >
               <Building2 className="w-5 h-5" />
-              Kurumsal (B2B)
+              Dükkan / İş Yeri
             </button>
             <button
               onClick={() => setActiveTab('b2c')}
@@ -55,7 +55,7 @@ export function ServiceTab() {
               }`}
             >
               <Home className="w-5 h-5" />
-              Bireysel (B2C)
+              Ev / Apartman
             </button>
             
             {/* Animated Tab Indicator */}

@@ -24,30 +24,30 @@ export function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-zinc-300">
             <ShieldCheck className="w-4 h-4 text-brand" />
-            <span>İstanbul'un Premium Haşere Kontrol Laboratuvarı</span>
+            <span>İstanbul'un En Kral İlaçlama Ustaları</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-            Steril, Güvenli ve <br />
+            Kökünden Çözüm, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-rose-400">
-              Kesin Çözüm.
+              Kesin Garanti!
             </span>
           </h1>
           
           <p className="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed">
-            Sıradan bir ilaçlama değil; işletmeniz ve yaşam alanlarınız için bilimsel, garantili ve ultra-premium koruma kalkanı.
+            Abi evi, dükkanı böcek mi bastı? Hiç canını sıkma. Kokusuz, garantili ilacımızla giriyoruz, kökünü kazıyıp çıkıyoruz. Sen çayını yudumlarken biz işi bitiririz.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link href="/teklif-al">
               <RoseButton className="w-full sm:w-auto text-lg px-8">
-                Hemen Teklif Al
+                Hemen Fiyat Al
                 <ArrowRight className="ml-2 w-5 h-5" />
               </RoseButton>
             </Link>
             <Link href="/hizmetler">
               <RoseButton variant="outline" className="w-full sm:w-auto text-lg px-8">
-                Hizmetlerimizi İncele
+                Neler Yapıyoruz?
               </RoseButton>
             </Link>
           </div>
@@ -70,7 +70,7 @@ export function HeroSection() {
           <div className="absolute bottom-8 left-8 right-8 z-20">
              <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="w-8 h-8 text-brand" />
-                <div className="text-xl font-light text-zinc-200">Koruma Kalkanı Aktif</div>
+                <div className="text-xl font-light text-zinc-200">TCK İlaçlama Mekanda!</div>
              </div>
              <div className="h-1 w-full bg-zinc-800/50 rounded-full overflow-hidden backdrop-blur-md">
                 <motion.div 
