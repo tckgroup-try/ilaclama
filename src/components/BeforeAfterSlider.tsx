@@ -28,7 +28,7 @@ export function BeforeAfterSlider() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Farkı Kendi Gözlerinizle Görün</h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Geleneksel ilaçlama yöntemleri sorunu sadece gizler. TCK İlaçlama'nın Biyosidal Kalkan teknolojisi ise kökten çözer ve sterilize eder. Kaydırarak sonucu görün.
+            Geleneksel ilaçlama yöntemleri sorunu sadece geçici olarak çözer. TCK İlaçlama'nın profesyonel haşere kontrol uygulamaları ise sorunu kökten bitirir. Kaydırarak sonucu görün.
           </p>
         </div>
 

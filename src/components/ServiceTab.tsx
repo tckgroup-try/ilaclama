@@ -37,7 +37,7 @@ const b2bServices = [
 const b2cServices = [
   { 
     id: 'apartment', slug: 'daire', title: 'Ev ve Daire Kompleksleri', 
-    desc: 'Bebek, çocuk ve evcil hayvan dostu biyosidal ürünler ile evinizi terk etmenize gerek kalmadan %100 kesin çözüm.',
+    desc: 'Bebek, çocuk ve evcil hayvan dostu onaylı solüsyonlar ile evinizi terk etmenize gerek kalmadan %100 kesin çözüm.',
     icon: Home, tags: ['Evcil Hayvan Dostu', 'Kokusuz', 'Garantili'], colSpan: 'col-span-1 sm:col-span-2'
   },
   { 
@@ -62,11 +62,11 @@ export function ServiceTab() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-sm font-semibold mb-6">
             <ShieldAlert className="w-4 h-4 mr-2" />
-            Biyosidal Kalkan Teknolojisi
+            Sağlık Bakanlığı Onaylı Koruma
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Her Sektöre Özel <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-400">Taktiksel Müdahale</span></h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            Sıradan böcek ilaçlamayı unutun. İhtiyaç duyduğunuz alanı seçin, mühendis kadromuz size özel "Entegre Zararlı Yönetimi (IPM)" protokolünü uygulasın.
+            Sıradan böcek ilaçlamayı unutun. İhtiyaç duyduğunuz alanı seçin, deneyimli uzman kadromuz size özel kalıcı ve garantili haşere kontrol yöntemlerini uygulasın.
           </p>
         </div>
 
