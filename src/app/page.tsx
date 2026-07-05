@@ -7,6 +7,7 @@ import { CostEstimator } from "@/components/CostEstimator";
 import { FAQ } from "@/components/FAQ";
 import { MobileAppPromo } from "@/components/MobileAppPromo";
 import { Testimonials } from "@/components/Testimonials";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
 
       <ServiceTab />
       
+      <BeforeAfterSlider />
       <Testimonials />
       <CostEstimator />
       <MobileAppPromo />

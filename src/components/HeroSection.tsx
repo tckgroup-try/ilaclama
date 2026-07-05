@@ -6,11 +6,13 @@ import Image from 'next/image';
 import { RoseButton } from './ui/RoseButton';
 import { ShieldCheck, ArrowRight, Award, FileCheck, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
+import { BackgroundBeams } from './ui/BackgroundBeams';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28 pb-12 md:pt-20 md:pb-0">
-      {/* Background gradients */}
+    <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
+      {/* Background Beams & Particles */}
+      <BackgroundBeams />
       <div className="absolute inset-0 bg-slate-900 z-0" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-slate-900 z-0" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand/10 rounded-full blur-[128px] z-0" />
