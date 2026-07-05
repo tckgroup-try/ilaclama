@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { PWASetup } from "@/components/PWASetup";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -59,6 +60,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.className} bg-slate-900 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-brand/30 selection:text-white`}>
+        <PWASetup />
         <Navbar />
         <main className="flex-grow">
           {children}

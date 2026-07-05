@@ -1,10 +1,36 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Apple, Play, ShieldCheck, Smartphone } from "lucide-react";
-import { GlassCard } from "./ui/GlassCard";
 
 export function MobileAppPromo() {
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+
+  useEffect(() => {
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      setDeferredPrompt(e);
+    });
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (deferredPrompt) {
+      // Show the install prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond to the prompt
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      }
+      setDeferredPrompt(null);
+    } else {
+      // Fallback for iOS or if already installed
+      alert("Cihazınızda uygulamayı kurmak için tarayıcı menüsünden 'Ana Ekrana Ekle' (Add to Home Screen) seçeneğine dokunun.");
+    }
+  };
+
   return (
     <section className="py-24 relative overflow-hidden z-10 bg-slate-900 border-y border-white/5">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-brand/10 via-slate-900 to-slate-900 z-0 pointer-events-none" />
@@ -23,13 +49,13 @@ export function MobileAppPromo() {
             </h2>
             
             <p className="text-lg text-slate-400 leading-relaxed">
-              İşletmenizin ve evinizin hijyen durumunu anlık takip edin, raporlarınızı (BRCGS, HACCP) görüntüleyin ve tek tuşla Acil Müdahale Ekibimizi (Acil SOS) çağırın. Android ve iOS için "TCK İlaçlama" uygulamasını hemen indirin.
+              İşletmenizin ve evinizin hijyen durumunu anlık takip edin, raporlarınızı (BRCGS, HACCP) görüntüleyin ve tek tuşla Acil Müdahale Ekibimizi (Acil SOS) çağırın. Android ve iOS için "TCK İlaçlama" uygulamasını hemen cihazınıza kurun.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
               <button 
-                onClick={() => alert("Uygulamamız çok yakında App Store'da!")}
-                className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-brand/20 group"
+                onClick={handleInstallClick}
+                className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-brand/20 group cursor-pointer"
               >
                 <Apple className="w-8 h-8 group-hover:text-white text-slate-300 transition-colors" />
                 <div className="text-left">
@@ -39,8 +65,8 @@ export function MobileAppPromo() {
               </button>
               
               <button 
-                onClick={() => alert("Uygulamamız çok yakında Google Play'de!")}
-                className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-brand/20 group"
+                onClick={handleInstallClick}
+                className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-brand/20 group cursor-pointer"
               >
                 <Play className="w-7 h-7 group-hover:text-brand text-slate-300 transition-colors" />
                 <div className="text-left">
