@@ -8,14 +8,14 @@ import { GlassCard } from './ui/GlassCard';
 const faqs = [
   {
     question: "İlaçlama sonrasında alanı terk etmemiz gerekiyor mu?",
-    answer: "Hayır. Kullandığımız biyosidal ürünler kokusuzdur ve insan, çocuk veya evcil hayvan sağlığına zarar vermez. Yalnızca endüstriyel fümigasyon uygulamalarında alanın 4 saat kapalı kalması gerekmektedir."
+    answer: "Hayır. Kullandığımız özel solüsyonlar kokusuzdur ve insan, çocuk veya evcil hayvan sağlığına zarar vermez. Yalnızca endüstriyel fümigasyon uygulamalarında alanın 4 saat kapalı kalması gerekmektedir."
   },
   {
     question: "Gıda üretim hatlarını veya otel odalarını mesai saatleri içinde ilaçlayabilir misiniz?",
     answer: "Evet. Özel jel formülasyonlarımız ve kokusuz ULV sistemlerimiz sayesinde, üretim veya hizmet operasyonunuzu zerre kadar aksatmadan 7/24 gizlilik içerisinde (sivil araçlarla) ilaçlama yapabiliyoruz."
   },
   {
-    question: "Kullanılan biyosidal ürünler evcil hayvanlara zarar verir mi?",
+    question: "Kullanılan ilaçlar evcil hayvanlara zarar verir mi?",
     answer: "Asla. TCK İlaçlama olarak, Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO) onaylı, sadece spesifik haşere ve kemirgenlerin sinir sistemini hedef alan ekolojik ürünler kullanmaktayız."
   },
   {
