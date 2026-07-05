@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!page) return { title: 'Bulunamadı' };
 
   return {
-    title: \`\${page.title} | TCK İlaçlama\`,
+    title: `${page.title} | TCK İlaçlama`,
     description: 'TCK İlaçlama yasal bilgilendirme, KVKK, gizlilik politikası ve ISO sertifikaları detayları.',
   };
 }
