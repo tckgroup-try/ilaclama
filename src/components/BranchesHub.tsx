@@ -201,7 +201,10 @@ export function BranchesHub({ branches }: BranchesHubProps) {
           {/* Interactive Map Embed */}
           <div className="h-[320px] w-full bg-slate-950 relative border-b border-white/5">
             <iframe
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedBranch ? selectedBranch.name : 'TCK İlaçlama Kadıköy Şubesi')}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+              src={selectedBranch 
+                ? `https://maps.google.com/maps?q=${selectedBranch.lat},${selectedBranch.lng}&t=&z=14&ie=UTF8&iwloc=&output=embed`
+                : `https://maps.google.com/maps?q=40.9901,29.0290&t=&z=14&ie=UTF8&iwloc=&output=embed`
+              }
               width="100%"
               height="100%"
               style={{ border: 0, filter: 'grayscale(0.8) invert(0.9) contrast(1.2)' }}
