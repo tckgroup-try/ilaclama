@@ -24,25 +24,25 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-8"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-300">
-            <ShieldCheck className="w-4 h-4 text-brand" />
-            <span>Entegre Zararlı Yönetimi (IPM) Uzmanları</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-brand/30 text-sm font-semibold text-brand shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+            <ShieldCheck className="w-4 h-4" />
+            <span>Sağlık Bakanlığı Onaylı Biyosidal Kalkan</span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-            İşletmeniz İçin <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-400">
-              Proaktif Koruma
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
+            Haşere İstilasını <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-emerald-400 to-blue-500">
+              Kökünden Kazıyın
             </span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed">
-            Zararlı kontrolünü sadece bir saha uygulaması olarak değil, marka itibarınızın ve kalite yönetiminizin temel unsuru olarak ele alıyoruz. BRCGS, HACCP ve IFS standartlarına tam uyumlu, kalıcı ve garantili çözümler.
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-xl leading-relaxed font-medium">
+            Sıradan ilaçlamayı unutun. Eviniz ve işletmeniz için geliştirilmiş 0 toleranslı <span className="text-white font-bold">Entegre Zararlı Yönetimi (IPM)</span>. 45 dakikada acil müdahale, kokusuz biyosidal formül ve %100 kesin çözüm garantisi.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 pt-4 w-full">
             <a 
-              href="https://wa.me/905300000000?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20i%C3%A7in%20fiyat%20almak%20istiyorum."
+              href="https://wa.me/905016355053?text=Merhaba,%20acil%20ila%C3%A7lama%20hizmeti%20i%C3%A7in%20fiyat%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto"

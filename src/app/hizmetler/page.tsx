@@ -18,7 +18,7 @@ export default function HizmetlerPage() {
           Kapsamlı <span className="text-brand">Hizmet</span> Ağımız
         </h1>
         <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-          İşletmelerin faaliyetlerini aksatmadan, yaşam alanlarınızda ise günlük yaşamınızı etkilemeden profesyonel ve kokusuz ilaçlama çözümleri sunuyoruz.
+          Sıradan ilaçlama şirketlerinin aksine, işletmenizin operasyonunu 1 dakika bile durdurmadan, evinizde ise sizi yerinizden etmeden %100 garantili, Biyosidal kalkan protokolleri (IPM) uyguluyoruz.
         </p>
       </div>
       

@@ -27,7 +27,7 @@ export default function Hakkimizda() {
             </span>
           </h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            TCK İlaçlama, TCK Group'un gücü ve vizyonuyla İstanbul'un her noktasına 7/24 ulaşan, teknolojik donanımlı profesyonel bir mobil haşere kontrol operasyonudur. Kesin ve garantili çözümler sunuyoruz.
+            TCK İlaçlama, arkasındaki güçlü TCK Group altyapısıyla İstanbul'un her noktasına 45 dakikada ulaşan, endüstriyel disiplinle çalışan profesyonel bir biyosidal operasyon merkezidir. Sıradan ilaçlama şirketlerinin aksine, deneme yanılma yapmaz, %100 kesin ve kalıcı IPM (Entegre Zararlı Yönetimi) protokolleri uygularız.
           </p>
         </div>
       </section>
@@ -56,8 +56,8 @@ export default function Hakkimizda() {
                     <FlaskConical className="w-6 h-6 text-brand" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Sağlık Bakanlığı & WHO Onaylı Biyosidal</h3>
-                    <p className="text-slate-400">Piyasadaki merdiven altı tarım ilaçlarını kullanmayız. Sadece insan ve çevre sağlığına duyarlı, uluslararası standartlarda "Biyosidal" ürünler kullanıyoruz.</p>
+                    <h3 className="text-xl font-bold text-white mb-2">Sağlık Bakanlığı & WHO Onaylı Biyosidal Kalkan</h3>
+                    <p className="text-slate-400">Piyasada ucuz maliyetli merdiven altı tarım ilaçları kullanan firmaların aksine, yalnızca insan ve evcil hayvan sağlığına duyarlı, uluslararası standartlarda orijinal "Biyosidal" ürün formülasyonları kullanıyoruz.</p>
                   </div>
                 </div>
 

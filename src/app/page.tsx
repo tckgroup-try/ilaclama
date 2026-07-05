@@ -23,9 +23,9 @@ export default function Home() {
               <div className="mx-auto w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mb-6">
                 <ShieldCheck className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">%100 Garantili Çözüm</h3>
+              <h3 className="text-xl font-bold text-white mb-3">%100 Kesin Çözüm Garantisi</h3>
               <p className="text-slate-400">
-                Uyguladığımız tüm protokoller, sonuç odaklıdır. Haşere problemine kalıcı olarak veda edin.
+                Uyguladığımız tüm biyosidal protokoller sıfır toleranslıdır. İstila sorununa kalıcı olarak veda edin, zamanınız ve paranız boşa gitmesin.
               </p>
             </GlassCard>
             
@@ -33,9 +33,9 @@ export default function Home() {
               <div className="mx-auto w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Nokta Atışı Müdahale</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Taktiksel Biyosidal Müdahale</h3>
               <p className="text-slate-400">
-                Gelişmiş taksonomik analiz ile haşerenin türüne özel, en etkili biyolojik ve kimyasal ajanlar kullanılır.
+                Gelişmiş taksonomik analiz ile haşerenin biyolojisine özel, bağışıklık direnci geliştiremeyen en etkili aktif ajanlar kullanılır.
               </p>
             </GlassCard>
             
@@ -43,9 +43,9 @@ export default function Home() {
               <div className="mx-auto w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8 text-brand" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">7/24 Acil Operasyon</h3>
+              <h3 className="text-xl font-bold text-white mb-3">45 Dakikada Acil Operasyon</h3>
               <p className="text-slate-400">
-                Kritik tesisler ve acil durumlar için gece gündüz demeden, kokusuz ve hızlı müdahale ekibi hazır.
+                Kritik tesisler, ev ve plazalar için gece gündüz demeden, kokusuz ve anında müdahale edebilen sivil motorize ekiplerimiz 7/24 hazır.
               </p>
             </GlassCard>
           </div>
