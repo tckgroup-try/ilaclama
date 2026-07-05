@@ -3,7 +3,6 @@ import { ServiceTab } from "@/components/ServiceTab";
 import { ShieldCheck, Target, Zap } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { TrustBadges } from "@/components/TrustBadges";
-import { CostEstimator } from "@/components/CostEstimator";
 import { FAQ } from "@/components/FAQ";
 import { Testimonials } from "@/components/Testimonials";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
@@ -55,7 +54,6 @@ export default function Home() {
       
       <BeforeAfterSlider />
       <Testimonials />
-      <CostEstimator />
       <FAQ />
     </>
   );
