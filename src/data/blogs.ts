@@ -1,32 +1,32 @@
 const generateCorporateContent = (content: string, title: string, district: string = 'İstanbul') => {
   const intro = content + "\n\n";
   
-  const bolum1 = `${title} kapsamında, TCK İlaçlama Laboratuvarları olarak ${district} lokasyonunda uzun yıllara dayanan sektörel tecrübemizle premium haşere kontrol hizmetleri sunmaktayız. Kentsel altyapıların yaşlanması ve ekolojik değişimler sebebiyle, yaşam alanlarınızda karşılaşabileceğiniz kemirgen ve böcek popülasyonları yüzeysel temizlik yöntemleriyle ortadan kaldırılamaz. Modern mimarinin getirdiği kompleks altyapı ağları, zararlıların kolonileşmesi için ideal ortamlar yaratmaktadır. Bizler, yüzeysel ve geçici müdahaleler yerine, sorunun kaynağına inen köklü ve mühendislik tabanlı çözümler üretiyoruz.\n\n`;
+  const bolum1 = `${title} kapsamında, TCK İlaçlama Laboratuvarları olarak ${district} bölgesinde uzun yıllara dayanan tecrübemizle profesyonel haşere kontrol hizmetleri sunmaktayız. Eski binalar, gider boruları ve tesisat boşlukları sebebiyle yaşam alanlarınıza sızan fare, hamam böceği ve diğer zararlılar basit market spreyleriyle kalıcı olarak yok edilemez. Duvar aralarında veya parke altlarında üreyen bu böcekleri kalıcı olarak bitirmek için sorunun kaynağına inen köklü çözümler üretiyoruz.\n\n`;
   
-  const bolum2 = `Operasyonel süreçlerimizde, T.C. Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO) standartlarına tam uyumlu, insan ve evcil hayvan sağlığını riske atmayan yeni nesil 'Biyosidal' ürünler kullanmaktayız. Uyguladığımız kaskat (domino) etkili mikrokapsül formülleri ve jel teknolojileri, hedef zararlının biyolojisini spesifik olarak hedef alarak yuva içerisindeki tüm koloniyi deaktive eder. Bu ileri teknoloji uygulamalarımız sayesinde, günlük yaşantınız ve iş akışınız kesintiye uğramadan maksimum hijyen sağlanır. <a href='https://wa.me/905300000000?text=Merhaba,%20ila%C3%A7lama%20hizmetleriniz%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20ve%20fiyat%20almak%20istiyorum' target='_blank' rel='noopener noreferrer' class='text-brand underline'>Kurumsal WhatsApp hattımız üzerinden teknik destek ve operasyonel maliyet analizi talep edebilirsiniz.</a>\n\n`;
+  const bolum2 = `Kullandığımız ilaçlar T.C. Sağlık Bakanlığı ve Dünya Sağlık Örgütü onaylı 'Biyosidal' ürünlerdir. Bu ürünler insan ve evcil hayvan sağlığına zarar vermezken, sadece hedef böcekleri ve kemirgenleri felç eder. Evinize veya iş yerinize uyguladığımız özel jel ilaçları yiyen böcekler, yuvalarına döndüklerinde diğer böcekleri de zincirleme bir şekilde (domino etkisiyle) yok eder. Böylece tek bir işlemle tüm yuvayı tamamen kurutuyoruz. <a href='https://wa.me/905300000000?text=Merhaba,%20ila%C3%A7lama%20hizmetleriniz%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20ve%20fiyat%20almak%20istiyorum' target='_blank' rel='noopener noreferrer' class='text-brand underline'>WhatsApp hattımız üzerinden hemen fiyat ve detaylı bilgi alabilirsiniz.</a>\n\n`;
 
-  const bolum3 = `Fiyatlandırma stratejimiz, alanın metrekare cinsi, haşere türünün direnç profili ve uygulanacak biyosidal protokolün içeriğine göre şeffaf bir şekilde belirlenmektedir. Standart dışı ve riskli kimyasalların kullanıldığı endüstri dışı uygulamalar, halk sağlığını doğrudan tehdit etmektedir. TCK İlaçlama olarak, yalnızca Bayer ve BASF gibi global endüstri devlerinin inovatif ürün gamını kullanmaktayız. Amacımız; kalıcı, güvenilir ve yüksek standartlı bir koruma kalkanı oluşturarak alanlarınızı uzun vadeli olarak güvence altına almaktır. Referanslarımız ve kalite sertifikalarımız, operasyonel mükemmelliğimizin teminatıdır.\n\n`;
+  const bolum3 = `Fiyatlandırma konusunda tamamen şeffaf çalışıyoruz. Piyasada merdiven altı, ucuz tarım ilaçlarıyla işlem yapan amatör kişilerin aksine, biz sadece Bayer ve BASF gibi dünyanın en iyi markalarının garantili ilaçlarını kullanıyoruz. Sağlıktan tasarruf olmaz; kullanılan kalitesiz ilaçlar sadece böcekleri öldürmemekle kalmaz, sağlığınızı da ciddi şekilde riske atar. Bir kez profesyonel ilaçlama yaptırdığınızda, eviniz veya dükkanınız aylar boyunca haşerelerden tamamen korunur.\n\n`;
 
-  const bolum4 = `Bireysel yaşam alanlarının yanı sıra; endüstriyel tesisler, lojistik depolar, gıda üretim tesisleri, sağlık kuruluşları ve eğitim kurumları için uluslararası denetim standartlarına (AIB, BRC, IFS) uygun Entegre Zararlı Yönetimi (IPM) sağlıyoruz. Kemirgen istasyonlarının (KİG) düzenli monitörizasyonu, uçan haşere trap sistemleri ve anlık dijital raporlama altyapımız ile denetim süreçlerini sıfır riskle atlatmanızı sağlıyoruz. Marka itibarınızı korumak, bizim birinci önceliğimizdir. <a href='/hizmetler' class='text-brand underline'>Kurumsal hizmet portföyümüzü detaylı olarak inceleyebilirsiniz.</a>\n\n`;
+  const bolum4 = `Sadece evler için değil; fabrika, depo, restoran, okul ve kreş gibi hassas işletmeler için de düzenli ilaçlama ve kemirgen istasyonu (fare kapanı) kontrol hizmeti sunuyoruz. Özellikle gıda işletmelerinde Tarım Bakanlığı denetimlerinden sorunsuz geçmeniz için gerekli tüm raporlamaları ve evrakları eksiksiz sağlıyoruz. İşletmenizin itibarını korumak ve müşterilerinize hijyenik bir ortam sunmak bizim görevimizdir. <a href='/hizmetler' class='text-brand underline'>Tüm hizmet detaylarımızı buradan inceleyebilirsiniz.</a>\n\n`;
   
-  const bolum5 = `${district} bölgesinin spesifik iklim dinamikleri ve mimari yapısı gereği, haşere popülasyonlarının bahar aylarında (Diyapoz dönemi sonrası) hızla artış gösterdiği bilinmektedir. Reaktif bir yaklaşımdan ziyade proaktif bir strateji benimseyerek, henüz larva veya yumurta evresinde olan popülasyonlara erken müdahale etmek en rasyonel adımdır. TCK İlaçlama'nın 7/24 hizmet veren uzman mühendis ve teknisyen kadrosuyla, mekanlarınızda tam izolasyon ve sterilizasyon sağlamak için her zaman yanınızdayız. Profesyonel keşif ekibimizle iletişime geçerek mekanınıza özel risk analizini yaptırabilirsiniz.`;
+  const bolum5 = `${district} bölgesinin iklimi ve yapıları haşere üremesine oldukça müsaittir. Havalar ısındığında gizlenen yumurtalar çatlar ve bir anda böcek istilasıyla karşılaşabilirsiniz. Bu yüzden böcekleri hiç görmeden, bahar aylarında önleyici ilaçlama yaptırmak en kesin çözümdür. 7/24 hizmet veren uzman kadromuzla, evinizde veya iş yerinizde en kısa sürede garantili ve kokusuz ilaçlama işlemlerini tamamlıyoruz. Keşif ve randevu için iletişim numaralarımızdan bize her zaman ulaşabilirsiniz.`;
 
   return intro + bolum1 + bolum2 + bolum3 + bolum4 + bolum5;
 };
 
 const generateTags = (title: string, district: string = 'İstanbul') => {
-  const baseTags = ['Profesyonel İlaçlama', 'TCK Laboratuvarları', 'Entegre Zararlı Yönetimi', 'Biyosidal Koruma', 'Kurumsal Çözümler'];
-  return [...baseTags, district + ' İlaçlama Hizmetleri', title.split(' ')[0] + ' Operasyonları'];
+  const baseTags = ['Garantili İlaçlama', 'Profesyonel İlaçlama', 'Kesin Çözüm', 'Böcek İlaçlama', 'Fare İlaçlama'];
+  return [...baseTags, district + ' İlaçlama Hizmeti', title.split(' ')[0] + ' İlaçlama'];
 };
 
 export const blogs = [
   {
     slug: 'kadikoy-bocek-ilaclama',
     title: 'Kadıköy Bölgesi Profesyonel Böcek İlaçlama Çözümleri',
-    excerpt: "Kadıköy'ün köklü mimari yapısı ve dinamik sosyal yaşam alanları, zararlılar için elverişli bir habitat oluşturmaktadır. İşletmeler ve konutlar için kalıcı izolasyon stratejileri.",
+    excerpt: "Kadıköy'ün eski binalarında ve hareketli sokaklarında sıkça karşılaşılan hamam böceği ve fare sorunları için garantili ve kesin çözümler sunuyoruz.",
     content: generateCorporateContent(
-      "Kadıköy, Moda ve Fenerbahçe gibi lokasyonlar estetik ve kültürel zenginliğinin yanı sıra, yaşlanan altyapı sistemleri sebebiyle kemirgen ve Blattodea (kalorifer böceği) popülasyonlarının hızla yayılabildiği alanlardır. Özellikle gastronomi işletmelerinin yoğun olduğu bölgelerde, gıda atıkları bu popülasyonları cezbetmektedir. TCK İlaçlama olarak, işletmelerin faaliyetlerini aksatmadan, gece operasyonlarıyla kokusuz jel ve yeni nesil sıvı mikrokapsül uygulamaları gerçekleştiriyor, hedef alanda tam bir sterilizasyon ve hijyen sağlıyoruz.",
-      'Kadıköy Haşere Kontrol Protokolleri',
+      "Kadıköy, Moda ve Fenerbahçe gibi bölgelerde eski altyapılar ve restoran yoğunluğu, lağım fareleri ve hamam böcekleri için uygun üreme alanları oluşturmaktadır. TCK İlaçlama olarak Kadıköy'deki kafe, restoran ve evlerde günlük hayatı aksatmadan kokusuz jel ve sıvı uygulamalarımızla böcek sorununu kökünden çözüyoruz. İşletmelerin kapanış saatlerinde yaptığımız operasyonlarla sabah tamamen hijyenik bir ortama uyanmanızı sağlıyoruz.",
+      'Kadıköy Böcek İlaçlama Hizmetleri',
       'Kadıköy'
     ),
     image: '/images/kadikoy-bocek-ilaclama-tck-ilaclama.png',
@@ -36,11 +36,11 @@ export const blogs = [
   },
   {
     slug: 'sisli-fare-ilaclama',
-    title: 'Şişli ve Mecidiyeköy Endüstriyel Kemirgen İlaçlama',
-    excerpt: "Plazaların ve yoğun iş merkezlerinin kalbi Şişli'de, kompleks altyapılardan kaynaklanan kemirgen popülasyonlarına karşı profesyonel bariyer ve KİG uygulamaları.",
+    title: 'Şişli ve Mecidiyeköy Fare İlaçlama Hizmeti',
+    excerpt: "Şişli ve Mecidiyeköy bölgesindeki plazalarda ve iş yerlerinde görülen fare problemlerine karşı özel istasyonlar kurarak kalıcı koruma sağlıyoruz.",
     content: generateCorporateContent(
-      "Şişli, Mecidiyeköy ve Nişantaşı aksında yer alan lüks yapılar ve plazalar, görünürde izole olsalar da kompleks havalandırma ve kanalizasyon altyapıları sebebiyle kemirgen (Rattus norvegicus) türleri için geçiş güzergahı oluşturabilmektedir. Bu tür spesifik tehditler, standart kapan sistemleriyle çözülemez. TCK İlaçlama olarak, binaların dış çevresine stratejik Kemirgen İstasyonları (KİG) konumlandırıyor, riskleri bina içerisine ulaşmadan kaynağında nötralize ederek kurumsal itibarı ve halk sağlığını koruma altına alıyoruz.",
-      'Şişli Kemirgen Kontrol Yönetimi',
+      "Şişli, Mecidiyeköy ve Nişantaşı bölgesinde kalabalık sokaklar ve yoğun atıklar, lağım farelerinin binalara sızmasına neden olabilmektedir. Asansör boşluklarından ya da otoparklardan binalara giren fareleri sıradan kapanlarla yakalamak mümkün değildir. TCK İlaçlama olarak, binaların etrafına özel kemirgen istasyonları yerleştiriyor, fareleri içeri girmeden önce güvenle etkisiz hale getiriyoruz.",
+      'Şişli Fare İlaçlama',
       'Şişli'
     ),
     image: '/images/sisli-fare-ilaclama-tck-ilaclama.png',
@@ -50,11 +50,11 @@ export const blogs = [
   },
   {
     slug: 'besiktas-ev-ilaclama',
-    title: 'Beşiktaş Bireysel Konut ve Alan İlaçlama Hizmetleri',
-    excerpt: "Beşiktaş lokasyonunda karşılaşılan dış parazit (pire, kene) ve nem kaynaklı zararlılara karşı, insan sağlığına dost biyosidal ürünlerle maksimum koruma.",
+    title: 'Beşiktaş Bireysel Konut ve Ev İlaçlama Hizmetleri',
+    excerpt: "Beşiktaş lokasyonunda karşılaşılan pire, kene ve nem kaynaklı böcek sorunlarına karşı, insan sağlığına dost ilaçlarla maksimum koruma.",
     content: generateCorporateContent(
-      "Beşiktaş'ın tarihi dokusu ve yoğun evcil/sokak hayvanı popülasyonu, apartman sığınaklarında ve giriş katlarında pire ve gümüşçün (Lepisma saccharinum) gibi spesifik zararlıların üremesine zemin hazırlayabilmektedir. Özellikle öğrenci nüfusunun yoğun olduğu bu bölgelerde, ekonomik ancak kaliteden ödün vermeyen, 1. sınıf biyosidal ürünlerle tasarlanmış özel ilaçlama paketleri sunuyoruz. Sağlık standartlarını en üst düzeye çıkararak kesintisiz bir uyku ve hijyenik yaşam alanları vadediyoruz.",
-      'Beşiktaş Yaşam Alanı Sterilizasyonu',
+      "Beşiktaş'ın eski yapılarında ve özellikle giriş katlarında pire ve gümüş böceği gibi sorunlar sıkça görülmektedir. Sokak hayvanı popülasyonunun yoğun olduğu bu bölgelerde, apartman sığınaklarından evlere sıçrayabilen pirelere karşı, uygun fiyatlı ancak birinci sınıf kalitede garantili ilaçlama hizmeti veriyoruz. Evcil hayvanlarınıza ve ailenize zarar vermeyen yöntemlerle yaşam alanlarınızı güvene alıyoruz.",
+      'Beşiktaş Ev İlaçlama',
       'Beşiktaş'
     ),
     image: '/images/besiktas-ev-ilaclama-tck-ilaclama.png',
@@ -64,11 +64,11 @@ export const blogs = [
   },
   {
     slug: 'pendik-tuzla-fabrika-ilaclama',
-    title: 'Tuzla ve Pendik Sanayi Odaklı Fümigasyon İşlemleri',
-    excerpt: 'Tuzla ve Pendik sanayi havzasındaki fabrikalar, lojistik depolar ve antrepolar için uluslararası gümrük ve denetim regülasyonlarına tam uyumlu çözümler.',
+    title: 'Tuzla ve Pendik Sanayi Odaklı İlaçlama İşlemleri',
+    excerpt: 'Tuzla ve Pendik sanayi bölgesindeki fabrikalar, depolar ve konteynerler için uluslararası denetim kurallarına uygun garantili ilaçlama çözümleri.',
     content: generateCorporateContent(
-      "Tuzla Organize Sanayi Bölgesi ve Pendik lojistik merkezleri, milyarlarca dolarlık ticari hacme ve hassas gümrük prosedürlerine ev sahipliği yapmaktadır. İhraç edilecek ahşap paletler veya konteynerlerde tespit edilebilecek en ufak bir entomolojik bulgu, ciddi finansal ve itibari kayıplara yol açar. TCK Laboratuvarları olarak, sanayi tipi geniş çaplı fümigasyon sistemlerimizle, konteyner ve depo alanlarını uluslararası standartlara uygun bir biçimde gazlıyor, ihracat için gerekli sertifikasyon süreçlerini sorunsuz tamamlamanızı sağlıyoruz.",
-      'Tuzla Endüstriyel Fümigasyon ve İlaçlama',
+      "Tuzla Organize Sanayi Bölgesi ve Pendik tersanelerinde gerçekleşen yüksek hacimli ihracat süreçlerinde, palet veya konteynerlere sızabilecek en ufak bir böcek bile gümrüklerde büyük sorunlar yaratabilmektedir. TCK İlaçlama olarak sanayi tipi gazlı ilaçlama (fümigasyon) sistemlerimizle depolarınızı tamamen mühürleyip tüm haşereleri etkisiz hale getiriyoruz. İhracat sertifikalarınızı eksiksiz sağlayarak iş akışınızı güvence altına alıyoruz.",
+      'Tuzla Fabrika İlaçlama',
       'Tuzla'
     ),
     image: '/images/pendik-tuzla-fabrika-ilaclama-tck-ilaclama.png',
@@ -79,10 +79,10 @@ export const blogs = [
   {
     slug: 'umraniye-hamambocek-ilaclama',
     title: 'Ataşehir ve Ümraniye Kalorifer Böceği Müdahale Protokolü',
-    excerpt: "Modern site konseptleri ve merkezi ısıtmalı bloklarda havalandırma boşluklarından yayılan Blattella germanica kolonizasyonunu bariyer teknolojisiyle sonlandırıyoruz.",
+    excerpt: "Ataşehir ve Ümraniye'deki yeni binalarda ve merkezi ısıtmalı bloklarda havalandırma boşluklarından yayılan kalorifer böceklerini kesin olarak durduruyoruz.",
     content: generateCorporateContent(
-      "Ataşehir ve Ümraniye lokasyonlarındaki yeni nesil yüksek katlı siteler ve lüks konut projelerinde, merkezi ısıtma ve ortak havalandırma altyapıları, kalorifer böceği (Blattella germanica) gibi invaziv türlerin katlar arası geçişine imkan tanımaktadır. TCK İlaçlama mühendisleri, bu geçiş güzergahlarını (şaft boşlukları, su borusu etrafları) tespit ederek kokusuz ve uzun süre kalıcı biyosidal bariyerler uygular. Böylece çapraz bulaşma riski tamamen ortadan kaldırılarak yapı genelinde biyolojik güvenlik temin edilir.",
-      'Ümraniye Blattella germanica İzolasyonu',
+      "Ataşehir ve Ümraniye bölgesindeki yeni nesil çok katlı sitelerde, merkezi ısıtma boruları ve havalandırma boşlukları kalorifer böceklerinin daireler arasında rahatça dolaşmasını sağlamaktadır. Komşunuzdan evinize sızabilecek bu böceklere karşı, boru etraflarına ve geçiş noktalarına kokusuz, görünmez bir ilaç bariyeri uyguluyoruz. Komşudan gelen böcek evinize adım attığı an etkisiz hale geliyor ve eviniz %100 güvende kalıyor.",
+      'Ümraniye Kalorifer Böceği İlaçlama',
       'Ümraniye'
     ),
     image: '/images/umraniye-hamambocek-ilaclama-tck-ilaclama.png',
@@ -92,16 +92,16 @@ export const blogs = [
   },
   {
     slug: 'ilaclama-fiyatlari-nasil-belirlenir',
-    title: 'Profesyonel İlaçlama Hizmetlerinde Fiyatlandırma ve Kalite Standartları',
-    excerpt: 'Haşere kontrol sektöründeki maliyet analizleri, kullanılan biyosidal ürünlerin kalitesi, inovasyon gücü ve teknik ekibin yetkinliği çerçevesinde nasıl şekillenir?',
+    title: 'Profesyonel İlaçlama Fiyatları Nasıl Belirlenir?',
+    excerpt: 'İlaçlama fiyatları hangi kriterlere göre değişir? Kaliteli ilaçlama ile merdiven altı işlemler arasındaki farklar nelerdir?',
     content: generateCorporateContent(
-      "Haşere kontrol ve çevre sağlığı sektöründe fiyatlandırma, yüzey alanı, zararlı türünün direnci ve kullanılacak spesifik kimyasalın niteliğine göre optimize edilmektedir. Piyasadaki düşük maliyetli alternatifler genellikle endüstri dışı (tarım ilacı menşeili) zararlı bileşenler içerdiğinden, kısa vadede dahi halk sağlığına ciddi tehditler oluşturur ve kalıcı bir çözüm sunamazlar. TCK Laboratuvarları, sürdürülebilir başarı ve %100 hijyen garantisi ilkesiyle, maliyet-fayda oranını en üst seviyede tutan uluslararası onaylı biyosidal ürünleri tercih etmektedir.",
-      'Kurumsal İlaçlama Fiyat Politikası',
+      "İlaçlama fiyatları; alanın büyüklüğüne, haşerenin türüne ve kullanılacak olan profesyonel ilacın markasına göre değişiklik gösterir. Piyasada çok düşük fiyatlarla hizmet veren firmalar genellikle kalitesiz ve tarım ilacı bazlı ürünler kullanır. Bu ürünler hem böcekleri kalıcı olarak bitirmez hem de solunduğunda ciddi sağlık sorunlarına yol açar. TCK İlaçlama olarak, Dünya Sağlık Örgütü onaylı birinci sınıf ürünleri kullanarak sağlığınızı tehlikeye atmadan, kesin ve garantili çözümler sunuyoruz.",
+      'İlaçlama Fiyatları',
       'İstanbul'
     ),
     image: '/images/blog_insect.png',
     date: '2026-06-10',
     geo: { lat: 41.0082, lng: 28.9784, region: 'İstanbul' },
-    tags: generateTags('Kurumsal Fiyatlandırma')
+    tags: generateTags('İlaçlama Fiyatları')
   }
 ];
