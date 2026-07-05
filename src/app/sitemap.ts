@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 1. Temel Sayfalar
   const routes = [
     '',
-    '/teklif-al',
     '/hizmetler',
     '/kurumsal',
     '/hasereler',

@@ -143,11 +143,11 @@ export default function Hakkimizda() {
                     Mobil Ekibi Çağır
                   </RoseButton>
                 </a>
-                <Link href="/teklif-al" className="w-full sm:w-auto">
+                <a href="https://wa.me/905300000000?text=Merhaba,%20%C3%BCcretsiz%20ke%C5%9Fif%20ve%20fiyat%20bilgisi%20istiyorum" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <RoseButton variant="outline" className="w-full text-lg px-8 py-4">
                     Ücretsiz Keşif İste
                   </RoseButton>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

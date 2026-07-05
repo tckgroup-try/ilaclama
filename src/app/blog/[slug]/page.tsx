@@ -115,22 +115,22 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
 
           {/* Call to Action */}
           <div className="bg-slate-900/50 border border-brand/20 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Abi Boşver Okumayı, İşi Bize Bırak!</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Mekanı Profesyonellere Teslim Edin</h3>
             <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-              Senin vaktin kıymetli. Dert etme, biz yarım saat içinde gelir, mekanı temizler, çıkarız. Kafan rahat etsin.
+              Vaktiniz kıymetli. Tüm haşere sorunlarınız için uzman mühendis kadromuzla hızlı ve garantili çözümler sunuyoruz.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="tel:05300000000" className="w-full sm:w-auto">
                 <RoseButton className="w-full text-lg px-8">
                   <PhoneCall className="w-5 h-5 mr-2" />
-                  Hemen Ustayı Ara
+                  Müşteri Temsilcisini Ara
                 </RoseButton>
               </a>
-              <Link href="/teklif-al" className="w-full sm:w-auto">
+              <a href="https://wa.me/905300000000?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20hakk%C4%B1nda%20fiyat%20almak%20istiyorum" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <RoseButton variant="outline" className="w-full text-lg px-8">
                   Whatsapp'tan Fiyat Al
                 </RoseButton>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

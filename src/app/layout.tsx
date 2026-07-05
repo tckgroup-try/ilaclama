@@ -42,6 +42,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="dark">
+      <head>
+        {/* Google Analytics (GA4) Placeholder */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} bg-slate-900 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-brand/30 selection:text-white`}>
         <Navbar />
         <main className="flex-grow">
@@ -64,7 +78,7 @@ export default function RootLayout({
                   <li><a href="/hakkimizda" className="text-slate-500 hover:text-brand transition-colors">Hakkımızda</a></li>
                   <li><a href="/hizmetler" className="text-slate-500 hover:text-brand transition-colors">Hizmetlerimiz</a></li>
                   <li><a href="/blog" className="text-slate-500 hover:text-brand transition-colors">Ustaların Notları (Blog)</a></li>
-                  <li><a href="/teklif-al" className="text-slate-500 hover:text-brand transition-colors">Fiyat Hesapla</a></li>
+                  <li><a href="https://wa.me/905300000000?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20i%C3%A7in%20fiyat%20hesaplatmak%20istiyorum." target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors">Fiyat Hesapla / Teklif Al</a></li>
                 </ul>
               </div>
               <div>
