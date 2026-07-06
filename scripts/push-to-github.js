@@ -31,12 +31,18 @@ async function run() {
   fs.cpSync(DOCS_SRC, docsDest, { recursive: true });
   console.log('✅ Copied docs folder to temp repository.');
 
-  // Create simple README.md
-  fs.writeFileSync(
-    path.join(TEMP_DIR, 'README.md'),
-    '# TCK İlaçlama - ReadMe.com Documentation Sync Repository\n\nThis repository is used for Bidirectional Git Sync with ReadMe.',
-    'utf-8'
-  );
+  // Copy sitemap README.md to the root of the Git repository for public GitHub SEO
+  const seoReadmeSrc = path.join(DOCS_SRC, 'README.md');
+  if (fs.existsSync(seoReadmeSrc)) {
+    fs.copyFileSync(seoReadmeSrc, path.join(TEMP_DIR, 'README.md'));
+    console.log('✅ Copied SEO README.md to temp repository root.');
+  } else {
+    fs.writeFileSync(
+      path.join(TEMP_DIR, 'README.md'),
+      '# TCK İlaçlama - İstanbul Böcek İlaçlama Servisi\n\nİstanbul geneli 7/24 Sağlık Bakanlığı onaylı dezenfeksiyon ve pest kontrol hizmetleri.',
+      'utf-8'
+    );
+  }
 
   // 3. Git operations
   try {
