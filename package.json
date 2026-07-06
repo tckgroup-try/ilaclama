@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-llm-resources.js && node scripts/generate-geo-maps.js && next build",
+    "build": "node scripts/sanitize-key.js && node scripts/generate-llm-resources.js && node scripts/generate-geo-maps.js && next build",
     "start": "next start",
     "lint": "eslint"
   },

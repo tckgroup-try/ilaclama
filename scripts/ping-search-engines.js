@@ -1,18 +1,18 @@
 const https = require('https');
 
-const SITEMAP_URL = 'https://www.tckilaclama.com/sitemap.xml';
+const SITEMAP_URL = 'https://tckilaclama.com/sitemap.xml';
 const INDEXNOW_KEY = 'a62886f7b15a45279f046b9a89d3429f';
 const INDEXNOW_URLS = [
-  'https://www.tckilaclama.com/',
-  'https://www.tckilaclama.com/hizmetler',
-  'https://www.tckilaclama.com/subelerimiz',
-  'https://www.tckilaclama.com/hakkimizda',
-  'https://www.tckilaclama.com/blog',
-  'https://www.tckilaclama.com/hizmet/istanbul-kadikoy-bocek-ilaclama',
-  'https://www.tckilaclama.com/hizmet/istanbul-sisli-bocek-ilaclama',
-  'https://www.tckilaclama.com/hizmet/istanbul-besiktas-pire-ilaclama',
-  'https://www.tckilaclama.com/hizmet/istanbul-bakirkoy-fare-ilaclama',
-  'https://www.tckilaclama.com/hizmet/istanbul-uskudar-tahtakurusu-ilaclama'
+  'https://tckilaclama.com/',
+  'https://tckilaclama.com/hizmetler',
+  'https://tckilaclama.com/subelerimiz',
+  'https://tckilaclama.com/hakkimizda',
+  'https://tckilaclama.com/blog',
+  'https://tckilaclama.com/hizmet/istanbul-kadikoy-bocek-ilaclama',
+  'https://tckilaclama.com/hizmet/istanbul-sisli-bocek-ilaclama',
+  'https://tckilaclama.com/hizmet/istanbul-besiktas-pire-ilaclama',
+  'https://tckilaclama.com/hizmet/istanbul-bakirkoy-fare-ilaclama',
+  'https://tckilaclama.com/hizmet/istanbul-uskudar-tahtakurusu-ilaclama'
 ];
 
 function getRequest(url) {
@@ -76,13 +76,13 @@ async function pingAll() {
   // 3. Submit to IndexNow (Bing, Yandex, Seznam)
   try {
     const indexNowPayload = {
-      host: 'www.tckilaclama.com',
+      host: 'tckilaclama.com',
       key: INDEXNOW_KEY,
-      keyLocation: `https://www.tckilaclama.com/${INDEXNOW_KEY}.txt`,
+      keyLocation: `https://tckilaclama.com/${INDEXNOW_KEY}.txt`,
       urlList: INDEXNOW_URLS
     };
 
-    const indexNowUrl = 'https://api.indexnow.org/IndexNow';
+    const indexNowUrl = 'https://www.bing.com/IndexNow';
     const res = await postRequest(indexNowUrl, indexNowPayload);
     console.log(`⚡ IndexNow (Bing/Yandex) API returned status: ${res.statusCode}`);
     if (res.statusCode === 200) {
