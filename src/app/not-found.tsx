@@ -9,11 +9,11 @@ export default function NotFound() {
         <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-brand/10 mb-8">
           <ShieldAlert className="w-12 h-12 text-brand" />
         </div>
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">404</h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-slate-300 mb-4">
+        <h1 className="text-6xl md:text-8xl font-bold text-slate-900 mb-6 tracking-tight">404</h1>
+        <h2 className="text-2xl md:text-3xl font-semibold text-slate-700 mb-4">
           Aradığınız Sayfa Bulunamadı
         </h2>
-        <p className="text-slate-400 max-w-md mx-auto mb-10 text-lg">
+        <p className="text-slate-600 max-w-md mx-auto mb-10 text-lg">
           Ulaşmaya çalıştığınız sayfa taşınmış veya yayından kaldırılmış olabilir. Operasyon ekibimizden doğrudan destek almak için iletişime geçebilirsiniz.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -33,29 +33,29 @@ export function Navbar() {
           <div className="w-10 h-10 rounded-xl bg-brand/20 flex items-center justify-center group-hover:bg-brand/30 transition-colors">
             <ShieldAlert className="text-brand w-6 h-6" />
           </div>
-          <span className="text-xl font-bold text-white tracking-wide">
+          <span className="text-xl font-bold tracking-wide text-slate-900 transition-colors">
             TCK<span className="text-brand">İLAÇLAMA</span>
           </span>
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/hizmetler" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/hizmetler" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             Hizmetler
           </Link>
-          <Link href="/hasereler" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/hasereler" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             Haşere Türleri
           </Link>
-          <Link href="/blog" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/blog" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             Blog
           </Link>
-          <Link href="/subelerimiz" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/subelerimiz" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             Şubelerimiz
           </Link>
-          <Link href="/hakkimizda" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          <Link href="/hakkimizda" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             Kurumsal
           </Link>
-          <a href="tel:+905016355053" className="text-sm font-medium text-brand hover:text-blue-400 transition-colors">
+          <a href="tel:+905016355053" className="text-sm font-medium text-brand hover:text-brand-hover transition-colors">
             0501 635 50 53
           </a>
           <a href="https://wa.me/905016355053?text=Merhaba,%20acil%20ila%C3%A7lama%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">
@@ -67,7 +67,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-slate-300 hover:text-white"
+          className="md:hidden text-slate-700 hover:text-slate-950 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -76,12 +76,12 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-panel absolute top-full left-0 right-0 border-t border-white/5 p-6 flex flex-col gap-6 shadow-2xl">
-          <Link href="/hizmetler" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Hizmetler</Link>
-          <Link href="/hasereler" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Haşere Türleri</Link>
-          <Link href="/hakkimizda" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Kurumsal</Link>
-          <Link href="/subelerimiz" className="text-slate-300 font-medium p-3 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Şubelerimiz</Link>
-          <a href="tel:+905016355053" className="text-brand font-medium p-3 hover:text-blue-400 transition-colors">0501 635 50 53</a>
+        <div className="md:hidden glass-panel absolute top-full left-0 right-0 border-t border-slate-200/60 p-6 flex flex-col gap-6 shadow-2xl">
+          <Link href="/hizmetler" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Hizmetler</Link>
+          <Link href="/hasereler" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Haşere Türleri</Link>
+          <Link href="/hakkimizda" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Kurumsal</Link>
+          <Link href="/subelerimiz" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Şubelerimiz</Link>
+          <a href="tel:+905016355053" className="text-brand font-medium p-3 hover:text-brand-hover transition-colors">0501 635 50 53</a>
           <a href="https://wa.me/905016355053?text=Merhaba,%20acil%20ila%C3%A7lama%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
             <RoseButton className="w-full py-4 text-lg">Acil Teklif Al</RoseButton>
           </a>

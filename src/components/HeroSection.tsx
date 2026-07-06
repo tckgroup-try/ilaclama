@@ -13,9 +13,9 @@ export function HeroSection() {
     <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Beams & Particles */}
       <BackgroundBeams />
-      <div className="absolute inset-0 bg-slate-900 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-slate-900 z-0" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand/10 rounded-full blur-[128px] z-0" />
+      <div className="absolute inset-0 bg-slate-50 z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-50/40 via-slate-50 to-white z-0" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand/5 rounded-full blur-[128px] z-0" />
       
       <div className="container relative z-10 px-4 mx-auto text-center md:text-left grid md:grid-cols-2 gap-12 items-center">
         <motion.div 
@@ -29,14 +29,14 @@ export function HeroSection() {
             <span>Sağlık Bakanlığı Onaylı Böcek ve Haşere İlaçlama</span>
           </div>
           
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.1]">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-slate-900 leading-[1.1]">
             Haşere İstilasını <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-emerald-400 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-emerald-500 to-emerald-600">
               Kökünden Kazıyın
             </span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-xl leading-relaxed font-medium">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed font-medium">
             Sıradan ilaçlamayı unutun. Eviniz ve işletmeniz için geliştirilmiş 0 toleranslı profesyonel haşere kontrolü. 45 dakikada acil müdahale, kokusuz, lekesiz ve insan sağlığına zararsız formüllerle %100 kesin çözüm garantisi.
           </p>
           
@@ -62,17 +62,17 @@ export function HeroSection() {
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-6 pt-6">
             <div className="flex flex-col">
               <span className="text-3xl md:text-4xl font-black text-brand">255+</span>
-              <span className="text-sm text-slate-400 font-medium mt-1">Ev / Apartman<br/>Mutlu Müşteri</span>
+              <span className="text-sm text-slate-600 font-medium mt-1">Ev / Apartman<br/>Mutlu Müşteri</span>
             </div>
-            <div className="w-px h-12 bg-white/10 hidden sm:block" />
+            <div className="w-px h-12 bg-slate-200 hidden sm:block" />
             <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-black text-emerald-400">115+</span>
-              <span className="text-sm text-slate-400 font-medium mt-1">Dükkan / İş Yeri<br/>Aktif Referans</span>
+              <span className="text-3xl md:text-4xl font-black text-emerald-600">115+</span>
+              <span className="text-sm text-slate-600 font-medium mt-1">Dükkan / İş Yeri<br/>Aktif Referans</span>
             </div>
-            <div className="w-px h-12 bg-white/10 hidden sm:block" />
+            <div className="w-px h-12 bg-slate-200 hidden sm:block" />
             <div className="flex flex-col">
-              <span className="text-3xl md:text-4xl font-black text-blue-400">%100</span>
-              <span className="text-sm text-slate-400 font-medium mt-1">Kesin Çözüm<br/>Garantisi</span>
+              <span className="text-3xl md:text-4xl font-black text-emerald-500">%100</span>
+              <span className="text-sm text-slate-600 font-medium mt-1">Kesin Çözüm<br/>Garantisi</span>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="hidden md:block relative h-[600px] w-full rounded-3xl overflow-hidden glass-panel border-white/5 shadow-2xl"
+          className="hidden md:block relative h-[600px] w-full rounded-3xl overflow-hidden glass-panel border-slate-200 shadow-2xl"
         >
           <Image 
             src="/images/tck_expert.png" 
@@ -115,13 +115,13 @@ export function HeroSection() {
             className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent z-10" />
           <div className="absolute bottom-8 left-8 right-8 z-20">
              <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="w-8 h-8 text-brand" />
-                <div className="text-xl font-light text-slate-200">Uluslararası Denetim Standartlarına Tam Uyum</div>
+                <div className="text-xl font-bold text-slate-800">Uluslararası Denetim Standartlarına Tam Uyum</div>
              </div>
-             <div className="h-1 w-full bg-slate-800/50 rounded-full overflow-hidden backdrop-blur-md">
+             <div className="h-1 w-full bg-slate-200 rounded-full overflow-hidden backdrop-blur-md">
                 <motion.div 
                   className="h-full bg-brand" 
                   initial={{ width: 0 }}

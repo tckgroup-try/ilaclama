@@ -23,16 +23,16 @@ export function BeforeAfterSlider() {
   const handleTouchMove = (e: TouchEvent) => handleMove(e.touches[0].clientX);
 
   return (
-    <section className="py-24 relative overflow-hidden bg-slate-950">
+    <section className="py-24 relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Farkı Kendi Gözlerinizle Görün</h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Farkı Kendi Gözlerinizle Görün</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Geleneksel ilaçlama yöntemleri sorunu sadece geçici olarak çözer. TCK İlaçlama'nın profesyonel haşere kontrol uygulamaları ise sorunu kökten bitirir. Kaydırarak sonucu görün.
           </p>
         </div>
 
-        <div className="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl shadow-brand/20 border border-white/10 group cursor-ew-resize">
+        <div className="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl shadow-brand/5 border border-slate-200 group cursor-ew-resize">
           {/* Main Container */}
           <div 
             ref={containerRef}

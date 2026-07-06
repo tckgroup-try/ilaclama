@@ -2,17 +2,17 @@
 @theme {
   --color-brand: #10b981; /* Emerald 500 (Green) */
   --color-brand-hover: #059669; /* Emerald 600 */
-  --color-bg-dark: #0f172a; /* Slate 900 (Dark Blue) */
-  --color-bg-glass: rgba(15, 23, 42, 0.8);
-  --color-bg-glass-light: rgba(255, 255, 255, 0.05);
-  --color-border-glass: rgba(59, 130, 246, 0.2); /* Blue border tint */
+  --color-bg-dark: #f8fafc; /* Slate 50 (Light Grayish-White) */
+  --color-bg-glass: rgba(255, 255, 255, 0.85); /* Light glass */
+  --color-bg-glass-light: rgba(255, 255, 255, 0.55);
+  --color-border-glass: rgba(15, 23, 42, 0.08); /* Subtle dark border tint */
   --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-spin-slow: spin 12s linear infinite;
 }
 
 :root {
-  --background: #0f172a; /* Dark Blue */
-  --foreground: #f8fafc; /* Slate 50 (White) */
+  --background: #ffffff; /* White Background */
+  --foreground: #0f172a; /* Slate 900 (Dark Slate Text) */
 }
 
 @layer base {
@@ -31,6 +31,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--color-border-glass);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03); /* Subtle light shadow */
   }
   
   .glass-nav {
@@ -38,6 +39,7 @@
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--color-border-glass);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02);
   }
 
   /* Custom Typography (replaces @tailwindcss/typography plugin to fix Turbopack bug) */
@@ -46,18 +48,18 @@
     line-height: 1.75;
   }
   .prose h1, .prose h2, .prose h3, .prose h4 {
-    color: #fff;
+    color: var(--foreground);
     font-weight: 700;
     margin-top: 2em;
     margin-bottom: 1em;
   }
   .prose h1 { font-size: 2.25em; }
-  .prose h2 { font-size: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.3em; }
+  .prose h2 { font-size: 1.5em; border-bottom: 1px solid rgba(15, 23, 42, 0.1); padding-bottom: 0.3em; }
   .prose h3 { font-size: 1.25em; }
-  .prose p { margin-top: 1.25em; margin-bottom: 1.25em; color: #cbd5e1; }
-  .prose ul { margin-top: 1.25em; margin-bottom: 1.25em; padding-left: 1.625em; list-style-type: disc; color: #cbd5e1; }
+  .prose p { margin-top: 1.25em; margin-bottom: 1.25em; color: #475569; } /* Slate 600 */
+  .prose ul { margin-top: 1.25em; margin-bottom: 1.25em; padding-left: 1.625em; list-style-type: disc; color: #475569; }
   .prose li { margin-top: 0.5em; margin-bottom: 0.5em; }
   .prose a { color: var(--color-brand); text-decoration: none; font-weight: 500; }
   .prose a:hover { text-decoration: underline; }
-  .prose strong { color: #fff; font-weight: 600; }
+  .prose strong { color: var(--foreground); font-weight: 600; }
 }

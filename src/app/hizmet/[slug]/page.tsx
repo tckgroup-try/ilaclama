@@ -129,21 +129,21 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
   return (
     <>
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-slate-900 z-0" />
+        <div className="absolute inset-0 bg-slate-50 z-0" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 rounded-full blur-[128px] z-0" />
         
         <div className="container relative z-10 px-4 mx-auto text-center max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-300 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-600 mb-8">
             <MapPin className="w-4 h-4 text-brand" />
             <span>{districtName} Bölgesi Özel Operasyon</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
-            {districtName} <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-400">{placeName || 'Geneli'}</span> <br/>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
+            {districtName} <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-600">{placeName || 'Geneli'}</span> <br/>
             Profesyonel {pestName} İlaçlama
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
             {districtName} lokasyonundaki {placeName ? `${placeName.toLowerCase()} alanlarına` : 'tüm yaşam alanlarına'} özel olarak geliştirilen {pestName.toLowerCase()} müdahale protokolümüzle %100 hijyen garantisi sunuyoruz.
           </p>
           
@@ -157,37 +157,37 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
 
       <section className="py-20 relative z-10">
          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-white">Neden Bizi Seçmelisiniz?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">Neden Bizi Seçmelisiniz?</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <GlassCard>
+              <GlassCard className="bg-white border-slate-200/80">
                 <ShieldCheck className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">{districtName} Bölge Hakimiyeti</h3>
-                <p className="text-slate-400">Bu bölgedeki {pestName.toLowerCase()} popülasyonunu ve ekolojik yapıyı iyi biliyor, nokta atışı müdahale ediyoruz.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">{districtName} Bölge Hakimiyeti</h3>
+                <p className="text-slate-600">Bu bölgedeki {pestName.toLowerCase()} popülasyonunu ve ekolojik yapıyı iyi biliyor, nokta atışı müdahale ediyoruz.</p>
               </GlassCard>
-              <GlassCard>
+              <GlassCard className="bg-white border-slate-200/80">
                 <Bug className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">{placeName || 'Tüm Alanlar'} Odaklı Formül</h3>
-                <p className="text-slate-400">{placeName || 'Yaşam ve iş alanları'} için kokusuz, lekesiz ve günlük işleyişi durdurmayan uygulamalar.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">{placeName || 'Tüm Alanlar'} Odaklı Formül</h3>
+                <p className="text-slate-600">{placeName || 'Yaşam ve iş alanları'} için kokusuz, lekesiz ve günlük işleyişi durdurmayan uygulamalar.</p>
               </GlassCard>
-              <GlassCard>
+              <GlassCard className="bg-white border-slate-200/80">
                 <MapPin className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">Hızlı Müdahale</h3>
-                <p className="text-slate-400">Acil durum ekibimizle en kısa sürede adresinizdeyiz. 7/24 hizmet sunuyoruz.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Hızlı Müdahale</h3>
+                <p className="text-slate-600">Acil durum ekibimizle en kısa sürede adresinizdeyiz. 7/24 hizmet sunuyoruz.</p>
               </GlassCard>
             </div>
          </div>
       </section>
 
       {/* Silo Architecture: Local Internal Linking */}
-      <section className="py-16 bg-slate-900 border-t border-white/5">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h3 className="text-2xl font-bold text-white mb-6">Yakındaki Hizmet Noktalarımız</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-6">Yakındaki Hizmet Noktalarımız</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href={`/hizmet/istanbul-kadikoy-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-300 hover:text-brand hover:border-brand/50 transition-all">Kadıköy {placeName} İlaçlama</Link>
-            <Link href={`/hizmet/istanbul-sisli-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-300 hover:text-brand hover:border-brand/50 transition-all">Şişli {placeName} İlaçlama</Link>
-            <Link href={`/hizmet/istanbul-besiktas-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-300 hover:text-brand hover:border-brand/50 transition-all">Beşiktaş {placeName} İlaçlama</Link>
-            <Link href={`/hizmet/istanbul-pendik-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-300 hover:text-brand hover:border-brand/50 transition-all">Pendik {placeName} İlaçlama</Link>
-            <Link href={`/hizmet/istanbul-bakirkoy-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-300 hover:text-brand hover:border-brand/50 transition-all">Bakırköy {placeName} İlaçlama</Link>
+            <Link href={`/hizmet/istanbul-kadikoy-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-600 hover:text-brand hover:border-brand/50 transition-all bg-white">Kadıköy {placeName} İlaçlama</Link>
+            <Link href={`/hizmet/istanbul-sisli-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-600 hover:text-brand hover:border-brand/50 transition-all bg-white">Şişli {placeName} İlaçlama</Link>
+            <Link href={`/hizmet/istanbul-besiktas-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-600 hover:text-brand hover:border-brand/50 transition-all bg-white">Beşiktaş {placeName} İlaçlama</Link>
+            <Link href={`/hizmet/istanbul-pendik-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-600 hover:text-brand hover:border-brand/50 transition-all bg-white">Pendik {placeName} İlaçlama</Link>
+            <Link href={`/hizmet/istanbul-bakirkoy-${placeName ? slugify(placeName) : 'bocek'}-ilaclama`} className="px-4 py-2 rounded-full glass-panel text-sm text-slate-600 hover:text-brand hover:border-brand/50 transition-all bg-white">Bakırköy {placeName} İlaçlama</Link>
           </div>
         </div>
       </section>
@@ -195,11 +195,11 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
       {/* Local Google Maps Embed & Get Directions */}
       <section className="py-20 relative z-10">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="glass-panel rounded-3xl p-4 md:p-8 border border-white/5 shadow-2xl">
+          <div className="glass-panel rounded-3xl p-4 md:p-8 border border-slate-200 bg-white shadow-2xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4">{districtName} Bölgesi Hizmet Noktası</h3>
-                <p className="text-slate-400 mb-6">Gezici ekiplerimiz ve deneyimli uzmanlarımız {districtName} genelinde 7/24 kesintisiz hizmet vermektedir. Hızlı ve güvenli haşere ilaçlama uygulamaları için yol tarifi alabilir veya doğrudan bizi arayabilirsiniz.</p>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">{districtName} Bölgesi Hizmet Noktası</h3>
+                <p className="text-slate-600 mb-6">Gezici ekiplerimiz ve deneyimli uzmanlarımız {districtName} genelinde 7/24 kesintisiz hizmet vermektedir. Hızlı ve güvenli haşere ilaçlama uygulamaları için yol tarifi alabilir veya doğrudan bizi arayabilirsiniz.</p>
                 <a href={branch ? branch.url : `https://www.google.com/maps/dir/?api=1&destination=${districtName}+istanbul+ilaclama`} target="_blank" rel="noopener noreferrer">
                   <button className="flex items-center gap-3 bg-brand hover:bg-brand-hover text-white px-6 py-3 rounded-xl transition-colors font-semibold shadow-lg shadow-brand/20">
                     <Navigation className="w-5 h-5" />
@@ -207,7 +207,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
                   </button>
                 </a>
               </div>
-              <div className="h-[300px] w-full rounded-2xl overflow-hidden border border-white/10">
+              <div className="h-[300px] w-full rounded-2xl overflow-hidden border border-slate-200">
                 <iframe 
                   src={`https://maps.google.com/maps?q=${branch ? encodeURIComponent(branch.name) : `${districtName}+istanbul+ilaclama`}&t=&z=14&ie=UTF8&iwloc=&output=embed`} 
                   width="100%" 

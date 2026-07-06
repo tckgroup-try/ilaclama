@@ -21,7 +21,7 @@ export function TrustBadges() {
         {[...badges, ...badges].map((badge, index) => (
           <div 
             key={index}
-            className="flex items-center gap-2 mx-8 text-slate-400 font-medium tracking-wide uppercase text-sm"
+            className="flex items-center gap-2 mx-8 text-slate-600 font-medium tracking-wide uppercase text-sm"
           >
             <div className="w-2 h-2 rounded-full bg-brand" />
             {badge}

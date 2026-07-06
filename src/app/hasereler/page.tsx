@@ -43,28 +43,28 @@ export default function HaserelerPage() {
     <div className="pt-32 pb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-300 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-600 mb-6">
             <ShieldCheck className="w-4 h-4 text-brand" />
             <span>Profesyonel Haşere Tür Analizi</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
             Zararlı ve <span className="text-brand">Haşere</span> Türleri
           </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Hastalık taşıyıcı ve itibar zedeleyici zararlı popülasyonlarının yapısını analiz ediyor, her türe özel etkili ve kesin çözüm sunan ilaçlama yöntemleri uyguluyoruz.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {pests.map((pest) => (
-            <GlassCard key={pest.id} hoverEffect className="flex flex-col h-full border border-white/5 hover:border-brand/30">
+            <GlassCard key={pest.id} hoverEffect className="flex flex-col h-full border border-slate-200 bg-white hover:border-brand/30">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center">
                   {pest.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-white">{pest.title}</h3>
+                <h3 className="text-2xl font-bold text-slate-900">{pest.title}</h3>
               </div>
-              <p className="text-slate-400 leading-relaxed mb-6 flex-grow">
+              <p className="text-slate-600 leading-relaxed mb-6 flex-grow">
                 {pest.desc}
               </p>
               <Link href={pest.link} className="inline-flex items-center text-brand font-medium group">

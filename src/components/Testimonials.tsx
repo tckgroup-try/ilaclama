@@ -132,7 +132,7 @@ export function Testimonials() {
   }, [activeTab]);
 
   return (
-    <section className="py-24 relative overflow-hidden z-10 bg-slate-950">
+    <section className="py-24 relative overflow-hidden z-10 bg-slate-50">
       {/* Infinite Scroll CSS Injection */}
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes marquee {
@@ -160,10 +160,10 @@ export function Testimonials() {
             <Star className="w-4 h-4 fill-brand text-brand" />
             <span>100+ Kurumsal Referans</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-            İşletmeler Neden <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-300">TCK İlaçlama'yı</span> Seçiyor?
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            İşletmeler Neden <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-600">TCK İlaçlama'yı</span> Seçiyor?
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Türkiye'nin önde gelen fabrikaları, otelleri ve restoran zincirleri hijyen standartlarını bizimle güvence altına alıyor.
           </p>
         </div>
@@ -182,7 +182,7 @@ export function Testimonials() {
               className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all border ${
                 activeTab === tab.id
                   ? 'bg-brand border-brand text-white shadow-lg shadow-brand/20'
-                  : 'bg-slate-900/50 border-white/5 text-slate-400 hover:text-slate-200'
+                  : 'bg-white border-slate-200/80 text-slate-600 hover:text-slate-900'
               }`}
             >
               {tab.label}
@@ -206,17 +206,17 @@ export function Testimonials() {
                 transition={{ duration: 0.4 }}
                 className="h-full"
               >
-                <GlassCard className="relative p-8 border-white/5 hover:border-brand/30 group h-full flex flex-col justify-between">
-                  <Quote className="absolute top-6 right-6 w-10 h-10 text-slate-800/20 group-hover:text-brand/10 transition-colors pointer-events-none" />
+                <GlassCard className="relative p-8 border-slate-200/80 hover:border-brand/30 group h-full flex flex-col justify-between">
+                  <Quote className="absolute top-6 right-6 w-10 h-10 text-slate-200 group-hover:text-brand/10 transition-colors pointer-events-none" />
                   
                   <div>
                     {/* Header */}
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center shadow-lg group-hover:border-brand/30 transition-all">
+                      <div className="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200/50 flex items-center justify-center shadow-lg group-hover:border-brand/30 transition-all">
                         {review.icon}
                       </div>
                       <div>
-                        <h3 className="text-base font-bold text-white leading-tight group-hover:text-brand transition-colors">
+                        <h3 className="text-base font-bold text-slate-900 leading-tight group-hover:text-brand transition-colors">
                           {review.company}
                         </h3>
                         <p className="text-xs text-slate-500 mt-0.5">{review.name} - {review.role}</p>
@@ -231,15 +231,15 @@ export function Testimonials() {
                     </div>
                     
                     {/* Comment */}
-                    <p className="text-slate-300 leading-relaxed italic text-sm mb-6">
+                    <p className="text-slate-600 leading-relaxed italic text-sm mb-6">
                       "{review.comment}"
                     </p>
                   </div>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-1.5 pt-4 border-t border-white/5">
+                  <div className="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100">
                     {review.tags.map((tag) => (
-                      <span key={tag} className="px-2 py-0.5 rounded-full bg-slate-950/80 border border-white/5 text-[10px] font-medium text-slate-400">
+                      <span key={tag} className="px-2 py-0.5 rounded-full bg-slate-100 border border-slate-200/50 text-[10px] font-medium text-slate-500">
                         {tag}
                       </span>
                     ))}
@@ -251,7 +251,7 @@ export function Testimonials() {
         </motion.div>
 
         {/* Corporate Infinite Logo Marquee */}
-        <div className="mt-20 border-t border-white/5 pt-12">
+        <div className="mt-20 border-t border-slate-200 pt-12">
           <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-500 mb-8">
             Güvenliği Denetlenmiş ve Tescillenmiş Kurumlar
           </p>
@@ -262,7 +262,7 @@ export function Testimonials() {
               {partnerLogos.map((logo, index) => (
                 <div 
                   key={`logo-1-${index}`} 
-                  className="flex items-center gap-2 bg-slate-900/40 border border-white/5 rounded-2xl py-3 px-6 text-slate-400 hover:text-white hover:border-brand/30 transition-all font-semibold tracking-wider text-sm cursor-default"
+                  className="flex items-center gap-2 bg-white border border-slate-200/80 rounded-2xl py-3 px-6 text-slate-600 hover:text-slate-900 hover:border-brand/30 hover:shadow-md transition-all font-semibold tracking-wider text-sm cursor-default"
                 >
                   <CheckCircle2 className="w-4 h-4 text-brand" />
                   {logo}
@@ -272,7 +272,7 @@ export function Testimonials() {
               {partnerLogos.map((logo, index) => (
                 <div 
                   key={`logo-2-${index}`} 
-                  className="flex items-center gap-2 bg-slate-900/40 border border-white/5 rounded-2xl py-3 px-6 text-slate-400 hover:text-white hover:border-brand/30 transition-all font-semibold tracking-wider text-sm cursor-default"
+                  className="flex items-center gap-2 bg-white border border-slate-200/80 rounded-2xl py-3 px-6 text-slate-600 hover:text-slate-900 hover:border-brand/30 hover:shadow-md transition-all font-semibold tracking-wider text-sm cursor-default"
                 >
                   <CheckCircle2 className="w-4 h-4 text-brand" />
                   {logo}
@@ -290,8 +290,8 @@ export function Testimonials() {
             { label: 'QR Kodlu Takip', desc: 'Dijital Rapor Arşivi' },
             { label: 'Sağlık Bakanlığı Onay', desc: 'Ruhsatlı Solüsyonlar' }
           ].map((badge, idx) => (
-            <div key={idx} className="glass-panel p-4 rounded-2xl border border-white/5 bg-slate-950/40">
-              <div className="text-sm font-bold text-white">{badge.label}</div>
+            <div key={idx} className="glass-panel p-4 rounded-2xl border border-slate-200/80 bg-white">
+              <div className="text-sm font-bold text-slate-900">{badge.label}</div>
               <div className="text-[10px] text-brand font-medium mt-1">{badge.desc}</div>
             </div>
           ))}

@@ -57,25 +57,25 @@ export function ServiceTab() {
   const services = activeTab === 'b2b' ? b2bServices : b2cServices;
 
   return (
-    <section className="py-24 relative z-10 bg-slate-950">
+    <section className="py-24 relative z-10 bg-slate-50">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-sm font-semibold mb-6">
             <ShieldAlert className="w-4 h-4 mr-2" />
             Sağlık Bakanlığı Onaylı Koruma
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Her Sektöre Özel <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-400">Taktiksel Müdahale</span></h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Her Sektöre Özel <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-700">Taktiksel Müdahale</span></h2>
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Sıradan böcek ilaçlamayı unutun. İhtiyaç duyduğunuz alanı seçin, deneyimli uzman kadromuz size özel kalıcı ve garantili haşere kontrol yöntemlerini uygulasın.
           </p>
         </div>
 
         <div className="flex justify-center mb-12">
-          <div className="glass-panel p-1.5 rounded-2xl flex w-full sm:w-auto relative border border-white/5 bg-slate-900/50 backdrop-blur-xl">
+          <div className="glass-panel p-1.5 rounded-2xl flex w-full sm:w-auto relative border border-slate-200 bg-white backdrop-blur-xl">
             <button
               onClick={() => setActiveTab('b2b')}
               className={`relative z-10 flex flex-1 sm:flex-none justify-center items-center gap-2 px-6 py-4 sm:px-10 rounded-xl text-sm sm:text-base font-bold transition-colors ${
-                activeTab === 'b2b' ? 'text-white' : 'text-slate-400 hover:text-slate-200'
+                activeTab === 'b2b' ? 'text-white' : 'text-slate-500 hover:text-slate-900'
               }`}
             >
               <Building2 className="w-5 h-5" />
@@ -84,7 +84,7 @@ export function ServiceTab() {
             <button
               onClick={() => setActiveTab('b2c')}
               className={`relative z-10 flex flex-1 sm:flex-none justify-center items-center gap-2 px-6 py-4 sm:px-10 rounded-xl text-sm sm:text-base font-bold transition-colors ${
-                activeTab === 'b2c' ? 'text-white' : 'text-slate-400 hover:text-slate-200'
+                activeTab === 'b2c' ? 'text-white' : 'text-slate-500 hover:text-slate-900'
               }`}
             >
               <Home className="w-5 h-5" />
@@ -101,7 +101,7 @@ export function ServiceTab() {
 
         <div className="grid lg:grid-cols-12 gap-6">
           {/* Dynamic Image Panel */}
-          <div className="lg:col-span-4 relative h-[400px] lg:h-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+          <div className="lg:col-span-4 relative h-[400px] lg:h-auto rounded-3xl overflow-hidden border border-slate-200 shadow-2xl group">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -146,26 +146,26 @@ export function ServiceTab() {
                     className={`${service.colSpan} block h-full`}
                   >
                     <Link href={`/hizmet/istanbul-${service.slug}-bocek-ilaclama`}>
-                      <div className="h-full relative overflow-hidden rounded-3xl bg-slate-900/40 border border-white/5 hover:border-brand/50 hover:bg-slate-800/60 transition-all duration-300 group p-8 flex flex-col justify-between">
+                      <div className="h-full relative overflow-hidden rounded-3xl bg-white border border-slate-200/80 hover:border-brand/50 hover:bg-slate-50/50 hover:shadow-xl transition-all duration-300 group p-8 flex flex-col justify-between">
                         
                         {/* Glow effect on hover */}
                         <div className="absolute -inset-px bg-gradient-to-r from-brand/0 via-brand/10 to-brand/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
                         
                         <div className="relative z-10">
-                          <div className="w-14 h-14 rounded-2xl bg-slate-800/80 border border-white/5 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand/20 group-hover:border-brand/30 transition-all duration-300 shadow-lg">
-                            <Icon className="w-7 h-7 text-slate-300 group-hover:text-brand transition-colors" />
+                          <div className="w-14 h-14 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand/20 group-hover:border-brand/30 transition-all duration-300 shadow-md">
+                            <Icon className="w-7 h-7 text-slate-600 group-hover:text-brand transition-colors" />
                           </div>
                           
-                          <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand transition-colors">
+                          <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand transition-colors">
                             {service.title}
                           </h3>
-                          <p className="text-slate-400 leading-relaxed text-sm md:text-base">
+                          <p className="text-slate-600 leading-relaxed text-sm md:text-base">
                             {service.desc}
                           </p>
                           
                           <div className="flex flex-wrap gap-2 mt-6">
                             {service.tags.map(tag => (
-                              <span key={tag} className="px-3 py-1 rounded-full bg-slate-950/50 border border-white/5 text-xs font-medium text-slate-300">
+                              <span key={tag} className="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-600">
                                 {tag}
                               </span>
                             ))}

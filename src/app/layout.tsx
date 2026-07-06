@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="dark">
+    <html lang="tr" className="light">
       <head>
         {/* Advanced SEO: Organization & LocalBusiness Schema */}
         <Script
@@ -136,7 +136,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${inter.className} bg-slate-900 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-brand/30 selection:text-white`}>
+      <body className={`${inter.className} bg-white text-slate-900 min-h-screen flex flex-col antialiased selection:bg-brand/30 selection:text-white`}>
         <SmoothScroll>
         <PWASetup />
         <Navbar />
@@ -145,17 +145,17 @@ export default function RootLayout({
         </main>
         
         {/* Advanced Footer */}
-        <footer className="border-t border-white/5 py-12 mt-20 relative z-10 bg-slate-950/50">
+        <footer className="border-t border-slate-200 py-12 mt-20 relative z-10 bg-slate-50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
               <div className="md:col-span-2">
-                <h3 className="text-xl font-bold text-white mb-4">TCK İlaçlama</h3>
-                <p className="text-slate-400 max-w-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">TCK İlaçlama</h3>
+                <p className="text-slate-600 max-w-sm">
                   İstanbul genelinde 7/24 profesyonel böcek ve haşere ilaçlama servisi. Kokusuz, güvenli ve garantili çözümler.
                 </p>
               </div>
               <div>
-                <h4 className="text-white font-semibold mb-4">Hızlı Bağlantılar</h4>
+                <h4 className="text-slate-900 font-semibold mb-4">Hızlı Bağlantılar</h4>
                 <ul className="space-y-2">
                   <li><a href="/hakkimizda" className="text-slate-500 hover:text-brand transition-colors">Hakkımızda</a></li>
                   <li><a href="/hizmetler" className="text-slate-500 hover:text-brand transition-colors">Hizmetlerimiz</a></li>
@@ -164,7 +164,7 @@ export default function RootLayout({
                 </ul>
               </div>
               <div>
-                <h4 className="text-white font-semibold mb-4">Kurumsal & Yasal</h4>
+                <h4 className="text-slate-900 font-semibold mb-4">Kurumsal & Yasal</h4>
                 <ul className="space-y-2">
                   <li><a href="/yasal/iso-sertifikalari" className="text-slate-500 hover:text-brand transition-colors">Kalite ve ISO Sertifikaları</a></li>
                   <li><a href="/yasal/kvkk-aydinlatma-metni" className="text-slate-500 hover:text-brand transition-colors">KVKK Aydınlatma Metni</a></li>
@@ -173,7 +173,7 @@ export default function RootLayout({
                 </ul>
               </div>
             </div>
-            <div className="text-center text-slate-600 text-sm pt-8 border-t border-white/5">
+            <div className="text-center text-slate-500 text-sm pt-8 border-t border-slate-200">
               <p>&copy; {new Date().getFullYear()} TCK İlaçlama. Tüm hakları saklıdır. TCK Group Kuruluşudur.</p>
             </div>
           </div>

@@ -38,8 +38,8 @@ export function FAQ() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand/10 mb-6">
             <HelpCircle className="w-8 h-8 text-brand" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Sıkça Sorulan Sorular</h2>
-          <p className="text-slate-400 text-lg">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Sıkça Sorulan Sorular</h2>
+          <p className="text-slate-600 text-lg">
             Hizmetlerimiz, kullanılan yöntemler ve güvenlik protokollerimiz hakkında en çok merak edilen soruların yanıtlarını aşağıda bulabilirsiniz.
           </p>
         </div>
@@ -51,17 +51,17 @@ export function FAQ() {
             return (
               <GlassCard 
                 key={index} 
-                className="p-0 overflow-hidden border border-white/5 transition-colors hover:border-brand/30"
+                className="p-0 overflow-hidden border border-slate-200/80 transition-colors hover:border-brand/30 bg-white"
               >
                 <button
                   className="w-full text-left px-8 py-6 flex items-center justify-between focus:outline-none"
                   onClick={() => toggleFaq(index)}
                 >
-                  <span className={`text-lg font-medium transition-colors ${isOpen ? 'text-brand' : 'text-slate-200'}`}>
+                  <span className={`text-lg font-medium transition-colors ${isOpen ? 'text-brand' : 'text-slate-800'}`}>
                     {faq.question}
                   </span>
                   <ChevronDown 
-                    className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-brand' : ''}`} 
+                    className={`w-5 h-5 text-slate-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-brand' : ''}`} 
                   />
                 </button>
                 <AnimatePresence>
@@ -72,7 +72,7 @@ export function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-8 pb-6 text-slate-400 leading-relaxed border-t border-white/5 pt-4">
+                      <div className="px-8 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
                         {faq.answer}
                       </div>
                     </motion.div>
