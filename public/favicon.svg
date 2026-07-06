@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="8" y="6" width="8" height="14" rx="4" />
-  <path d="M12 2v4" />
-  <path d="M6 10h2" />
-  <path d="M16 10h2" />
-  <path d="M6 14h2" />
-  <path d="M16 14h2" />
-  <path d="M6 18h2" />
-  <path d="M16 18h2" />
-  <path d="M9 4a3 3 0 0 0-6 2" />
-  <path d="M15 4a3 3 0 0 1 6 2" />
-  <path d="M12 6c-2 0-3 1-3 2v2c0 1 1 2 3 2s3-1 3-2V8c0-1-1-2-3-2z" fill="#e11d48" />
-  <path d="M10 22L8 18" />
-  <path d="M14 22l2-4" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Pest Shield / Body -->
+  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#10b981" fill-opacity="0.1"/>
+  <!-- Bug Legs/Antennae -->
+  <path d="M8 8H6"/>
+  <path d="M18 8h-2"/>
+  <path d="M8 12H5"/>
+  <path d="M19 12h-3"/>
+  <path d="M8 16H6"/>
+  <path d="M18 16h-2"/>
+  <!-- Bug Body Inside Shield -->
+  <rect x="10" y="8" width="4" height="8" rx="2" fill="#10b981"/>
+  <circle cx="12" cy="6" r="1.5" fill="#10b981"/>
+  <!-- Antennae -->
+  <path d="M10 4.5c-.5-.5-1-1-2-1"/>
+  <path d="M14 4.5c.5-.5 1-1 2-1"/>
 </svg>
