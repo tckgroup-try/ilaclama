@@ -111,15 +111,64 @@ const generateCorporateContent = (district: string, pest: string) => {
   `;
 };
 
+const generateAggressiveTitle = (district: string, pest: string) => {
+  const titles: Record<string, string[]> = {
+    'Fare': [
+      `${district} Fare İstilası Kabusuna Son: Yuvalarını Bulup 45 Dakikada Kurutuyoruz!`,
+      `${district} Kemirgen İlaçlama: Taşıdıkları Ölümcül Hastalıklardan Ailenizi Koruyun`,
+      `${district} Fare İlaçlama Servisi | 7/24 Kesin Sonuçlu İstila Önleme`
+    ],
+    'Hamam Böceği': [
+      `${district} Hamam Böceği Kabusuna Kesin Çözüm: Tek Seferde Yuvaları Kurutun!`,
+      `${district} Kalorifer Böceği İlaçlama: Mutfaktaki Gizli Bakterileri Yok Edin!`,
+      `Spreyle Bitmeyen ${district} Hamam Böceği İstilasını Kökünden Kazıyoruz!`
+    ],
+    'Pire': [
+      `${district} Pire İstilası Nasıl Geçer? Kaşıntı ve Uykusuz Gecelere Son!`,
+      `${district} Pire İlaçlama: Evcil Hayvanlarınızı ve Yuvanızı Parazitlerden Kurtarın`,
+      `Halıların Arasına Gizlenen ${district} Pirelerini Tek Uygulamada Yok Ediyoruz!`
+    ],
+    'Kene': [
+      `${district} Kene İlaçlama: Ölümcül Kırım Kongo Ateşine Karşı Acil Kalkan`,
+      `Bahçeniz Güvenli mi? ${district} Kene ve Akrep İlaçlama ile %100 Güvenlik`,
+      `Gezici Ekiplerle ${district} Kene İlaçlama Servisi | 7/24 Koruma`
+    ],
+    'Böcek': [
+      `${district} Böcek İstilasına Son: Sağlık Bakanlığı Onaylı Kokusuz Çözümler!`,
+      `${district} İlaçlama Şirketi: Evinizde Böceklerin Üreme Noktalarını Nasıl Buluyoruz?`,
+      `Merdiven Altı İlaçlamacılara Dikkat! ${district} Garantili Böcek İlaçlama`
+    ]
+  };
+  const list = titles[pest] || [
+    `${district} ${pest} İlaçlama: Sağlığınızı Riski Atmayın, Uzman Desteği Alın!`,
+    `${district} Bölgesinde %100 Garantili Profesyonel ${pest} Kontrolü`
+  ];
+  return list[district.length % list.length];
+};
+
+const generateAggressiveExcerpt = (district: string, pest: string) => {
+  const excerpts: Record<string, string> = {
+    'Fare': `${district} bölgesinde fare istilası mı var? Salgın hastalık yayan kemirgenlerden profesyonel, Sağlık Bakanlığı onaylı ve 7/24 acil müdahale ile kurtulun.`,
+    'Hamam Böceği': `Mutfak ve banyonuzu saran hamam böceklerine ev yapımı çözümlerle zaman kaybetmeyin. ${district} genelinde yuvaları tek seferde kurutuyoruz.`,
+    'Pire': `Evcil hayvanlardan veya dışarıdan bulaşan pireler uykunuzu mu kaçırıyor? ${district} genelinde kokusuz ve lekesiz ilaçlama ile 45 dakikada temizlik.`,
+    'Kene': `Kene ısırması ölümcül olabilir. Bahçe ve yeşil alanlarınızda ${district} profesyonel kene ilaçlama çözümleri ile sevdiklerinizi güvenceye alın.`,
+    'Böcek': `Evinizde veya iş yerinizde yürüyen haşere kabusu mu başladı? ${district} en güvenilir, ruhsatlı ve garantili ilaçlama servisi burada.`
+  };
+  return excerpts[pest] || `${district} genelinde ${pest} sorunlarına karşı 7/24 aktif, Sağlık Bakanlığı onaylı ve kesin çözüm garantili profesyonel ilaçlama.`;
+};
+
 const generatedBlogs = [];
 let index = 0;
 
 for (const district of districts) {
   for (const pest of pests) {
+    const aggressiveTitle = generateAggressiveTitle(district, pest.name);
+    const aggressiveExcerpt = generateAggressiveExcerpt(district, pest.name);
+
     generatedBlogs.push({
       slug: `${slugify(district)}-${slugify(pest.name)}-ilaclama`,
-      title: `${district} ${pest.name} İlaçlama | Profesyonel Çözüm`,
-      excerpt: `${district} lokasyonunda ${pest.name} (${pest.desc}) problemlerine karşı garantili, kokusuz ve profesyonel haşere kontrol hizmetleri.`,
+      title: aggressiveTitle,
+      excerpt: aggressiveExcerpt,
       content: generateCorporateContent(district, pest.name),
       image: getImageForPest(pest.name, index),
       date: `2026-07-${(index % 28) + 1 < 10 ? '0' + ((index % 28) + 1) : (index % 28) + 1}`,
