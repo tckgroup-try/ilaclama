@@ -6,6 +6,8 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import Script from 'next/script';
 import { tckBranches } from '@/data/branches';
 import { istanbulNeighborhoods } from '@/data/neighborhoods';
+import { ServiceQuoteForm } from '@/components/ServiceQuoteForm';
+import { PHONE_HREF, PHONE_DISPLAY, PHONE_RAW, COMPANY_EMAIL, COMPANY_DOMAIN, WHATSAPP_QUOTE } from '@/lib/constants';
 
 // Mappings for professional Turkish representations
 const PEST_MAPPING: Record<string, string> = {
@@ -108,12 +110,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description,
     alternates: {
-      canonical: `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}`
+      canonical: `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}`
     },
     openGraph: {
       title,
       description,
-      url: `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}`,
+      url: `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}`,
       type: "article",
     }
   };
@@ -128,12 +130,21 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
 
   return (
     <>
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
         <div className="absolute inset-0 bg-slate-50 z-0" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 rounded-full blur-[128px] z-0" />
         
         <div className="container relative z-10 px-4 mx-auto text-center max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-600 mb-8">
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center justify-center gap-2 text-xs md:text-sm text-slate-500 mb-6 bg-white/60 backdrop-blur-sm py-1.5 px-4 rounded-full border border-slate-200/50 w-fit mx-auto" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-brand transition-colors">Ana Sayfa</Link>
+            <span className="text-slate-400">/</span>
+            <Link href="/hizmetler" className="hover:text-brand transition-colors">Hizmetler</Link>
+            <span className="text-slate-400">/</span>
+            <span className="text-slate-800 font-medium">{placeName ? `${districtName} ${placeName}` : districtName} {pestName} İlaçlama</span>
+          </nav>
+
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-sm text-slate-600 mb-6">
             <MapPin className="w-4 h-4 text-brand" />
             <span>{districtName} Bölgesi Özel Operasyon</span>
           </div>
@@ -143,37 +154,56 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
             Profesyonel {pestName} İlaçlama
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-6">
             {districtName} lokasyonundaki {placeName ? `${placeName.toLowerCase()} alanlarına` : 'tüm yaşam alanlarına'} özel olarak geliştirilen {pestName.toLowerCase()} müdahale protokolümüzle %100 hijyen garantisi sunuyoruz.
           </p>
-          
-          <a href="https://wa.me/905016355053?text=Merhaba,%20%C3%BCcretsiz%20ke%C5%9Fif%20ve%20teklif%20istiyorum" target="_blank" rel="noopener noreferrer">
-            <RoseButton className="text-lg px-8 py-4 shadow-2xl">
-              Hemen Keşif ve Teklif İste
-            </RoseButton>
-          </a>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 bg-brand text-white font-bold px-6 py-3 rounded-xl hover:bg-brand/90 transition-all shadow-lg shadow-brand/20">
+              📞 {PHONE_DISPLAY}
+            </a>
+            <a href={WHATSAPP_QUOTE} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-500/20">
+              WhatsApp Hızlı Teklif
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 relative z-10">
+      <section className="py-16 relative z-10 border-t border-slate-100 bg-white">
          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">Neden Bizi Seçmelisiniz?</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <GlassCard className="bg-white border-slate-200/80">
-                <ShieldCheck className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{districtName} Bölge Hakimiyeti</h3>
-                <p className="text-slate-600">Bu bölgedeki {pestName.toLowerCase()} popülasyonunu ve ekolojik yapıyı iyi biliyor, nokta atışı müdahale ediyoruz.</p>
-              </GlassCard>
-              <GlassCard className="bg-white border-slate-200/80">
-                <Bug className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{placeName || 'Tüm Alanlar'} Odaklı Formül</h3>
-                <p className="text-slate-600">{placeName || 'Yaşam ve iş alanları'} için kokusuz, lekesiz ve günlük işleyişi durdurmayan uygulamalar.</p>
-              </GlassCard>
-              <GlassCard className="bg-white border-slate-200/80">
-                <MapPin className="w-10 h-10 text-brand mb-4" />
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Hızlı Müdahale</h3>
-                <p className="text-slate-600">Acil durum ekibimizle en kısa sürede adresinizdeyiz. 7/24 hizmet sunuyoruz.</p>
-              </GlassCard>
+            <div className="grid lg:grid-cols-3 gap-12 items-start">
+               {/* Left column: Features */}
+               <div className="lg:col-span-2 space-y-8">
+                  <div>
+                    <h2 className="text-3xl font-bold mb-4 text-slate-900">7/24 Kesin Çözümlü Profesyonel Hizmet</h2>
+                    <p className="text-slate-600 leading-relaxed">
+                      {districtName} genelinde ve özellikle {placeName || 'tüm yaşam alanlarında'} Sağlık Bakanlığı onaylı formüllerimiz, nano-kapsül teknolojimiz ve BRCGS standartlarına uygun profesyonel mobil ekiplerimizle 7/24 hizmet veriyoruz.
+                    </p>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <GlassCard className="bg-white border-slate-200/80 p-6">
+                      <ShieldCheck className="w-10 h-10 text-brand mb-4" />
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">{districtName} Bölge Hakimiyeti</h3>
+                      <p className="text-slate-600 text-sm">Bu bölgedeki {pestName.toLowerCase()} popülasyonunu ve ekolojik yapıyı iyi biliyor, nokta atışı müdahale ediyoruz.</p>
+                    </GlassCard>
+
+                    <GlassCard className="bg-white border-slate-200/80 p-6">
+                      <Bug className="w-10 h-10 text-brand mb-4" />
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">{placeName || 'Tüm Alanlar'} Odaklı Formül</h3>
+                      <p className="text-slate-600 text-sm">{placeName || 'Yaşam ve iş alanları'} için kokusuz, lekesiz ve günlük işleyişi durdurmayan uygulamalar.</p>
+                    </GlassCard>
+                  </div>
+               </div>
+
+               {/* Right column: Form widget */}
+               <div className="lg:sticky lg:top-24">
+                  <ServiceQuoteForm
+                    districtName={districtName}
+                    pestName={pestName}
+                    placeName={placeName}
+                  />
+               </div>
             </div>
          </div>
       </section>
@@ -234,16 +264,16 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
             "@graph": [
               {
                 "@type": "PestControlService",
-                "@id": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}#service`,
+                "@id": `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}#service`,
                 "name": placeName ? `${districtName} ${placeName} ${pestName} İlaçlama Hizmeti` : `${districtName} ${pestName} İlaçlama Hizmeti`,
                 "serviceType": `${pestName} İlaçlama`,
                 "provider": {
                   "@type": "LocalBusiness",
-                  "@id": "https://www.tckilaclama.com/#localbusiness",
+                  "@id": `${COMPANY_DOMAIN}/#localbusiness`,
                   "name": "TCK İlaçlama",
-                  "telephone": "+905016355053",
+                  "telephone": `+${PHONE_RAW}`,
                   "priceRange": "₺₺",
-                  "image": "https://www.tckilaclama.com/images/istanbul-ev-bocek-ilaclama-hizmeti.png",
+                  "image": `${COMPANY_DOMAIN}/images/istanbul-ev-bocek-ilaclama-hizmeti.webp`,
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": `İstanbul ${districtName} Şubesi`,
@@ -266,7 +296,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
               },
               {
                 "@type": "FAQPage",
-                "@id": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}#faq`,
+                "@id": `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}#faq`,
                 "mainEntity": [
                   {
                     "@type": "Question",
@@ -288,7 +318,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
               },
               {
                 "@type": "JobPosting",
-                "@id": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}#job`,
+                "@id": `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}#job`,
                 "title": `${districtName} Bölgesi Böcek İlaçlama Elemanı & Teknisyeni`,
                 "description": `TCK İlaçlama ${districtName} şubesinde görevlendirilmek üzere, biyosidal ürün uygulama belgesine sahip, ilaçlama ekipmanlarını kullanabilen, B sınıfı ehliyetli ve müşteri odaklı ilaçlama teknisyenleri alınacaktır.`,
                 "datePosted": "2026-07-06T00:00:00Z",
@@ -297,7 +327,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
                 "hiringOrganization": {
                   "@type": "Organization",
                   "name": "TCK İlaçlama",
-                  "sameAs": "https://www.tckilaclama.com"
+                  "sameAs": COMPANY_DOMAIN
                 },
                 "jobLocation": {
                   "@type": "Place",
@@ -321,25 +351,25 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}#breadcrumb`,
+                "@id": `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}#breadcrumb`,
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Ana Sayfa",
-                    "item": "https://www.tckilaclama.com"
+                    "item": COMPANY_DOMAIN
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Hizmetler",
-                    "item": "https://www.tckilaclama.com/hizmetler"
+                    "item": `${COMPANY_DOMAIN}/hizmetler`
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": placeName ? `${districtName} ${placeName} ${pestName} İlaçlama` : `${districtName} ${pestName} İlaçlama`,
-                    "item": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}`
+                    "item": `${COMPANY_DOMAIN}/hizmet/${resolvedParams.slug}`
                   }
                 ]
               }

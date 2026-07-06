@@ -89,7 +89,7 @@ export default function RootLayout({
                   "@id": "https://tckilaclama.com/#organization",
                   "name": "TCK İlaçlama",
                   "url": "https://tckilaclama.com",
-                  "logo": "https://tckilaclama.com/images/tck_expert.png",
+                  "logo": "https://tckilaclama.com/images/tck_expert.webp",
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+90-501-635-50-53",
@@ -106,7 +106,7 @@ export default function RootLayout({
                   "@type": "LocalBusiness",
                   "@id": "https://tckilaclama.com/#localbusiness",
                   "name": "TCK İlaçlama",
-                  "image": "https://tckilaclama.com/images/tck_expert.png",
+                  "image": "https://tckilaclama.com/images/tck_expert.webp",
                   "telephone": "+905016355053",
                   "email": "info@tckilaclama.com",
                   "url": "https://tckilaclama.com",

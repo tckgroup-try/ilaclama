@@ -10,6 +10,7 @@ import {
   ADDRESS_STREET, ADDRESS_DISTRICT, ADDRESS_CITY,
   ADDRESS_POSTAL, COMPANY_DOMAIN
 } from '@/lib/constants';
+import { trackFormSubmit, trackPhoneClick, trackWhatsAppClick } from '@/lib/analytics';
 
 const PEST_OPTIONS = [
   { value: 'UCAN_HASERE', label: '🦟 Uçan Haşere (Sivrisinek, Karasinek, Arı)' },
@@ -52,12 +53,15 @@ export default function IletisimPage() {
       });
       if (res.ok) {
         setStatus('success');
+        trackFormSubmit('iletisim_page_form', 'success');
         setForm({ customerType: 'B2C', pestType: '', serviceArea: '', fullName: '', phoneNumber: '', email: '', areaSizeSqM: '', message: '', isUrgent: false });
       } else {
         setStatus('error');
+        trackFormSubmit('iletisim_page_form', 'error');
       }
     } catch {
       setStatus('error');
+      trackFormSubmit('iletisim_page_form', 'error');
     }
   };
 
@@ -102,6 +106,7 @@ export default function IletisimPage() {
             <a
               href={PHONE_HREF}
               id="iletisim-tel-hero-btn"
+              onClick={() => trackPhoneClick('iletisim_hero')}
               className="inline-flex items-center gap-2 bg-brand text-white font-bold px-6 py-3 rounded-xl hover:bg-brand/90 transition-all shadow-lg shadow-brand/20"
             >
               <Phone className="w-5 h-5" />
@@ -111,6 +116,7 @@ export default function IletisimPage() {
               href={WHATSAPP_QUOTE}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('iletisim_hero')}
               id="iletisim-whatsapp-hero-btn"
               className="inline-flex items-center gap-2 bg-green-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-500/20"
             >
@@ -135,7 +141,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">Telefon</p>
-                  <a href={PHONE_HREF} className="text-brand hover:underline font-bold text-lg">{PHONE_DISPLAY}</a>
+                  <a href={PHONE_HREF} onClick={() => trackPhoneClick('iletisim_info_card')} className="text-brand hover:underline font-bold text-lg">{PHONE_DISPLAY}</a>
                   <p className="text-slate-500 text-sm mt-1">7/24 Acil Hat</p>
                 </div>
               </GlassCard>
@@ -146,7 +152,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">WhatsApp</p>
-                  <a href={`https://wa.me/${PHONE_RAW}`} target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline font-bold">Hızlı Mesaj Gönder</a>
+                  <a href={`https://wa.me/${PHONE_RAW}`} onClick={() => trackWhatsAppClick('iletisim_info_card')} target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline font-bold">Hızlı Mesaj Gönder</a>
                   <p className="text-slate-500 text-sm mt-1">Ortalama yanıt: 5 dakika</p>
                 </div>
               </GlassCard>

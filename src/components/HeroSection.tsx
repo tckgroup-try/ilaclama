@@ -10,21 +10,21 @@ import { BackgroundBeams } from './ui/BackgroundBeams';
 
 const SLIDES = [
   {
-    image: "/images/istanbul-ev-bocek-ilaclama-hizmeti.png",
+    image: "/images/istanbul-ev-bocek-ilaclama-hizmeti.webp",
     alt: "İstanbul ev böcek ilaçlama hizmeti - TCK İlaçlama Sağlık Bakanlığı Onaylı Uzman Ekibi",
     title: "İstanbul Ev Böcek İlaçlama Hizmeti",
     heading: "Uluslararası Denetim Standartlarına Tam Uyum",
     badge: "BRCGS, HACCP, IFS, ISO Belgeli Koruma"
   },
   {
-    image: "/images/kurumsal-ofis-pest-kontrol-firmasi.png",
+    image: "/images/kurumsal-ofis-pest-kontrol-firmasi.webp",
     alt: "Kurumsal ofis pest kontrol firması - TCK İlaçlama Plaza ve İşyeri İlaçlama Servisi",
     title: "Kurumsal Ofis Pest Kontrol Firması",
     heading: "Kurumsal Alanlarda Sıfır Haşere Toleransı",
     badge: "Ofis, Fabrika ve Depolar İçin IPM Çözümleri"
   },
   {
-    image: "/images/fabrika-ve-gida-tesisi-ilaclama-servisi.png",
+    image: "/images/fabrika-ve-gida-tesisi-ilaclama-servisi.webp",
     alt: "Fabrika ve gıda tesisi ilaçlama servisi - TCK İlaçlama Profesyonel Endüstriyel Hijyen Uygulaması",
     title: "Fabrika ve Gıda Tesisi İlaçlama Servisi",
     heading: "Hassas Üretim Tesislerinde Kesin Güvence",
@@ -112,22 +112,22 @@ export function HeroSection() {
             <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-widest">Sahip Olduğumuz Uluslararası Belgeler</p>
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_brcgs.png" alt="BRCGS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.3)]" />
+                <Image src="/images/badge_brcgs.webp" alt="BRCGS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.3)]" />
               </div>
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_haccp.png" alt="HACCP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]" />
+                <Image src="/images/badge_haccp.webp" alt="HACCP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]" />
               </div>
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_ifs.png" alt="IFS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(239,68,68,0.3)]" />
+                <Image src="/images/badge_ifs.webp" alt="IFS Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(239,68,68,0.3)]" />
               </div>
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_iso.png" alt="ISO 9001 Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" />
+                <Image src="/images/badge_iso.webp" alt="ISO 9001 Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" />
               </div>
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_gmp.png" alt="GMP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(250,204,21,0.3)]" />
+                <Image src="/images/badge_gmp.webp" alt="GMP Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(250,204,21,0.3)]" />
               </div>
               <div className="relative w-16 h-16 md:w-20 md:h-20 hover:scale-110 transition-transform duration-300">
-                <Image src="/images/badge_tse.png" alt="TSE Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(220,38,38,0.3)]" />
+                <Image src="/images/badge_tse.webp" alt="TSE Sertifikası" fill className="object-contain drop-shadow-[0_0_15px_rgba(220,38,38,0.3)]" />
               </div>
             </div>
           </div>

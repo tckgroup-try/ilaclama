@@ -48,7 +48,7 @@ export function BeforeAfterSlider() {
             {/* After Image (Always at bottom) */}
             <div className="absolute inset-0 w-full h-full">
               <Image
-                src="/images/after_slider.png"
+                src="/images/after_slider.webp"
                 alt="TCK İlaçlama Sonrası Steril Alan"
                 fill
                 className="object-cover"
@@ -67,7 +67,7 @@ export function BeforeAfterSlider() {
             >
               {/* Using the perfectly matching dirty image */}
               <Image
-                src="/images/before_slider.png" 
+                src="/images/before_slider.webp" 
                 alt="İlaçlama Öncesi İstila"
                 fill
                 className="object-cover"
