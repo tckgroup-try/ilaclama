@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>TCK Ilaclama Istanbul Harita Pinleri</name>
+    <description>TCK Ilaclama 28 Aktif Bolge Konumu ve Koordinatlari</description>
+
+    <Placemark>
+      <name>TCK İlaçlama Kadıköy Şubesi</name>
+      <description>TCK İlaçlama İstanbul Kadıköy Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-kadikoy-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.029,40.9901,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Şişli Şubesi</name>
+      <description>TCK İlaçlama İstanbul Şişli Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-sisli-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.987,41.06,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Beşiktaş Şubesi</name>
+      <description>TCK İlaçlama İstanbul Beşiktaş Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-besiktas-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.0075,41.0428,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Bakırköy Şubesi</name>
+      <description>TCK İlaçlama İstanbul Bakırköy Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-bakirkoy-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.7951,40.9783,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Pendik Şubesi</name>
+      <description>TCK İlaçlama İstanbul Pendik Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-pendik-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.2311,40.8753,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Üsküdar Şubesi</name>
+      <description>TCK İlaçlama İstanbul Üsküdar Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-uskudar-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.0157,41.0269,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Maltepe Şubesi</name>
+      <description>TCK İlaçlama İstanbul Maltepe Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-maltepe-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.1311,40.9246,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Kartal Şubesi</name>
+      <description>TCK İlaçlama İstanbul Kartal Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-kartal-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.1856,40.8886,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Ümraniye Şubesi</name>
+      <description>TCK İlaçlama İstanbul Ümraniye Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-umraniye-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.1172,41.0253,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Ataşehir Şubesi</name>
+      <description>TCK İlaçlama İstanbul Ataşehir Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-atasehir-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.1064,40.9847,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Sarıyer Şubesi</name>
+      <description>TCK İlaçlama İstanbul Sarıyer Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-sariyer-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.0501,41.1663,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Beykoz Şubesi</name>
+      <description>TCK İlaçlama İstanbul Beykoz Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-beykoz-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.085,41.119,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Beyoğlu Şubesi</name>
+      <description>TCK İlaçlama İstanbul Beyoğlu Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-beyoglu-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.9747,41.037,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Fatih Şubesi</name>
+      <description>TCK İlaçlama İstanbul Fatih Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-fatih-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.9405,41.0186,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Zeytinburnu Şubesi</name>
+      <description>TCK İlaçlama İstanbul Zeytinburnu Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-zeytinburnu-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.8966,40.9881,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Başakşehir Şubesi</name>
+      <description>TCK İlaçlama İstanbul Başakşehir Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-basaksehir-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.7972,41.0978,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Beylikdüzü Şubesi</name>
+      <description>TCK İlaçlama İstanbul Beylikdüzü Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-beylikduzu-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.6473,40.9912,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Esenyurt Şubesi</name>
+      <description>TCK İlaçlama İstanbul Esenyurt Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-esenyurt-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.6801,41.0343,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Avcılar Şubesi</name>
+      <description>TCK İlaçlama İstanbul Avcılar Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-avcilar-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.7176,40.9801,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Küçükçekmece Şubesi</name>
+      <description>TCK İlaçlama İstanbul Küçükçekmece Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-kucukcekmece-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.7712,40.9919,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Bahçelievler Şubesi</name>
+      <description>TCK İlaçlama İstanbul Bahçelievler Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-bahcelievler-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.8624,40.9972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Bağcılar Şubesi</name>
+      <description>TCK İlaçlama İstanbul Bağcılar Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-bagcilar-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.8579,41.0339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Gaziosmanpaşa Şubesi</name>
+      <description>TCK İlaçlama İstanbul Gaziosmanpaşa Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-gaziosmanpasa-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.9142,41.0578,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Eyüpsultan Şubesi</name>
+      <description>TCK İlaçlama İstanbul Eyüpsultan Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-eyupsultan-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.9329,41.0478,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Kağıthane Şubesi</name>
+      <description>TCK İlaçlama İstanbul Kağıthane Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-kagithane-bocek-ilaclama</description>
+      <Point>
+        <coordinates>28.973,41.0811,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Şile Şubesi</name>
+      <description>TCK İlaçlama İstanbul Şile Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-sile-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.6125,41.1744,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Çekmeköy Şubesi</name>
+      <description>TCK İlaçlama İstanbul Çekmeköy Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-cekmekoy-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.1764,41.0346,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCK İlaçlama Tuzla Şubesi</name>
+      <description>TCK İlaçlama İstanbul Tuzla Bölge Operasyon ve Hizmet Merkezi. Detaylı bilgi için: https://www.tckilaclama.com/hizmet/istanbul-tuzla-bocek-ilaclama</description>
+      <Point>
+        <coordinates>29.3094,40.8159,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

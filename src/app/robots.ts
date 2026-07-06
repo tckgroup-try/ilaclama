@@ -7,6 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.tckilaclama.com/sitemap.xml',
+    sitemap: [
+      'https://www.tckilaclama.com/sitemap.xml',
+      'https://www.tckilaclama.com/geo-sitemap.xml'
+    ],
   };
 }
