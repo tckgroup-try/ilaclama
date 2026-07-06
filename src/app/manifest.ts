@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'İstanbul merkezli profesyonel mobil haşere kontrol ve böcek ilaçlama servisi.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#09090b',
-    theme_color: '#e11d48',
+    background_color: '#ffffff',
+    theme_color: '#10b981',
     icons: [
       {
         src: '/favicon.svg',
