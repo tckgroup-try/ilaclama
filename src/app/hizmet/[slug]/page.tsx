@@ -130,6 +130,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
 
   return (
     <>
+      <link rel="amphtml" href={`https://tckilaclama.com/hizmet/${resolvedParams.slug}/amp`} />
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
         <div className="absolute inset-0 bg-slate-50 z-0" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 rounded-full blur-[128px] z-0" />

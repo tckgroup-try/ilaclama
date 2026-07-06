@@ -64,6 +64,7 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
 
   return (
     <>
+      <link rel="amphtml" href={`https://tckilaclama.com/blog/${slug}/amp`} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
