@@ -116,7 +116,7 @@ function generate() {
       const targetPestSlug = pestOrder[(idx + k) % pestOrder.length];
       const targetPest = pestSpecs[targetPestSlug];
       
-      const cleanSlug = `istanbul-${targetDist.districtSlug}-${targetPestSlug}-ilaclama-rehberi`;
+      const cleanSlug = `istanbul-${targetDist.districtSlug}-${targetPestSlug}-ilaclama`;
       siloLinks.push(`* [📍 ${targetDist.districtName} ${targetPest.name} İlaçlama](https://istanbul-bocek-ilaclama.readme.io/docs/${cleanSlug})`);
     }
 

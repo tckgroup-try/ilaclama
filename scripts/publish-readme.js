@@ -149,7 +149,7 @@ async function run() {
     const friendlyDistrict = districtNames[districtSlug] || districtSlug.toUpperCase();
     const friendlyPest = pestNames[pestSlug] || pestSlug.toUpperCase();
 
-    const activeSlug = `istanbul-${districtSlug}-${pestSlug}-ilaclama-rehberi`;
+    const activeSlug = `istanbul-${districtSlug}-${pestSlug}-ilaclama`;
     const descText = `İstanbul ${friendlyDistrict} bölgesinde profesyonel dezenfeksiyon ve ${friendlyPest.toLowerCase()} ilaçlama hizmeti. Sağlık Bakanlığı onaylı biyosidal ilaçlar ve TSE belgeli uzman kadroyla 7/24 hizmetinizdeyiz.`;
 
     const payload = {
