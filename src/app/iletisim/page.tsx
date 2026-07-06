@@ -4,6 +4,12 @@ import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, CheckCircle, AlertCircle, Send, MessageCircle } from 'lucide-react';
 import { GlassCard } from '@/components/ui/GlassCard';
 import Script from 'next/script';
+import {
+  PHONE_HREF, PHONE_DISPLAY, PHONE_RAW,
+  WHATSAPP_QUOTE, COMPANY_EMAIL,
+  ADDRESS_STREET, ADDRESS_DISTRICT, ADDRESS_CITY,
+  ADDRESS_POSTAL, COMPANY_DOMAIN
+} from '@/lib/constants';
 
 const PEST_OPTIONS = [
   { value: 'UCAN_HASERE', label: '🦟 Uçan Haşere (Sivrisinek, Karasinek, Arı)' },
@@ -61,19 +67,19 @@ export default function IletisimPage() {
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": "TCK İlaçlama İletişim",
-        "url": "https://tckilaclama.com/iletisim",
+        "url": `${COMPANY_DOMAIN}/iletisim`,
         "description": "TCK İlaçlama ile iletişime geçin. İstanbul genelinde 7/24 haşere ilaçlama hizmetleri için ücretsiz teklif alın.",
         "mainEntity": {
           "@type": "LocalBusiness",
           "name": "TCK İlaçlama",
-          "telephone": "+905016355053",
-          "email": "info@tckilaclama.com",
+          "telephone": `+${PHONE_RAW}`,
+          "email": COMPANY_EMAIL,
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Barbaros Bulvarı No:74",
-            "addressLocality": "Beşiktaş",
-            "addressRegion": "İstanbul",
-            "postalCode": "34349",
+            "streetAddress": ADDRESS_STREET,
+            "addressLocality": ADDRESS_DISTRICT,
+            "addressRegion": ADDRESS_CITY,
+            "postalCode": ADDRESS_POSTAL,
             "addressCountry": "TR"
           }
         }
@@ -94,15 +100,15 @@ export default function IletisimPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+905016355053"
+              href={PHONE_HREF}
               id="iletisim-tel-hero-btn"
               className="inline-flex items-center gap-2 bg-brand text-white font-bold px-6 py-3 rounded-xl hover:bg-brand/90 transition-all shadow-lg shadow-brand/20"
             >
               <Phone className="w-5 h-5" />
-              0501 635 50 53
+              {PHONE_DISPLAY}
             </a>
             <a
-              href="https://wa.me/905016355053?text=Merhaba%2C%20ilaçlama%20hizmeti%20için%20teklif%20almak%20istiyorum."
+              href={WHATSAPP_QUOTE}
               target="_blank"
               rel="noopener noreferrer"
               id="iletisim-whatsapp-hero-btn"
@@ -129,7 +135,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">Telefon</p>
-                  <a href="tel:+905016355053" className="text-brand hover:underline font-bold text-lg">0501 635 50 53</a>
+                  <a href={PHONE_HREF} className="text-brand hover:underline font-bold text-lg">{PHONE_DISPLAY}</a>
                   <p className="text-slate-500 text-sm mt-1">7/24 Acil Hat</p>
                 </div>
               </GlassCard>
@@ -140,7 +146,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">WhatsApp</p>
-                  <a href="https://wa.me/905016355053" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline font-bold">Hızlı Mesaj Gönder</a>
+                  <a href={`https://wa.me/${PHONE_RAW}`} target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline font-bold">Hızlı Mesaj Gönder</a>
                   <p className="text-slate-500 text-sm mt-1">Ortalama yanıt: 5 dakika</p>
                 </div>
               </GlassCard>
@@ -151,7 +157,7 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">E-Posta</p>
-                  <a href="mailto:info@tckilaclama.com" className="text-brand hover:underline">info@tckilaclama.com</a>
+                  <a href={`mailto:${COMPANY_EMAIL}`} className="text-brand hover:underline">{COMPANY_EMAIL}</a>
                   <p className="text-slate-500 text-sm mt-1">Kurumsal teklifler için</p>
                 </div>
               </GlassCard>
@@ -162,8 +168,8 @@ export default function IletisimPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 mb-1">Merkez Ofis</p>
-                  <p className="text-slate-600">Barbaros Bulvarı No:74</p>
-                  <p className="text-slate-600">Beşiktaş / İstanbul</p>
+                  <p className="text-slate-600">{ADDRESS_STREET}</p>
+                  <p className="text-slate-600">{ADDRESS_DISTRICT} / {ADDRESS_CITY}</p>
                 </div>
               </GlassCard>
 
@@ -189,7 +195,7 @@ export default function IletisimPage() {
                   <div className="flex flex-col items-center text-center py-12 gap-4">
                     <CheckCircle className="w-16 h-16 text-brand" />
                     <h3 className="text-2xl font-bold text-slate-900">Talebiniz Alındı!</h3>
-                    <p className="text-slate-600 max-w-sm">Ekibimiz en kısa sürede sizi arayacak. Acil durumlarda <strong>0501 635 50 53</strong> numarasını arayabilirsiniz.</p>
+                    <p className="text-slate-600 max-w-sm">Ekibimiz en kısa sürede sizi arayacak. Acil durumlarda <strong><a href={PHONE_HREF} className="text-brand hover:underline">{PHONE_DISPLAY}</a></strong> numarasını arayabilirsiniz.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6" id="iletisim-teklif-formu">
@@ -262,7 +268,7 @@ export default function IletisimPage() {
                     {status === 'error' && (
                       <div className="flex items-center gap-2 text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
                         <AlertCircle className="w-5 h-5 shrink-0" />
-                        <span className="text-sm">Bir hata oluştu. Lütfen telefon ile ulaşın: <strong>0501 635 50 53</strong></span>
+                        <span className="text-sm">Bir hata oluştu. Lütfen telefon ile ulaşın: <strong><a href={PHONE_HREF} className="text-red-700">{PHONE_DISPLAY}</a></strong></span>
                       </div>
                     )}
 

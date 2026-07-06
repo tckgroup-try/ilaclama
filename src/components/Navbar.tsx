@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ShieldAlert, Menu, X } from 'lucide-react';
 import { RoseButton } from './ui/RoseButton';
+import { PHONE_HREF, PHONE_DISPLAY, WHATSAPP_URGENT } from '@/lib/constants';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,10 +59,10 @@ export function Navbar() {
           <Link href="/iletisim" className="text-sm font-medium text-slate-600 hover:text-brand transition-colors">
             İletişim
           </Link>
-          <a href="tel:+905016355053" className="text-sm font-medium text-brand hover:text-brand-hover transition-colors">
-            0501 635 50 53
+          <a href={PHONE_HREF} className="text-sm font-medium text-brand hover:text-brand-hover transition-colors">
+            {PHONE_DISPLAY}
           </a>
-          <a href="https://wa.me/905016355053?text=Merhaba,%20acil%20ila%C3%A7lama%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">
+          <a href={WHATSAPP_URGENT} target="_blank" rel="noopener noreferrer">
             <RoseButton variant="primary" className="py-2 px-5 text-sm">
               Acil Teklif Al
             </RoseButton>
@@ -85,8 +86,8 @@ export function Navbar() {
           <Link href="/hakkimizda" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Kurumsal</Link>
           <Link href="/subelerimiz" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Şubelerimiz</Link>
           <Link href="/iletisim" className="text-slate-700 font-medium p-3 hover:text-brand transition-colors" onClick={() => setIsMobileMenuOpen(false)}>İletişim</Link>
-          <a href="tel:+905016355053" className="text-brand font-medium p-3 hover:text-brand-hover transition-colors">0501 635 50 53</a>
-          <a href="https://wa.me/905016355053?text=Merhaba,%20acil%20ila%C3%A7lama%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
+          <a href={PHONE_HREF} className="text-brand font-medium p-3 hover:text-brand-hover transition-colors">{PHONE_DISPLAY}</a>
+          <a href={WHATSAPP_URGENT} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
             <RoseButton className="w-full py-4 text-lg">Acil Teklif Al</RoseButton>
           </a>
         </div>
