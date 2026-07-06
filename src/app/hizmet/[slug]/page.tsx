@@ -124,7 +124,7 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
   const { districtName, placeName, pestName, districtKey } = parseSlug(resolvedParams.slug);
 
   // En yakın şubeyi bul veya merkez şubeyi al
-  const branch = tckBranches.find(b => b.district.toLowerCase() === districtKey.toLowerCase()) || tckBranches[0];
+  const branch = tckBranches.find(b => slugify(b.district) === districtKey.toLowerCase()) || tckBranches[0];
 
   return (
     <>

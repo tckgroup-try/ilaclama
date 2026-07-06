@@ -51,11 +51,11 @@ const generateLSIKeywords = (district: string, pest: string) => {
 const generateCorporateContent = (district: string, pest: string) => {
   return `
     <article class="professional-blog-content">
-      <p class="lead" style="font-size: 1.1rem; color: #94a3b8; margin-bottom: 2rem;">
+      <p class="lead" style="font-size: 1.1rem; color: #475569; margin-bottom: 2rem;">
         TCK İlaçlama olarak <strong>${district}</strong> bölgesinde karşılaştığınız <strong>${pest}</strong> problemlerine karşı kalıcı, garantili ve Sağlık Bakanlığı onaylı ilaçlama çözümleri sunuyoruz.
       </p>
 
-      <h2 style="color: #ffffff; font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
         ${district} ${pest} İstilasının Nedenleri ve Riskleri
       </h2>
       <p style="margin-bottom: 1.5rem;">
@@ -80,7 +80,7 @@ const generateCorporateContent = (district: string, pest: string) => {
         </ul>
       </div>
 
-      <h2 style="color: #ffffff; font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
         ${district} Bölgesi ${pest} İlaçlama Fiyatları
       </h2>
       <p style="margin-bottom: 1.5rem;">
@@ -88,21 +88,21 @@ const generateCorporateContent = (district: string, pest: string) => {
         Sağlıktan ve hijyenden tasarruf olmaz; kalitesiz ilaçlar yalnızca paranızı israf etmekle kalmaz, mekanınızı da zehirler.
       </p>
 
-      <h2 style="color: #ffffff; font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
         Sıkça Sorulan Sorular (S.S.S.)
       </h2>
       
-      <div style="margin-bottom: 1.5rem; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
-        <h4 style="color: #ffffff; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: ${pest} ilaçlaması sonrası evde kalabilir miyim?</h4>
+      <div style="margin-bottom: 1.5rem; background: rgba(15,23,42,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(15,23,42,0.05);">
+        <h4 style=" margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: ${pest} ilaçlaması sonrası evde kalabilir miyim?</h4>
         <p style="margin-bottom: 0;"><strong>Cevap:</strong> Evet. Uyguladığımız özel jeller ve kokusuz sıvı bariyerler sayesinde günlük yaşantınıza veya işleyişinize kesintisiz devam edebilirsiniz.</p>
       </div>
 
-      <div style="margin-bottom: 1.5rem; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05);">
-        <h4 style="color: #ffffff; margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: Çözüm garantili mi?</h4>
+      <div style="margin-bottom: 1.5rem; background: rgba(15,23,42,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(15,23,42,0.05);">
+        <h4 style=" margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: Çözüm garantili mi?</h4>
         <p style="margin-bottom: 0;"><strong>Cevap:</strong> Kesinlikle. ${district} bölgesindeki tüm operasyonlarımızda tam izolasyon sağlanana kadar süreç tarafımızca garanti altındadır.</p>
       </div>
 
-      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(15,23,42,0.1);">
         <p style="font-size: 0.85rem; color: #64748b;">
           <strong>İlgili Terimler (LSI):</strong> ${generateLSIKeywords(district, pest)}
         </p>
