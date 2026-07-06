@@ -63,23 +63,10 @@ const pestNames = {
   kene: 'Kene'
 };
 
-// Helper function to introduce delay
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function run() {
-  console.log('🚀 Starting ReadMe.com Parasite SEO publishing operation...');
-  
-  // Load active slugs map
-  let slugMap = {};
-  const SLUG_MAP_PATH = path.join(__dirname, '..', 'active_slugs.json');
-  if (fs.existsSync(SLUG_MAP_PATH)) {
-    try {
-      slugMap = JSON.parse(fs.readFileSync(SLUG_MAP_PATH, 'utf8'));
-      console.log('📖 Successfully loaded active slugs map for publishing.');
-    } catch (err) {
-      console.warn('⚠️ Could not parse active_slugs.json.');
-    }
-  }
+  console.log('🚀 Starting ReadMe.com Parasite SEO publishing with correct excerpt metadata...');
 
   // 1. Fetch category
   let categoryUri = '';
@@ -157,19 +144,19 @@ async function run() {
     const slugParts = nameWithoutExt.split('-');
     
     const districtSlug = slugParts[1];
-    const pestSlug = slugParts.slice(2).join('-'); // handles 'hamam-bocegi' correctly
+    const pestSlug = slugParts.slice(2).join('-');
     
     const friendlyDistrict = districtNames[districtSlug] || districtSlug.toUpperCase();
     const friendlyPest = pestNames[pestSlug] || pestSlug.toUpperCase();
 
-    // Resolve exact active slug from map
-    const baseSlug = `istanbul-${districtSlug}-${pestSlug}-ilaclama-rehberi`;
-    const activeSlug = slugMap[baseSlug] || baseSlug;
+    const activeSlug = `istanbul-${districtSlug}-${pestSlug}-ilaclama-rehberi`;
+    const descText = `İstanbul ${friendlyDistrict} bölgesinde profesyonel dezenfeksiyon ve ${friendlyPest.toLowerCase()} ilaçlama hizmeti. Sağlık Bakanlığı onaylı biyosidal ilaçlar ve TSE belgeli uzman kadroyla 7/24 hizmetinizdeyiz.`;
 
     const payload = {
       title: title,
       content: {
         body: body,
+        excerpt: descText, // SET EXCERPT INSIDE CONTENT
         type: 'markdown'
       },
       slug: activeSlug,
@@ -178,7 +165,7 @@ async function run() {
       },
       metadata: {
         title: `İstanbul ${friendlyDistrict} ${friendlyPest} İlaçlama | %100 Garantili TCK İlaçlama`,
-        description: `İstanbul ${friendlyDistrict} bölgesinde profesyonel dezenfeksiyon ve ${friendlyPest.toLowerCase()} ilaçlama hizmeti. Sağlık Bakanlığı onaylı biyosidal ilaçlar ve TSE belgeli uzman kadroyla 7/24 hizmetinizdeyiz.`,
+        description: descText,
         keywords: `${friendlyDistrict} ${friendlyPest.toLowerCase()} ilaclama, ${friendlyDistrict} dezenfeksiyon, en yakin ${friendlyPest.toLowerCase()} ilaclama firmasi`
       },
       hidden: false
@@ -220,7 +207,6 @@ async function run() {
       console.error(`  ❌ Network error while publishing:`, error.message);
     }
 
-    // Delay 250ms between requests to respect API rate limits
     await delay(250);
   }
 
