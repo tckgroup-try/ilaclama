@@ -18,8 +18,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tckilaclama.com"),
-  title: "TCK İlaçlama | İstanbul Böcek ve Haşere İlaçlama Hizmeti",
-  description: "TCK İlaçlama: İstanbul'un lider böcek ilaçlama, haşere kontrol ve fümigasyon merkezi. Sağlık Bakanlığı onaylı, %100 kesin çözüm garantili, kokusuz, 7/24 acil müdahale. Ev, apartman, fabrika, gemi ve restoran ilaçlama hizmetleri. Hemen fiyat alın.",
+  title: "🛡️ TCK İlaçlama | İstanbul Böcek & Haşere İlaçlama Servisi",
+  description: "🛡️ İstanbul genelinde 7/24 profesyonel böcek ve haşere ilaçlama servisi. ✅ Sağlık Bakanlığı onaylı, ULV dezenfeksiyon ilaçları ile %100 kesin çözüm ve kalıcı koruma garantisi! 📞 Hemen ücretsiz fiyat teklifi alın.",
   keywords: [
     // Core Head Terms
     "böcek ilaçlama", "haşere ilaçlama", "haşere kontrol", "istanbul böcek ilaçlama", "ilaçlama şirketleri", "ilaçlama firmaları", 

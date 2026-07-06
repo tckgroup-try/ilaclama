@@ -318,6 +318,30 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
                     "unitText": "MONTH"
                   }
                 }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}#breadcrumb`,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Ana Sayfa",
+                    "item": "https://www.tckilaclama.com"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Hizmetler",
+                    "item": "https://www.tckilaclama.com/hizmetler"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": placeName ? `${districtName} ${placeName} ${pestName} İlaçlama` : `${districtName} ${pestName} İlaçlama`,
+                    "item": `https://www.tckilaclama.com/hizmet/${resolvedParams.slug}`
+                  }
+                ]
               }
             ]
           })
