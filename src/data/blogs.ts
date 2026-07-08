@@ -106,13 +106,13 @@ const generateCorporateContent = (district: string, pest: string) => {
       </div>
 
       <h2 style="font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #f43f5e; padding-bottom: 0.5rem; color: #0f172a; font-weight: 700;">
-        İstanbul İl ve İlçe Genelinde Profesyonel Böcek İlaçlama
+        İstanbul ve ${district} Genelinde Profesyonel Böcek İlaçlama
       </h2>
       <p style="margin-bottom: 1.5rem; color: #334155; line-height: 1.8;">
-        Sadece yerel mahalle bazlı değil, İstanbul genelinde geniş kapsamlı <strong>il ilaçlama</strong> ve <strong>ilçe ilaçlama</strong> operasyonları yönetiyoruz. TCK İlaçlama, İstanbul genelinde <strong>il böcek ilaçlama</strong> ağını yöneterek tüm 39 ilçede 7/24 hizmet sunmaktadır. Her bölgeye özel kurduğumuz mobil ekiplerimiz sayesinde <strong>ilçe böcek ilaçlama</strong> taleplerine 45 dakikada hızlı müdahale sağlıyoruz. Evinizi saran haşerelerden kalıcı olarak kurtulmak için en yetkin <strong>il haşere ilaçlama</strong> firmasıyız.
+        Sadece yerel mahalle bazlı değil, İstanbul genelinde geniş kapsamlı <strong>İstanbul İlaçlama</strong> ve <strong>${district} İlaçlama</strong> operasyonları yönetiyoruz. TCK İlaçlama, İstanbul genelinde <strong>İstanbul Böcek İlaçlama</strong> ağını yöneterek tüm 39 ilçede 7/24 hizmet sunmaktadır. Her bölgeye özel kurduğumuz mobil ekiplerimiz sayesinde <strong>${district} Böcek İlaçlama</strong> taleplerine 45 dakikada hızlı müdahale sağlıyoruz. Evinizi saran haşerelerden kalıcı olarak kurtulmak için en yetkin <strong>İstanbul Haşere İlaçlama</strong> firmasıyız.
       </p>
       <p style="margin-bottom: 1.5rem; color: #334155; line-height: 1.8;">
-        Envanterimizdeki tüm biyosidal ürünler T.C. Sağlık Bakanlığı ruhsatlı olup, <strong>ilçe haşere ilaçlama</strong> prosedürlerine göre her mekana (villa, apartman dairesi, restoran, depo) özel olarak formüle edilir. İstanbul genelinde güvenilir, yasal ve garantili bir <strong>il ilaçlama</strong> veya <strong>ilçe ilaçlama</strong> çözümü arıyorsanız, uzman kadromuzla yanınızdayız.
+        Envanterimizdeki tüm biyosidal ürünler T.C. Sağlık Bakanlığı ruhsatlı olup, <strong>${district} Haşere İlaçlama</strong> prosedürlerine göre her mekana (villa, apartman dairesi, restoran, depo) özel olarak formüle edilir. İstanbul genelinde güvenilir, yasal ve garantili bir <strong>İstanbul İlaçlama</strong> veya <strong>${district} İlaçlama</strong> çözümü arıyorsanız, uzman kadromuzla yanınızdayız.
       </p>
 
       <h2 style="font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #f43f5e; padding-bottom: 0.5rem; color: #0f172a; font-weight: 700;">
