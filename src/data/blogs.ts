@@ -44,65 +44,87 @@ const generateLSIKeywords = (district: string, pest: string) => {
     `sağlık bakanlığı onaylı ${pest.toLowerCase()} ilacı`,
     `${pest.toLowerCase()} kesin çözüm`,
     `haşere ilacı`,
-    `kokusuz ilaçlama`
+    `kokusuz ilaçlama`,
+    `böcek ilaçlama`,
+    `haşere ilaçlama`,
+    `ilçe ilaçlama`,
+    `il ilaçlama`
   ].join(', ');
 };
 
 const generateCorporateContent = (district: string, pest: string) => {
   return `
     <article class="professional-blog-content">
-      <p class="lead" style="font-size: 1.1rem; color: #475569; margin-bottom: 2rem;">
-        TCK İlaçlama olarak <strong>${district}</strong> bölgesinde karşılaştığınız <strong>${pest}</strong> problemlerine karşı kalıcı, garantili ve Sağlık Bakanlığı onaylı ilaçlama çözümleri sunuyoruz.
+      <p class="lead" style="font-size: 1.15rem; color: #1e293b; margin-bottom: 2rem; font-weight: 600; border-left: 4px solid #f43f5e; padding-left: 1rem;">
+        Dikkat: <strong>${district}</strong> genelinde son dönemdeki kontrolsüz yapılaşma ve altyapı yetersizliği, <strong>${pest}</strong> popülasyonunu zirveye taşıdı. Basit market spreyleriyle veya ne idüğü belirsiz ilaçlamacılarla vakit kaybetmek, sadece koloniyi daha derin deliklere kaçırıp üremelerini hızlandırır. Ailenizin sağlığını ve yuvanızı riske atmayın!
       </p>
 
-      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
-        ${district} ${pest} İstilasının Nedenleri ve Riskleri
+      <h2 style="font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #f43f5e; padding-bottom: 0.5rem; color: #0f172a; font-weight: 700;">
+        Neden Sıradan İlaçlama İşlemleri İstila Karşısında Yetersiz Kalır?
       </h2>
-      <p style="margin-bottom: 1.5rem;">
-        İstanbul'un en yoğun yaşam alanlarından biri olan ${district} bölgesinde, altyapı eskimesi, iklimsel değişiklikler ve yoğun insan popülasyonu <strong>${pest}</strong> üremesi için ideal koşullar yaratır. 
-        Geleneksel market spreyleri veya merdiven altı tarım ilaçları, sadece gözle gördüğünüz ${pest} popülasyonunu etkiler, ancak yuvalarında üremeye devam eden koloniyi durduramaz.
+      <p style="margin-bottom: 1.5rem; color: #334155; line-height: 1.8;">
+        Piyasadaki dev bütçeli, çağrı merkezi üzerinden çalışan aracı firmaların çoğu, sahada yüksek kâr marjı hedefledikleri için yetersiz eğitimli veya taşeron ekiplerle hizmet verir. Evinizde veya iş yerinizde detaylı zemin, nem ve yuva analizi yapmadan standart, suyla aşırı seyreltilmiş etkisiz kimyasalları üstünkörü püskürtüp giderler. Sonuç olarak, kısa süre sonra aynı <strong>böcek ilaçlama</strong> veya <strong>haşere ilaçlama</strong> problemiyle tekrar karşılaşırsınız.
       </p>
-      <p style="margin-bottom: 1.5rem;">
-        Özellikle gıda işletmelerinde, plazalarda ve evlerde ${pest} sorunu hem maddi hem de ciddi halk sağlığı riskleri (enfeksiyon, virüs taşıma) barındırmaktadır.
-        Bu sebeple soruna yüzeysel değil, kökten müdahale eden profesyonel ve garantili ilaçlama yöntemleri uygulamaktayız.
+      <p style="margin-bottom: 1.5rem; color: #334155; line-height: 1.8;">
+        Daha da tehlikelisi, piyasada "ucuz fiyat" vaadiyle çalışan ruhsatsız ve merdiven altı şahıslardır. T.C. Sağlık Bakanlığı yetki belgesi olmayan bu kişiler, kapalı yaşam alanlarında asla kullanılmaması gereken ağır tarım kimyasallarını bilinçsizce uygulayarak sevdiklerinizin ve evcil hayvanlarınızın sağlığını doğrudan tehlikeye atar. Bu tip kalitesiz veya tarım kökenli ilaçlar, <strong>${pest}</strong> türlerinin kimyasallara karşı bağışıklık kazanıp daha dirençli şekilde çoğalmasına sebep olur.
       </p>
 
-      <div style="background: rgba(16, 185, 129, 0.05); border-left: 4px solid #10b981; padding: 1.5rem; margin: 2rem 0; border-radius: 0 0.5rem 0.5rem 0;">
-        <h3 style="color: #10b981; margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">Garantili ve Kokusuz İlaçlama Uygulamaları</h3>
-        <p style="margin-bottom: 1rem;">
-          TCK İlaçlama olarak, uyguladığımız işlemlerde sadece <strong>T.C. Sağlık Bakanlığı ve Dünya Sağlık Örgütü (WHO)</strong> onaylı, insan ve çevre sağlığına zarar vermeyen ruhsatlı ilaçlar kullanmaktayız.
+      <div style="background: rgba(244, 63, 94, 0.05); border-left: 4px solid #f43f5e; padding: 1.5rem; margin: 2rem 0; border-radius: 0 0.5rem 0.5rem 0;">
+        <h3 style="color: #e11d48; margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">TCK İlaçlama ile Nano-Kapsül Bariyer Teknolojisi</h3>
+        <p style="margin-bottom: 1rem; color: #334155;">
+          Biz <strong>${district}</strong> bölgesindeki tüm <strong>ilçe ilaçlama</strong> operasyonlarımızda sadece anlık öldürücü değil, aylarca koruyan özel formüller kullanıyoruz:
         </p>
-        <ul style="list-style-type: none; padding-left: 0;">
-          <li style="margin-bottom: 0.5rem;">✓ Kokusuzdur ve leke bırakmaz.</li>
-          <li style="margin-bottom: 0.5rem;">✓ Alanı terk etmenize gerek kalmaz.</li>
-          <li style="margin-bottom: 0.5rem;">✓ Evcil hayvan dostudur (Pet-friendly).</li>
-          <li style="margin-bottom: 0;">✓ Kapsül teknolojisi ile aylarca koruma sağlar.</li>
+        <ul style="list-style-type: none; padding-left: 0; color: #334155; margin-bottom: 0;">
+          <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; line-height: 1.6;">
+            <span style="color: #e11d48; margin-right: 10px; font-weight: bold; font-size: 1.2rem; line-height: 1;">✓</span> 
+            <span><strong>Sağlık Bakanlığı ve WHO Onaylı Biyosidal Ürünler:</strong> İnsan ve evcil hayvan sağlığına tamamen zararsız, kokusuz ve lekesiz koruma bariyeri.</span>
+          </li>
+          <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; line-height: 1.6;">
+            <span style="color: #e11d48; margin-right: 10px; font-weight: bold; font-size: 1.2rem; line-height: 1;">✓</span> 
+            <span><strong>Mikro-Kapsül Teknolojisi:</strong> Yüzeye yapışan nano-kapsüller haşereler yürüdükçe patlar ve koloninin kalbine (yuvasına) taşınarak zincirleme yok oluş başlatır.</span>
+          </li>
+          <li style="margin-bottom: 0; display: flex; align-items: flex-start; line-height: 1.6;">
+            <span style="color: #e11d48; margin-right: 10px; font-weight: bold; font-size: 1.2rem; line-height: 1;">✓</span> 
+            <span><strong>45 Dakikada Hızlı Servis Garantisi:</strong> ${district} sokaklarına hakim yerel mobil ekiplerimizle en kritik durumlarda bile hızla yanınızdayız.</span>
+          </li>
         </ul>
       </div>
 
-      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
-        ${district} Bölgesi ${pest} İlaçlama Fiyatları
+      <div style="background: #fff1f2; border: 1.5px solid #fda4af; border-radius: 0.75rem; padding: 1.5rem 2rem; margin: 2.5rem 0;">
+        <p style="margin: 0 0 0.5rem 0; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #e11d48;">⚖️ Yasal Uyarı — T.C. Türk Ceza Kanunu</p>
+        <h3 style="color: #9f1239; margin: 0 0 0.75rem 0; font-size: 1.15rem; font-weight: 800; line-height: 1.4;">TCK Madde 187/1: Ruhsatsız İlaçlama 1 ila 5 Yıl Hapis Cezası Gerektirir</h3>
+        <p style="margin: 0; color: #4c0519; line-height: 1.7; font-size: 0.95rem;">
+          T.C. Türk Ceza Kanunu'nun 187. maddesi 1. fıkrası uyarınca: <em>"Kişilerin hayatını ve sağlığını tehlikeye sokacak biçimde ilaç üreten veya satan kimseye bir yıldan beş yıla kadar hapis ve adlî para cezası verilir."</em> Bu sebeple ruhsatsız, eğitimsiz veya Sağlık Bakanlığı yetki belgesi bulunmayan kişilere ev veya iş yerinizde ilaçlama yaptırmak hem aileniz hem de o kişi açısından ciddi hukuki sonuçlar doğurur. Güvenliğiniz için mutlaka <strong>lisanslı ve tescilli bir ilaçlama firması</strong> tercih edin.
+        </p>
+      </div>
+
+      <h2 style="font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #f43f5e; padding-bottom: 0.5rem; color: #0f172a; font-weight: 700;">
+        ${district} ${pest} İlaçlama Fiyatları: Sağlığın Ucuzu Olmaz!
       </h2>
-      <p style="margin-bottom: 1.5rem;">
-        Maliyet analizi yapılırken alanın m² büyüklüğü, popülasyonun direnç seviyesi ve kullanılacak ilaçların türü dikkate alınır. TCK İlaçlama olarak, en ucuzu değil, kalıcı ve garantili olan en doğru çözümü sunuyoruz. 
-        Sağlıktan ve hijyenden tasarruf olmaz; kalitesiz ilaçlar yalnızca paranızı israf etmekle kalmaz, mekanınızı da zehirler.
+      <p style="margin-bottom: 1.5rem; color: #334155; line-height: 1.8;">
+        İstanbul genelinde <strong>il ilaçlama</strong> ve genel <strong>ilaçlama</strong> hizmeti adı altında piyasa gerçekleriyle uyuşmayan komik fiyatlar sunanlara itibar etmeyin. Profesyonel bir biyosidal ürünün, koruyucu ekipmanların ve uzman ziraat mühendislerinin maliyeti bellidir. TCK İlaçlama olarak, ${district} sakinlerine bütçe dostu ama %100 garantili kesin çözümler sunuyoruz. Fiyattan tasarruf etmek, sevdiklerinizin sağlığından tasarruf etmektir.
       </p>
 
-      <h2 style=" font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(15,23,42,0.1); padding-bottom: 0.5rem;">
-        Sıkça Sorulan Sorular (S.S.S.)
+      <h2 style="font-size: 1.8rem; margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #f43f5e; padding-bottom: 0.5rem; color: #0f172a; font-weight: 700;">
+        Kullanıcılar Bunları da Sordu (S.S.S.)
       </h2>
       
-      <div style="margin-bottom: 1.5rem; background: rgba(15,23,42,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(15,23,42,0.05);">
-        <h4 style=" margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: ${pest} ilaçlaması sonrası evde kalabilir miyim?</h4>
-        <p style="margin-bottom: 0;"><strong>Cevap:</strong> Evet. Uyguladığımız özel jeller ve kokusuz sıvı bariyerler sayesinde günlük yaşantınıza veya işleyişinize kesintisiz devam edebilirsiniz.</p>
+      <div style="margin-bottom: 1.5rem; background: #f8fafc; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+        <h4 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.15rem; color: #0f172a; font-weight: 700;">Soru: ${pest} ilaçlaması sırasında evi terk etmeli miyiz?</h4>
+        <p style="margin-bottom: 0; color: #475569; line-height: 1.6;"><strong>Cevap:</strong> Hayır. Kullandığımız son teknoloji kokusuz biyosidal formüller sayesinde evinizden çıkmanıza gerek kalmaz. Günlük yaşamınıza güvenle devam edebilirsiniz.</p>
       </div>
 
-      <div style="margin-bottom: 1.5rem; background: rgba(15,23,42,0.02); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(15,23,42,0.05);">
-        <h4 style=" margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem;">Soru: Çözüm garantili mi?</h4>
-        <p style="margin-bottom: 0;"><strong>Cevap:</strong> Kesinlikle. ${district} bölgesindeki tüm operasyonlarımızda tam izolasyon sağlanana kadar süreç tarafımızca garanti altındadır.</p>
+      <div style="margin-bottom: 1.5rem; background: #f8fafc; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+        <h4 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.15rem; color: #0f172a; font-weight: 700;">Soru: İlaçlama sonrası haşereler ne zaman tamamen yok olur?</h4>
+        <p style="margin-bottom: 0; color: #475569; line-height: 1.6;"><strong>Cevap:</strong> Mikro-kapsül etki mekanizmamız sayesinde ilk 24 saat içinde gözle görülür düşüş başlar. Maksimum 7 ila 10 gün içinde tüm koloni yuvalarında zincirleme olarak kurutulmuş olur.</p>
       </div>
 
-      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(15,23,42,0.1);">
+      <div style="margin-bottom: 1.5rem; background: #f8fafc; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #e2e8f0;">
+        <h4 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.15rem; color: #0f172a; font-weight: 700;">Soru: İlaçlarınız evcil hayvanlarımıza zarar verir mi?</h4>
+        <p style="margin-bottom: 0; color: #475569; line-height: 1.6;"><strong>Cevap:</strong> Kesinlikle hayır. Kullandığımız tüm ürünler hedef dışı canlıların (kedi, köpek vb.) metabolizmasına zarar vermeyecek şekilde formüle edilmiş WHO tescilli biyosidal ürünlerdir.</p>
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
         <p style="font-size: 0.85rem; color: #64748b;">
           <strong>İlgili Terimler (LSI):</strong> ${generateLSIKeywords(district, pest)}
         </p>
@@ -114,29 +136,29 @@ const generateCorporateContent = (district: string, pest: string) => {
 const generateAggressiveTitle = (district: string, pest: string) => {
   const titles: Record<string, string[]> = {
     'Fare': [
-      `${district} Fare İstilası Kabusuna Son: Yuvalarını Bulup 45 Dakikada Kurutuyoruz!`,
-      `${district} Kemirgen İlaçlama: Taşıdıkları Ölümcül Hastalıklardan Ailenizi Koruyun`,
-      `${district} Fare İlaçlama Servisi | 7/24 Kesin Sonuçlu İstila Önleme`
+      `${district} Böcek ve Fare İlaçlama | 45 Dakikada Yuvaları Kurutuyoruz!`,
+      `${district} Haşere İlaçlama: Taşıdıkları Ölümcül Hastalıklardan Ailenizi Koruyun`,
+      `${district} Fare İlaçlama Servisi | 7/24 Kesin Sonuçlu İlçe İlaçlama`
     ],
     'Hamam Böceği': [
-      `${district} Hamam Böceği Kabusuna Kesin Çözüm: Tek Seferde Yuvaları Kurutun!`,
-      `${district} Kalorifer Böceği İlaçlama: Mutfaktaki Gizli Bakterileri Yok Edin!`,
-      `Spreyle Bitmeyen ${district} Hamam Böceği İstilasını Kökünden Kazıyoruz!`
+      `${district} Hamam Böceği İlaçlama: 45 Dakikada Yuvaları Kökünden Kurutun!`,
+      `Spreyle Bitmeyen ${district} Hamam Böceği İstilasını Kökünden Kazıyoruz!`,
+      `${district} Kalorifer Böceği İlaçlama: Mutfaktaki Gizli Bakterileri Yok Edin!`
     ],
     'Pire': [
-      `${district} Pire İstilası Nasıl Geçer? Kaşıntı ve Uykusuz Gecelere Son!`,
-      `${district} Pire İlaçlama: Evcil Hayvanlarınızı ve Yuvanızı Parazitlerden Kurtarın`,
-      `Halıların Arasına Gizlenen ${district} Pirelerini Tek Uygulamada Yok Ediyoruz!`
+      `${district} Pire İlaçlama | Kaşıntı ve Uykusuz Gecelere Son! %100 Garantili`,
+      `Halıların Arasına Gizlenen ${district} Pirelerini Tek Uygulamada Yok Ediyoruz!`,
+      `${district} Pire ve Haşere İlaçlama | Evcil Hayvan Dostu Kokusuz Koruma`
     ],
     'Kene': [
       `${district} Kene İlaçlama: Ölümcül Kırım Kongo Ateşine Karşı Acil Kalkan`,
-      `Bahçeniz Güvenli mi? ${district} Kene ve Akrep İlaçlama ile %100 Güvenlik`,
-      `Gezici Ekiplerle ${district} Kene İlaçlama Servisi | 7/24 Koruma`
+      `Bahçeniz Güvenli mi? ${district} Kene ve Böcek İlaçlama ile %100 Güvenlik`,
+      `Gezici Ekiplerle ${district} Kene İlaçlama Servisi | 7/24 İl İlaçlama`
     ],
     'Böcek': [
-      `${district} Böcek İstilasına Son: Sağlık Bakanlığı Onaylı Kokusuz Çözümler!`,
-      `${district} İlaçlama Şirketi: Evinizde Böceklerin Üreme Noktalarını Nasıl Buluyoruz?`,
-      `Merdiven Altı İlaçlamacılara Dikkat! ${district} Garantili Böcek İlaçlama`
+      `${district} Böcek İlaçlama: Sağlık Bakanlığı Onaylı Kokusuz Çözümler!`,
+      `${district} Haşere İlaçlama Şirketi: Evinizde Böceklerin Üreme Noktalarını Nasıl Buluyoruz?`,
+      `Merdiven Altı İlaçlamacılara Dikkat! ${district} Garantili İlaçlama Firması`
     ]
   };
   const list = titles[pest] || [

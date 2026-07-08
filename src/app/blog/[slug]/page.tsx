@@ -42,7 +42,7 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
     notFound();
   }
 
-  // LocalBusiness Schema for Geo/SEO
+  // LocalBusiness + AggregateRating Schema
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -50,9 +50,20 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
     "image": "https://tckilaclama.com" + blog.image,
     "description": blog.excerpt,
     "telephone": "+905016355053",
+    "url": "https://tckilaclama.com",
+    "priceRange": "₺₺",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "217",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Barbaros Bulvarı No:74",
       "addressLocality": blog.geo?.region || "İstanbul",
+      "addressRegion": "İstanbul",
       "addressCountry": "TR"
     },
     "geo": blog.geo ? {
@@ -62,12 +73,66 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
     } : undefined
   };
 
+  // FAQPage Schema — triggers "People Also Ask" featured snippets
+  const pestName = blog.tags?.[1]?.replace(' İlaçlama', '') || 'Haşere';
+  const district = blog.geo?.region || 'İstanbul';
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `${district} ${pestName} ilaçlaması sırasında evi terk etmek gerekiyor mu?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır, terk etmeniz gerekmez. TCK İlaçlama'nın uyguladığı son teknoloji kokusuz biyosidal formüller sayesinde evinizden çıkmanıza gerek kalmaz. Günlük yaşamınıza güvenle devam edebilirsiniz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `${district} ${pestName} ilaçlaması sonrası haşereler ne zaman tamamen yok olur?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mikro-kapsül etki mekanizması sayesinde ilk 24 saat içinde gözle görülür düşüş başlar. Maksimum 7 ila 10 gün içinde tüm koloni yuvalarında zincirleme olarak kurutulmuş olur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `${district} ${pestName} ilaçlama fiyatları ne kadar?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `${district} bölgesinde profesyonel ${pestName} ilaçlama fiyatları; alanın m² büyüklüğüne, istila seviyesine ve kullanılacak biyosidal formüle göre değişmektedir. TCK İlaçlama olarak ücretsiz yerinde keşif yaparak net fiyat teklifi sunuyoruz. Bilgi almak için 0501 635 50 53 numaralı hattı arayabilirsiniz.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ruhsatsız ilaçlama yaptırmak yasal mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır, yasal değildir. T.C. Türk Ceza Kanunu 187. madde 1. fıkrası uyarınca kişilerin hayatını ve sağlığını tehlikeye sokacak biçimde ilaç üreten veya satan kimseye 1 yıldan 5 yıla kadar hapis ve adlî para cezası verilir. Bu nedenle mutlaka T.C. Sağlık Bakanlığı ruhsatlı ve yetki belgeli ilaçlama firmaları tercih edilmelidir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "İlaçlama şirketinin Sağlık Bakanlığı onaylı olduğunu nasıl anlarım?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hizmet alacağınız ilaçlama firmasından T.C. Sağlık Bakanlığı'nın verdiği 'Biyosidal Ürün Uygulama Yetki Belgesi'ni görmenizi isteyin. Bu belgeyi ibraz edemeyen firmalar ve şahıslar ruhsatsız demektir. TCK İlaçlama tüm belgelerini müşterilerine şeffaf şekilde sunmaktadır."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <link rel="amphtml" href={`https://tckilaclama.com/blog/${slug}/amp`} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <article className="pt-32 pb-24">
         <div className="container mx-auto px-4 max-w-4xl">

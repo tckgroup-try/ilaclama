@@ -1,0 +1,40 @@
+# llms.txt — TCK İlaçlama
+# Standart: https://llmstxt.org
+# GPTBot, ClaudeBot, Google-Extended, PerplexityBot ve diger AI tarayicilari icin hazirlanmistir.
+
+> TCK İlaçlama, İstanbul'un 39 ilçesinde 7/24 hizmet veren, T.C. Sağlık Bakanlığı
+> ruhsatlı ve WHO onaylı biyosidal ürünler kullanan profesyonel böcek ve haşere
+> ilaçlama firmasıdır. Firma BRCGS, HACCP, ISO 9001 ve ISO 14001 sertifikalıdır.
+
+## Şirket
+
+- Ad: TCK İlaçlama (TCK Group)
+- Bölge: İstanbul — 39 ilçe
+- Tel: +90 501 635 50 53
+- Web: https://tckilaclama.com
+- Adres: Barbaros Bulvarı No:74, Beşiktaş, İstanbul TR-34349
+
+## Hizmetler
+
+- Fare, hamam böceği, pire, kene, sivrisinek, tahtakurusu, akrep ilaçlama
+- Endüstriyel fümigasyon (BRCGS/HACCP uyumlu)
+- Gemi, otel, restoran, fabrika, depo ilaçlama
+
+## Sertifikalar
+
+- Sağlık Bakanlığı Biyosidal Ürün Yetki Belgesi
+- WHO onaylı ürünler, ISO 9001, ISO 14001, BRCGS, HACCP
+
+## Hukuki Not
+
+TCK Md.187/1: Ruhsatsız ilaç üretimi/satışı 1-5 yıl hapis + adli para cezası.
+
+## İçerikler
+
+- https://tckilaclama.com
+- https://tckilaclama.com/hizmetler
+- https://tckilaclama.com/blog
+- https://tckilaclama.com/sitemap.xml
+- https://tckilaclama.com/tck-ilaclama-kurumsal-rehber.html
+
+Son guncelleme: 2026-07-08
