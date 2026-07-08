@@ -9,16 +9,16 @@ const slugify = (text: string) => {
     .replace(/^-|-$/g, '');
 };
 
-const imageList = [
-  '/images/tck_fare_uzman.png',
-  '/images/tck_fabrika_ekip.png',
-  '/images/tck_bocek_mutfak.png',
-  '/images/tck_arac_filo.png',
-  '/images/tck_expert.png'
-];
+const pestImages: Record<string, string> = {
+  'Fare': '/images/blog_fare_control.png',
+  'Hamam Böceği': '/images/blog_hamambocek_control.png',
+  'Pire': '/images/blog_pire_control.png',
+  'Kene': '/images/blog_kene_control.png',
+  'Böcek': '/images/blog_bocek_control.png'
+};
 
-const getImageForPest = (pest: string, index: number) => {
-  return imageList[index % imageList.length];
+const getImageForPest = (pest: string) => {
+  return pestImages[pest] || '/images/blog_bocek_control.png';
 };
 
 const districts = [
@@ -233,7 +233,7 @@ for (const district of districts) {
       title: aggressiveTitle,
       excerpt: aggressiveExcerpt,
       content: generateCorporateContent(district, pest.name),
-      image: getImageForPest(pest.name, index),
+      image: getImageForPest(pest.name),
       date: `2026-07-${(index % 28) + 1 < 10 ? '0' + ((index % 28) + 1) : (index % 28) + 1}`,
       geo: { lat: coords.lat, lng: coords.lng, region: district },
       tags: [district, `${pest.name} İlaçlama`, 'Garantili İlaçlama', 'Profesyonel Çözüm']
