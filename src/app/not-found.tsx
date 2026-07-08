@@ -2,6 +2,11 @@ import Link from 'next/link';
 import { RoseButton } from '@/components/ui/RoseButton';
 import { ShieldAlert } from 'lucide-react';
 
+export const metadata = {
+  title: '404 - Sayfa Bulunamadı | TCK İlaçlama',
+  robots: { index: false, follow: false }
+};
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center pt-20 px-4">

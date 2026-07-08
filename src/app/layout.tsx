@@ -7,7 +7,7 @@ import { PWASetup } from "@/components/PWASetup";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
 export const viewport: Viewport = {
   themeColor: "#10b981",
@@ -39,10 +39,18 @@ export const metadata: Metadata = {
     siteName: "TCK İlaçlama",
     locale: "tr_TR",
     type: "website",
-    images: [{ url: "/images/tck_expert.png", width: 1200, height: 630, alt: "TCK İlaçlama Uzmanı" }]
+    images: [{ url: "/images/tck_expert.webp", width: 1200, height: 630, alt: "TCK İlaçlama Uzmanı" }]
   },
   alternates: {
     canonical: "https://tckilaclama.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TCK İlaçlama | İstanbul Böcek & Haşere İlaçlama Servisi",
+    description: "İstanbul'da 7/24 acil böcek ve haşere ilaçlama hizmeti. %100 garantili, kokusuz, Sağlık Bakanlığı onaylı çözüm. 45 dakikada müdahale.",
+    images: ["/images/tck_expert.webp"],
+    creator: "@tckilaclama",
+    site: "@tckilaclama",
   },
   authors: [{ name: "TCK Group" }],
   robots: {
@@ -186,6 +194,15 @@ export default function RootLayout({
                   <li><a href="/blog" className="text-slate-500 hover:text-brand transition-colors">Ustaların Notları (Blog)</a></li>
                   <li><a href="/iletisim" className="text-slate-500 hover:text-brand transition-colors">İletişim &amp; Teklif Al</a></li>
                   <li><a href="https://wa.me/905016355053?text=Merhaba,%20ila%C3%A7lama%20hizmetleri%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors">WhatsApp ile Hızlı Teklif</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-slate-900 font-semibold mb-4">Sosyal Medya</h4>
+                <ul className="space-y-2">
+                  <li><a href="https://www.instagram.com/tckilaclama" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors flex items-center gap-2">📸 Instagram</a></li>
+                  <li><a href="https://www.facebook.com/tckilaclama" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors flex items-center gap-2">👥 Facebook</a></li>
+                  <li><a href="https://www.youtube.com/@tckilaclama" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors flex items-center gap-2">▶️ YouTube</a></li>
+                  <li><a href="https://wa.me/905016355053" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-brand transition-colors flex items-center gap-2">💬 WhatsApp</a></li>
                 </ul>
               </div>
               <div>

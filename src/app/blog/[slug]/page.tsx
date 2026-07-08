@@ -18,12 +18,19 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     alternates: {
       canonical: `https://tckilaclama.com/blog/${slug}`
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: blog.title,
+      description: blog.excerpt,
+      images: [`https://tckilaclama.com${blog.image}`],
+    },
     openGraph: {
       title: blog.title,
       description: blog.excerpt,
       url: `https://tckilaclama.com/blog/${slug}`,
       type: "article",
-      images: [blog.image]
+      publishedTime: blog.date,
+      images: [`https://tckilaclama.com${blog.image}`]
     }
   };
 }
@@ -123,9 +130,59 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
     ]
   };
 
+  // Article Schema — critical for Google News + rich snippets
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `https://tckilaclama.com/blog/${slug}#article`,
+    "headline": blog.title,
+    "description": blog.excerpt,
+    "image": `https://tckilaclama.com${blog.image}`,
+    "datePublished": blog.date,
+    "dateModified": blog.date,
+    "author": {
+      "@type": "Organization",
+      "name": "TCK İlaçlama",
+      "url": "https://tckilaclama.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TCK İlaçlama",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tckilaclama.com/images/tck_expert.webp"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://tckilaclama.com/blog/${slug}`
+    },
+    "keywords": blog.tags?.join(', '),
+    "articleSection": "Haşere İlaçlama Rehberi"
+  };
+
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://tckilaclama.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tckilaclama.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": blog.title, "item": `https://tckilaclama.com/blog/${slug}` }
+    ]
+  };
+
   return (
     <>
       <link rel="amphtml" href={`https://tckilaclama.com/blog/${slug}/amp`} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

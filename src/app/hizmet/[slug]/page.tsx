@@ -8,6 +8,7 @@ import { tckBranches } from '@/data/branches';
 import { istanbulNeighborhoods } from '@/data/neighborhoods';
 import { ServiceQuoteForm } from '@/components/ServiceQuoteForm';
 import { PHONE_HREF, PHONE_DISPLAY, PHONE_RAW, COMPANY_EMAIL, COMPANY_DOMAIN, WHATSAPP_QUOTE } from '@/lib/constants';
+import { LocalMapEmbed } from '@/components/LocalMapEmbed';
 
 // Mappings for professional Turkish representations
 const PEST_MAPPING: Record<string, string> = {
@@ -96,6 +97,21 @@ export function parseSlug(slug: string): ParsedSlug {
 }
 
 export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const params: { slug: string }[] = [];
+  const targetPests = ['bocek', 'fare', 'pire', 'hamam-bocegi'];
+
+  for (const [key] of Object.entries(istanbulNeighborhoods)) {
+    for (const pest of targetPests) {
+      params.push({
+        slug: `istanbul-${key}-${pest}-ilaclama`,
+      });
+    }
+  }
+
+  return params;
+}
 
 // Programmatic SEO: Dinamik sayfalar için metadatalar üretilir.
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -238,18 +254,10 @@ export default async function ServiceSlugPage({ params }: { params: Promise<{ sl
                   </button>
                 </a>
               </div>
-              <div className="h-[300px] w-full rounded-2xl overflow-hidden border border-slate-200">
-                <iframe 
-                  src={`https://maps.google.com/maps?q=${branch ? encodeURIComponent(branch.name) : `${districtName}+istanbul+ilaclama`}&t=&z=14&ie=UTF8&iwloc=&output=embed`} 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={false} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`${districtName} İlaçlama Haritası`}
-                />
-              </div>
+              <LocalMapEmbed 
+                query={branch ? branch.name : `${districtName} istanbul ilaclama`}
+                title={`${districtName} İlaçlama Haritası`}
+              />
             </div>
           </div>
         </div>

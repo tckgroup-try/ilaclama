@@ -1,225 +1,225 @@
 Ilce,HasereTuru,RiskSeviyesi,OrtalamaSicaklikC,TavsiyeEdilenPeriyotAy,GeziciEkipSayisi,EnYakinSube
-Kadikoy,Fare,Yuksek,21.0,3,3,TCK Kadikoy Subesi
-Kadikoy,Bocek,Orta,29.8,6,5,TCK Kadikoy Subesi
-Kadikoy,Pire,Orta,28.2,6,3,TCK Kadikoy Subesi
-Kadikoy,Hamam Bocegi,Orta,23.6,6,2,TCK Kadikoy Subesi
-Kadikoy,Akrep,Orta,22.1,3,5,TCK Kadikoy Subesi
-Kadikoy,Kene,Yuksek,28.7,6,4,TCK Kadikoy Subesi
-Kadikoy,Tahtakurusu,Yuksek,29.3,6,2,TCK Kadikoy Subesi
-Kadikoy,Sivrisinek,Orta,29.5,6,2,TCK Kadikoy Subesi
-Sisli,Fare,Yuksek,27.4,3,4,TCK Sisli Subesi
-Sisli,Bocek,Orta,24.4,6,5,TCK Sisli Subesi
-Sisli,Pire,Yuksek,26.1,6,3,TCK Sisli Subesi
-Sisli,Hamam Bocegi,Yuksek,23.4,6,2,TCK Sisli Subesi
-Sisli,Akrep,Orta,28.0,3,2,TCK Sisli Subesi
-Sisli,Kene,Yuksek,22.9,6,3,TCK Sisli Subesi
-Sisli,Tahtakurusu,Orta,21.7,6,3,TCK Sisli Subesi
-Sisli,Sivrisinek,Orta,21.8,6,5,TCK Sisli Subesi
-Besiktas,Fare,Yuksek,28.0,3,5,TCK Besiktas Subesi
-Besiktas,Bocek,Orta,23.0,6,4,TCK Besiktas Subesi
-Besiktas,Pire,Yuksek,29.4,6,4,TCK Besiktas Subesi
-Besiktas,Hamam Bocegi,Orta,22.8,6,3,TCK Besiktas Subesi
-Besiktas,Akrep,Orta,27.4,3,5,TCK Besiktas Subesi
-Besiktas,Kene,Yuksek,21.1,6,3,TCK Besiktas Subesi
-Besiktas,Tahtakurusu,Orta,25.3,6,4,TCK Besiktas Subesi
-Besiktas,Sivrisinek,Yuksek,27.3,6,2,TCK Besiktas Subesi
-Bakirkoy,Fare,Yuksek,28.7,3,5,TCK Bakirkoy Subesi
-Bakirkoy,Bocek,Yuksek,22.0,6,5,TCK Bakirkoy Subesi
-Bakirkoy,Pire,Yuksek,25.7,6,3,TCK Bakirkoy Subesi
-Bakirkoy,Hamam Bocegi,Yuksek,22.9,6,5,TCK Bakirkoy Subesi
-Bakirkoy,Akrep,Yuksek,21.3,3,2,TCK Bakirkoy Subesi
-Bakirkoy,Kene,Orta,24.5,6,2,TCK Bakirkoy Subesi
-Bakirkoy,Tahtakurusu,Orta,26.5,6,3,TCK Bakirkoy Subesi
-Bakirkoy,Sivrisinek,Orta,23.6,6,4,TCK Bakirkoy Subesi
-Pendik,Fare,Yuksek,20.5,3,4,TCK Pendik Subesi
-Pendik,Bocek,Orta,27.9,6,4,TCK Pendik Subesi
-Pendik,Pire,Orta,22.0,6,5,TCK Pendik Subesi
-Pendik,Hamam Bocegi,Orta,23.4,6,4,TCK Pendik Subesi
-Pendik,Akrep,Yuksek,20.4,3,2,TCK Pendik Subesi
-Pendik,Kene,Orta,25.9,6,5,TCK Pendik Subesi
-Pendik,Tahtakurusu,Yuksek,27.5,6,2,TCK Pendik Subesi
-Pendik,Sivrisinek,Yuksek,20.2,6,4,TCK Pendik Subesi
-Uskudar,Fare,Orta,29.3,3,4,TCK Uskudar Subesi
-Uskudar,Bocek,Yuksek,29.6,6,5,TCK Uskudar Subesi
-Uskudar,Pire,Yuksek,29.4,6,2,TCK Uskudar Subesi
-Uskudar,Hamam Bocegi,Orta,27.3,6,2,TCK Uskudar Subesi
-Uskudar,Akrep,Orta,25.8,3,2,TCK Uskudar Subesi
-Uskudar,Kene,Yuksek,20.3,6,3,TCK Uskudar Subesi
-Uskudar,Tahtakurusu,Yuksek,24.6,6,4,TCK Uskudar Subesi
-Uskudar,Sivrisinek,Yuksek,28.3,6,3,TCK Uskudar Subesi
-Maltepe,Fare,Yuksek,28.3,3,5,TCK Maltepe Subesi
-Maltepe,Bocek,Orta,28.7,6,2,TCK Maltepe Subesi
-Maltepe,Pire,Yuksek,26.9,6,5,TCK Maltepe Subesi
-Maltepe,Hamam Bocegi,Yuksek,20.5,6,3,TCK Maltepe Subesi
-Maltepe,Akrep,Yuksek,28.3,3,3,TCK Maltepe Subesi
-Maltepe,Kene,Yuksek,25.4,6,3,TCK Maltepe Subesi
-Maltepe,Tahtakurusu,Orta,28.0,6,4,TCK Maltepe Subesi
-Maltepe,Sivrisinek,Yuksek,24.9,6,2,TCK Maltepe Subesi
-Kartal,Fare,Orta,22.6,3,5,TCK Kartal Subesi
-Kartal,Bocek,Yuksek,24.7,6,3,TCK Kartal Subesi
-Kartal,Pire,Yuksek,25.7,6,4,TCK Kartal Subesi
-Kartal,Hamam Bocegi,Orta,24.5,6,2,TCK Kartal Subesi
-Kartal,Akrep,Orta,26.8,3,3,TCK Kartal Subesi
-Kartal,Kene,Orta,25.6,6,2,TCK Kartal Subesi
-Kartal,Tahtakurusu,Yuksek,25.2,6,5,TCK Kartal Subesi
-Kartal,Sivrisinek,Yuksek,27.9,6,3,TCK Kartal Subesi
-Umraniye,Fare,Orta,26.7,3,4,TCK Umraniye Subesi
-Umraniye,Bocek,Orta,27.2,6,5,TCK Umraniye Subesi
-Umraniye,Pire,Orta,28.5,6,2,TCK Umraniye Subesi
-Umraniye,Hamam Bocegi,Yuksek,27.2,6,5,TCK Umraniye Subesi
-Umraniye,Akrep,Yuksek,20.1,3,3,TCK Umraniye Subesi
-Umraniye,Kene,Yuksek,20.6,6,4,TCK Umraniye Subesi
-Umraniye,Tahtakurusu,Yuksek,24.6,6,3,TCK Umraniye Subesi
-Umraniye,Sivrisinek,Yuksek,20.1,6,3,TCK Umraniye Subesi
-Atasehir,Fare,Orta,24.9,3,5,TCK Atasehir Subesi
-Atasehir,Bocek,Yuksek,28.7,6,4,TCK Atasehir Subesi
-Atasehir,Pire,Orta,26.6,6,2,TCK Atasehir Subesi
-Atasehir,Hamam Bocegi,Yuksek,26.7,6,4,TCK Atasehir Subesi
-Atasehir,Akrep,Orta,25.6,3,5,TCK Atasehir Subesi
-Atasehir,Kene,Orta,22.5,6,2,TCK Atasehir Subesi
-Atasehir,Tahtakurusu,Yuksek,24.7,6,2,TCK Atasehir Subesi
-Atasehir,Sivrisinek,Yuksek,26.5,6,3,TCK Atasehir Subesi
-Sariyer,Fare,Yuksek,22.9,3,3,TCK Sariyer Subesi
-Sariyer,Bocek,Orta,29.3,6,3,TCK Sariyer Subesi
-Sariyer,Pire,Yuksek,22.3,6,4,TCK Sariyer Subesi
-Sariyer,Hamam Bocegi,Yuksek,22.7,6,5,TCK Sariyer Subesi
-Sariyer,Akrep,Orta,20.1,3,5,TCK Sariyer Subesi
-Sariyer,Kene,Yuksek,25.8,6,4,TCK Sariyer Subesi
-Sariyer,Tahtakurusu,Yuksek,21.8,6,5,TCK Sariyer Subesi
-Sariyer,Sivrisinek,Yuksek,29.4,6,4,TCK Sariyer Subesi
-Beykoz,Fare,Yuksek,24.8,3,4,TCK Beykoz Subesi
-Beykoz,Bocek,Yuksek,26.6,6,5,TCK Beykoz Subesi
-Beykoz,Pire,Orta,25.7,6,5,TCK Beykoz Subesi
-Beykoz,Hamam Bocegi,Yuksek,25.7,6,5,TCK Beykoz Subesi
-Beykoz,Akrep,Yuksek,25.1,3,5,TCK Beykoz Subesi
-Beykoz,Kene,Yuksek,29.9,6,3,TCK Beykoz Subesi
-Beykoz,Tahtakurusu,Yuksek,20.6,6,2,TCK Beykoz Subesi
-Beykoz,Sivrisinek,Orta,28.2,6,4,TCK Beykoz Subesi
-Beyoglu,Fare,Orta,21.2,3,2,TCK Beyoglu Subesi
-Beyoglu,Bocek,Yuksek,29.9,6,2,TCK Beyoglu Subesi
-Beyoglu,Pire,Yuksek,26.1,6,5,TCK Beyoglu Subesi
-Beyoglu,Hamam Bocegi,Yuksek,21.8,6,4,TCK Beyoglu Subesi
-Beyoglu,Akrep,Yuksek,20.4,3,5,TCK Beyoglu Subesi
-Beyoglu,Kene,Orta,24.8,6,2,TCK Beyoglu Subesi
-Beyoglu,Tahtakurusu,Orta,23.3,6,4,TCK Beyoglu Subesi
-Beyoglu,Sivrisinek,Yuksek,20.5,6,5,TCK Beyoglu Subesi
-Fatih,Fare,Yuksek,29.6,3,3,TCK Fatih Subesi
-Fatih,Bocek,Yuksek,22.4,6,2,TCK Fatih Subesi
-Fatih,Pire,Orta,20.4,6,2,TCK Fatih Subesi
-Fatih,Hamam Bocegi,Yuksek,24.8,6,3,TCK Fatih Subesi
-Fatih,Akrep,Yuksek,22.5,3,2,TCK Fatih Subesi
-Fatih,Kene,Yuksek,27.3,6,3,TCK Fatih Subesi
-Fatih,Tahtakurusu,Orta,26.7,6,5,TCK Fatih Subesi
-Fatih,Sivrisinek,Orta,20.3,6,5,TCK Fatih Subesi
-Zeytinburnu,Fare,Yuksek,23.0,3,2,TCK Zeytinburnu Subesi
-Zeytinburnu,Bocek,Orta,23.7,6,3,TCK Zeytinburnu Subesi
-Zeytinburnu,Pire,Orta,29.2,6,5,TCK Zeytinburnu Subesi
-Zeytinburnu,Hamam Bocegi,Orta,23.2,6,2,TCK Zeytinburnu Subesi
-Zeytinburnu,Akrep,Orta,28.4,3,5,TCK Zeytinburnu Subesi
-Zeytinburnu,Kene,Orta,26.3,6,2,TCK Zeytinburnu Subesi
-Zeytinburnu,Tahtakurusu,Yuksek,21.8,6,3,TCK Zeytinburnu Subesi
-Zeytinburnu,Sivrisinek,Yuksek,29.3,6,4,TCK Zeytinburnu Subesi
-Basaksehir,Fare,Orta,28.2,3,3,TCK Basaksehir Subesi
-Basaksehir,Bocek,Orta,24.7,6,5,TCK Basaksehir Subesi
-Basaksehir,Pire,Yuksek,29.5,6,5,TCK Basaksehir Subesi
-Basaksehir,Hamam Bocegi,Yuksek,23.9,6,3,TCK Basaksehir Subesi
-Basaksehir,Akrep,Orta,24.5,3,4,TCK Basaksehir Subesi
-Basaksehir,Kene,Yuksek,20.6,6,2,TCK Basaksehir Subesi
-Basaksehir,Tahtakurusu,Orta,21.5,6,2,TCK Basaksehir Subesi
-Basaksehir,Sivrisinek,Orta,28.6,6,5,TCK Basaksehir Subesi
-Beylikduzu,Fare,Yuksek,25.9,3,2,TCK Beylikduzu Subesi
-Beylikduzu,Bocek,Yuksek,28.9,6,4,TCK Beylikduzu Subesi
-Beylikduzu,Pire,Orta,21.3,6,2,TCK Beylikduzu Subesi
-Beylikduzu,Hamam Bocegi,Yuksek,24.9,6,2,TCK Beylikduzu Subesi
-Beylikduzu,Akrep,Yuksek,20.8,3,3,TCK Beylikduzu Subesi
-Beylikduzu,Kene,Yuksek,23.0,6,4,TCK Beylikduzu Subesi
-Beylikduzu,Tahtakurusu,Orta,29.5,6,3,TCK Beylikduzu Subesi
-Beylikduzu,Sivrisinek,Orta,22.1,6,4,TCK Beylikduzu Subesi
-Esenyurt,Fare,Yuksek,21.3,3,5,TCK Esenyurt Subesi
-Esenyurt,Bocek,Orta,23.2,6,2,TCK Esenyurt Subesi
-Esenyurt,Pire,Yuksek,27.6,6,2,TCK Esenyurt Subesi
-Esenyurt,Hamam Bocegi,Yuksek,28.7,6,4,TCK Esenyurt Subesi
-Esenyurt,Akrep,Yuksek,22.2,3,3,TCK Esenyurt Subesi
-Esenyurt,Kene,Orta,26.9,6,2,TCK Esenyurt Subesi
-Esenyurt,Tahtakurusu,Yuksek,29.2,6,4,TCK Esenyurt Subesi
-Esenyurt,Sivrisinek,Yuksek,23.4,6,4,TCK Esenyurt Subesi
-Avcilar,Fare,Orta,22.0,3,4,TCK Avcilar Subesi
-Avcilar,Bocek,Yuksek,24.4,6,3,TCK Avcilar Subesi
-Avcilar,Pire,Orta,22.8,6,5,TCK Avcilar Subesi
-Avcilar,Hamam Bocegi,Orta,26.0,6,3,TCK Avcilar Subesi
-Avcilar,Akrep,Yuksek,22.0,3,4,TCK Avcilar Subesi
-Avcilar,Kene,Yuksek,21.6,6,4,TCK Avcilar Subesi
-Avcilar,Tahtakurusu,Orta,27.4,6,2,TCK Avcilar Subesi
-Avcilar,Sivrisinek,Yuksek,24.8,6,4,TCK Avcilar Subesi
-Kucukcekmece,Fare,Yuksek,29.6,3,4,TCK Kucukcekmece Subesi
-Kucukcekmece,Bocek,Yuksek,26.6,6,3,TCK Kucukcekmece Subesi
-Kucukcekmece,Pire,Yuksek,21.3,6,2,TCK Kucukcekmece Subesi
-Kucukcekmece,Hamam Bocegi,Orta,27.7,6,3,TCK Kucukcekmece Subesi
-Kucukcekmece,Akrep,Orta,25.8,3,5,TCK Kucukcekmece Subesi
-Kucukcekmece,Kene,Orta,27.4,6,4,TCK Kucukcekmece Subesi
-Kucukcekmece,Tahtakurusu,Yuksek,27.7,6,3,TCK Kucukcekmece Subesi
-Kucukcekmece,Sivrisinek,Orta,21.4,6,3,TCK Kucukcekmece Subesi
-Bahcelievler,Fare,Yuksek,27.1,3,2,TCK Bahcelievler Subesi
-Bahcelievler,Bocek,Orta,25.3,6,4,TCK Bahcelievler Subesi
-Bahcelievler,Pire,Orta,26.8,6,3,TCK Bahcelievler Subesi
-Bahcelievler,Hamam Bocegi,Yuksek,20.6,6,2,TCK Bahcelievler Subesi
-Bahcelievler,Akrep,Orta,25.1,3,4,TCK Bahcelievler Subesi
-Bahcelievler,Kene,Yuksek,25.0,6,5,TCK Bahcelievler Subesi
-Bahcelievler,Tahtakurusu,Orta,23.8,6,3,TCK Bahcelievler Subesi
-Bahcelievler,Sivrisinek,Yuksek,26.4,6,3,TCK Bahcelievler Subesi
-Bagcilar,Fare,Orta,22.1,3,2,TCK Bagcilar Subesi
-Bagcilar,Bocek,Yuksek,21.1,6,2,TCK Bagcilar Subesi
-Bagcilar,Pire,Yuksek,22.4,6,2,TCK Bagcilar Subesi
-Bagcilar,Hamam Bocegi,Orta,22.7,6,5,TCK Bagcilar Subesi
-Bagcilar,Akrep,Yuksek,24.7,3,3,TCK Bagcilar Subesi
-Bagcilar,Kene,Orta,25.7,6,3,TCK Bagcilar Subesi
-Bagcilar,Tahtakurusu,Yuksek,29.0,6,4,TCK Bagcilar Subesi
-Bagcilar,Sivrisinek,Orta,29.6,6,2,TCK Bagcilar Subesi
-Gaziosmanpasa,Fare,Orta,27.1,3,3,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Bocek,Orta,21.3,6,3,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Pire,Yuksek,21.0,6,4,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Hamam Bocegi,Orta,24.2,6,3,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Akrep,Orta,21.2,3,3,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Kene,Orta,28.8,6,4,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Tahtakurusu,Yuksek,23.9,6,2,TCK Gaziosmanpasa Subesi
-Gaziosmanpasa,Sivrisinek,Orta,21.1,6,5,TCK Gaziosmanpasa Subesi
-Eyupsultan,Fare,Yuksek,28.4,3,4,TCK Eyupsultan Subesi
-Eyupsultan,Bocek,Orta,29.8,6,5,TCK Eyupsultan Subesi
-Eyupsultan,Pire,Yuksek,20.5,6,3,TCK Eyupsultan Subesi
-Eyupsultan,Hamam Bocegi,Orta,29.0,6,5,TCK Eyupsultan Subesi
-Eyupsultan,Akrep,Yuksek,21.1,3,5,TCK Eyupsultan Subesi
-Eyupsultan,Kene,Orta,29.5,6,3,TCK Eyupsultan Subesi
-Eyupsultan,Tahtakurusu,Yuksek,27.1,6,3,TCK Eyupsultan Subesi
-Eyupsultan,Sivrisinek,Yuksek,25.5,6,2,TCK Eyupsultan Subesi
-Kagithane,Fare,Yuksek,24.4,3,5,TCK Kagithane Subesi
-Kagithane,Bocek,Yuksek,24.4,6,2,TCK Kagithane Subesi
-Kagithane,Pire,Orta,25.6,6,5,TCK Kagithane Subesi
-Kagithane,Hamam Bocegi,Yuksek,23.0,6,5,TCK Kagithane Subesi
-Kagithane,Akrep,Orta,28.1,3,2,TCK Kagithane Subesi
-Kagithane,Kene,Yuksek,29.8,6,3,TCK Kagithane Subesi
-Kagithane,Tahtakurusu,Yuksek,28.0,6,2,TCK Kagithane Subesi
-Kagithane,Sivrisinek,Yuksek,24.0,6,4,TCK Kagithane Subesi
-Sile,Fare,Yuksek,27.4,3,2,TCK Sile Subesi
-Sile,Bocek,Orta,27.8,6,2,TCK Sile Subesi
-Sile,Pire,Orta,22.8,6,4,TCK Sile Subesi
-Sile,Hamam Bocegi,Orta,27.2,6,4,TCK Sile Subesi
-Sile,Akrep,Yuksek,22.0,3,5,TCK Sile Subesi
-Sile,Kene,Orta,25.1,6,4,TCK Sile Subesi
-Sile,Tahtakurusu,Yuksek,23.7,6,2,TCK Sile Subesi
-Sile,Sivrisinek,Orta,29.1,6,4,TCK Sile Subesi
-Cekmekoy,Fare,Orta,27.1,3,2,TCK Cekmekoy Subesi
-Cekmekoy,Bocek,Yuksek,29.2,6,3,TCK Cekmekoy Subesi
-Cekmekoy,Pire,Orta,25.2,6,5,TCK Cekmekoy Subesi
-Cekmekoy,Hamam Bocegi,Yuksek,22.8,6,4,TCK Cekmekoy Subesi
-Cekmekoy,Akrep,Yuksek,24.0,3,5,TCK Cekmekoy Subesi
-Cekmekoy,Kene,Yuksek,20.3,6,5,TCK Cekmekoy Subesi
-Cekmekoy,Tahtakurusu,Yuksek,29.2,6,2,TCK Cekmekoy Subesi
-Cekmekoy,Sivrisinek,Yuksek,26.8,6,3,TCK Cekmekoy Subesi
-Tuzla,Fare,Yuksek,27.6,3,2,TCK Tuzla Subesi
-Tuzla,Bocek,Orta,25.8,6,2,TCK Tuzla Subesi
-Tuzla,Pire,Orta,29.2,6,4,TCK Tuzla Subesi
-Tuzla,Hamam Bocegi,Orta,29.6,6,2,TCK Tuzla Subesi
-Tuzla,Akrep,Yuksek,28.2,3,4,TCK Tuzla Subesi
-Tuzla,Kene,Orta,28.9,6,4,TCK Tuzla Subesi
-Tuzla,Tahtakurusu,Yuksek,29.0,6,4,TCK Tuzla Subesi
-Tuzla,Sivrisinek,Yuksek,27.5,6,3,TCK Tuzla Subesi
+Kadikoy,Fare,Orta,23.5,3,4,TCK Kadikoy Subesi
+Kadikoy,Bocek,Orta,24.1,6,5,TCK Kadikoy Subesi
+Kadikoy,Pire,Orta,27.2,6,4,TCK Kadikoy Subesi
+Kadikoy,Hamam Bocegi,Yuksek,25.5,6,4,TCK Kadikoy Subesi
+Kadikoy,Akrep,Yuksek,27.6,3,4,TCK Kadikoy Subesi
+Kadikoy,Kene,Orta,25.4,6,2,TCK Kadikoy Subesi
+Kadikoy,Tahtakurusu,Yuksek,29.7,6,5,TCK Kadikoy Subesi
+Kadikoy,Sivrisinek,Orta,20.8,6,3,TCK Kadikoy Subesi
+Sisli,Fare,Orta,20.9,3,4,TCK Sisli Subesi
+Sisli,Bocek,Yuksek,28.6,6,4,TCK Sisli Subesi
+Sisli,Pire,Yuksek,26.3,6,4,TCK Sisli Subesi
+Sisli,Hamam Bocegi,Yuksek,20.4,6,3,TCK Sisli Subesi
+Sisli,Akrep,Orta,20.5,3,3,TCK Sisli Subesi
+Sisli,Kene,Yuksek,25.3,6,5,TCK Sisli Subesi
+Sisli,Tahtakurusu,Yuksek,20.4,6,5,TCK Sisli Subesi
+Sisli,Sivrisinek,Orta,22.2,6,2,TCK Sisli Subesi
+Besiktas,Fare,Orta,20.6,3,4,TCK Besiktas Subesi
+Besiktas,Bocek,Yuksek,29.1,6,4,TCK Besiktas Subesi
+Besiktas,Pire,Yuksek,23.1,6,2,TCK Besiktas Subesi
+Besiktas,Hamam Bocegi,Yuksek,20.4,6,5,TCK Besiktas Subesi
+Besiktas,Akrep,Orta,28.8,3,3,TCK Besiktas Subesi
+Besiktas,Kene,Yuksek,25.8,6,2,TCK Besiktas Subesi
+Besiktas,Tahtakurusu,Orta,27.9,6,3,TCK Besiktas Subesi
+Besiktas,Sivrisinek,Yuksek,24.4,6,2,TCK Besiktas Subesi
+Bakirkoy,Fare,Yuksek,28.1,3,3,TCK Bakirkoy Subesi
+Bakirkoy,Bocek,Orta,27.6,6,3,TCK Bakirkoy Subesi
+Bakirkoy,Pire,Orta,29.1,6,4,TCK Bakirkoy Subesi
+Bakirkoy,Hamam Bocegi,Orta,26.5,6,3,TCK Bakirkoy Subesi
+Bakirkoy,Akrep,Yuksek,29.5,3,3,TCK Bakirkoy Subesi
+Bakirkoy,Kene,Orta,25.2,6,5,TCK Bakirkoy Subesi
+Bakirkoy,Tahtakurusu,Yuksek,20.4,6,3,TCK Bakirkoy Subesi
+Bakirkoy,Sivrisinek,Orta,28.3,6,3,TCK Bakirkoy Subesi
+Pendik,Fare,Orta,24.3,3,3,TCK Pendik Subesi
+Pendik,Bocek,Orta,23.2,6,3,TCK Pendik Subesi
+Pendik,Pire,Orta,25.1,6,4,TCK Pendik Subesi
+Pendik,Hamam Bocegi,Yuksek,24.8,6,3,TCK Pendik Subesi
+Pendik,Akrep,Orta,24.9,3,2,TCK Pendik Subesi
+Pendik,Kene,Yuksek,29.0,6,2,TCK Pendik Subesi
+Pendik,Tahtakurusu,Orta,21.6,6,3,TCK Pendik Subesi
+Pendik,Sivrisinek,Yuksek,29.4,6,5,TCK Pendik Subesi
+Uskudar,Fare,Orta,24.9,3,2,TCK Uskudar Subesi
+Uskudar,Bocek,Yuksek,20.6,6,2,TCK Uskudar Subesi
+Uskudar,Pire,Yuksek,22.7,6,3,TCK Uskudar Subesi
+Uskudar,Hamam Bocegi,Yuksek,24.1,6,3,TCK Uskudar Subesi
+Uskudar,Akrep,Orta,20.8,3,3,TCK Uskudar Subesi
+Uskudar,Kene,Yuksek,25.3,6,2,TCK Uskudar Subesi
+Uskudar,Tahtakurusu,Orta,26.9,6,4,TCK Uskudar Subesi
+Uskudar,Sivrisinek,Yuksek,24.8,6,3,TCK Uskudar Subesi
+Maltepe,Fare,Yuksek,27.1,3,5,TCK Maltepe Subesi
+Maltepe,Bocek,Yuksek,28.6,6,4,TCK Maltepe Subesi
+Maltepe,Pire,Orta,27.7,6,2,TCK Maltepe Subesi
+Maltepe,Hamam Bocegi,Orta,27.4,6,5,TCK Maltepe Subesi
+Maltepe,Akrep,Orta,25.4,3,5,TCK Maltepe Subesi
+Maltepe,Kene,Orta,24.7,6,5,TCK Maltepe Subesi
+Maltepe,Tahtakurusu,Yuksek,22.2,6,4,TCK Maltepe Subesi
+Maltepe,Sivrisinek,Yuksek,28.1,6,5,TCK Maltepe Subesi
+Kartal,Fare,Orta,21.4,3,2,TCK Kartal Subesi
+Kartal,Bocek,Orta,21.1,6,3,TCK Kartal Subesi
+Kartal,Pire,Orta,28.8,6,4,TCK Kartal Subesi
+Kartal,Hamam Bocegi,Yuksek,22.9,6,4,TCK Kartal Subesi
+Kartal,Akrep,Yuksek,20.9,3,2,TCK Kartal Subesi
+Kartal,Kene,Yuksek,23.2,6,3,TCK Kartal Subesi
+Kartal,Tahtakurusu,Yuksek,20.1,6,3,TCK Kartal Subesi
+Kartal,Sivrisinek,Yuksek,21.8,6,5,TCK Kartal Subesi
+Umraniye,Fare,Orta,23.2,3,3,TCK Umraniye Subesi
+Umraniye,Bocek,Yuksek,25.1,6,3,TCK Umraniye Subesi
+Umraniye,Pire,Yuksek,20.3,6,5,TCK Umraniye Subesi
+Umraniye,Hamam Bocegi,Orta,24.0,6,2,TCK Umraniye Subesi
+Umraniye,Akrep,Orta,27.4,3,2,TCK Umraniye Subesi
+Umraniye,Kene,Orta,27.1,6,3,TCK Umraniye Subesi
+Umraniye,Tahtakurusu,Orta,25.2,6,3,TCK Umraniye Subesi
+Umraniye,Sivrisinek,Orta,20.9,6,4,TCK Umraniye Subesi
+Atasehir,Fare,Yuksek,22.2,3,5,TCK Atasehir Subesi
+Atasehir,Bocek,Orta,26.3,6,4,TCK Atasehir Subesi
+Atasehir,Pire,Yuksek,24.2,6,4,TCK Atasehir Subesi
+Atasehir,Hamam Bocegi,Orta,28.5,6,5,TCK Atasehir Subesi
+Atasehir,Akrep,Yuksek,24.9,3,4,TCK Atasehir Subesi
+Atasehir,Kene,Orta,23.2,6,4,TCK Atasehir Subesi
+Atasehir,Tahtakurusu,Yuksek,26.3,6,5,TCK Atasehir Subesi
+Atasehir,Sivrisinek,Orta,20.8,6,3,TCK Atasehir Subesi
+Sariyer,Fare,Yuksek,27.9,3,2,TCK Sariyer Subesi
+Sariyer,Bocek,Yuksek,25.7,6,2,TCK Sariyer Subesi
+Sariyer,Pire,Yuksek,25.1,6,3,TCK Sariyer Subesi
+Sariyer,Hamam Bocegi,Orta,24.9,6,2,TCK Sariyer Subesi
+Sariyer,Akrep,Yuksek,23.6,3,4,TCK Sariyer Subesi
+Sariyer,Kene,Yuksek,22.3,6,2,TCK Sariyer Subesi
+Sariyer,Tahtakurusu,Orta,26.2,6,2,TCK Sariyer Subesi
+Sariyer,Sivrisinek,Orta,22.1,6,3,TCK Sariyer Subesi
+Beykoz,Fare,Orta,28.5,3,4,TCK Beykoz Subesi
+Beykoz,Bocek,Yuksek,25.5,6,2,TCK Beykoz Subesi
+Beykoz,Pire,Yuksek,29.8,6,3,TCK Beykoz Subesi
+Beykoz,Hamam Bocegi,Yuksek,21.6,6,5,TCK Beykoz Subesi
+Beykoz,Akrep,Yuksek,29.4,3,3,TCK Beykoz Subesi
+Beykoz,Kene,Yuksek,26.2,6,3,TCK Beykoz Subesi
+Beykoz,Tahtakurusu,Yuksek,29.6,6,3,TCK Beykoz Subesi
+Beykoz,Sivrisinek,Yuksek,28.9,6,3,TCK Beykoz Subesi
+Beyoglu,Fare,Orta,21.2,3,3,TCK Beyoglu Subesi
+Beyoglu,Bocek,Yuksek,27.8,6,2,TCK Beyoglu Subesi
+Beyoglu,Pire,Orta,23.7,6,2,TCK Beyoglu Subesi
+Beyoglu,Hamam Bocegi,Orta,27.2,6,2,TCK Beyoglu Subesi
+Beyoglu,Akrep,Orta,26.9,3,5,TCK Beyoglu Subesi
+Beyoglu,Kene,Orta,21.9,6,2,TCK Beyoglu Subesi
+Beyoglu,Tahtakurusu,Orta,25.4,6,5,TCK Beyoglu Subesi
+Beyoglu,Sivrisinek,Yuksek,25.1,6,2,TCK Beyoglu Subesi
+Fatih,Fare,Yuksek,23.5,3,5,TCK Fatih Subesi
+Fatih,Bocek,Orta,24.4,6,5,TCK Fatih Subesi
+Fatih,Pire,Orta,26.9,6,2,TCK Fatih Subesi
+Fatih,Hamam Bocegi,Orta,24.6,6,2,TCK Fatih Subesi
+Fatih,Akrep,Yuksek,21.5,3,3,TCK Fatih Subesi
+Fatih,Kene,Orta,23.8,6,5,TCK Fatih Subesi
+Fatih,Tahtakurusu,Yuksek,28.9,6,2,TCK Fatih Subesi
+Fatih,Sivrisinek,Orta,24.8,6,2,TCK Fatih Subesi
+Zeytinburnu,Fare,Orta,25.8,3,4,TCK Zeytinburnu Subesi
+Zeytinburnu,Bocek,Yuksek,21.2,6,2,TCK Zeytinburnu Subesi
+Zeytinburnu,Pire,Orta,22.3,6,3,TCK Zeytinburnu Subesi
+Zeytinburnu,Hamam Bocegi,Orta,22.7,6,4,TCK Zeytinburnu Subesi
+Zeytinburnu,Akrep,Yuksek,24.0,3,5,TCK Zeytinburnu Subesi
+Zeytinburnu,Kene,Orta,30.0,6,5,TCK Zeytinburnu Subesi
+Zeytinburnu,Tahtakurusu,Orta,22.9,6,5,TCK Zeytinburnu Subesi
+Zeytinburnu,Sivrisinek,Yuksek,21.1,6,2,TCK Zeytinburnu Subesi
+Basaksehir,Fare,Orta,23.2,3,2,TCK Basaksehir Subesi
+Basaksehir,Bocek,Yuksek,26.5,6,2,TCK Basaksehir Subesi
+Basaksehir,Pire,Orta,27.1,6,2,TCK Basaksehir Subesi
+Basaksehir,Hamam Bocegi,Orta,24.6,6,2,TCK Basaksehir Subesi
+Basaksehir,Akrep,Orta,26.3,3,3,TCK Basaksehir Subesi
+Basaksehir,Kene,Yuksek,21.9,6,3,TCK Basaksehir Subesi
+Basaksehir,Tahtakurusu,Yuksek,22.7,6,5,TCK Basaksehir Subesi
+Basaksehir,Sivrisinek,Yuksek,21.0,6,2,TCK Basaksehir Subesi
+Beylikduzu,Fare,Orta,28.3,3,3,TCK Beylikduzu Subesi
+Beylikduzu,Bocek,Orta,29.5,6,2,TCK Beylikduzu Subesi
+Beylikduzu,Pire,Orta,21.9,6,3,TCK Beylikduzu Subesi
+Beylikduzu,Hamam Bocegi,Orta,24.4,6,4,TCK Beylikduzu Subesi
+Beylikduzu,Akrep,Yuksek,29.0,3,5,TCK Beylikduzu Subesi
+Beylikduzu,Kene,Yuksek,26.3,6,3,TCK Beylikduzu Subesi
+Beylikduzu,Tahtakurusu,Yuksek,22.3,6,5,TCK Beylikduzu Subesi
+Beylikduzu,Sivrisinek,Yuksek,27.0,6,5,TCK Beylikduzu Subesi
+Esenyurt,Fare,Yuksek,26.4,3,2,TCK Esenyurt Subesi
+Esenyurt,Bocek,Yuksek,26.3,6,4,TCK Esenyurt Subesi
+Esenyurt,Pire,Yuksek,24.7,6,3,TCK Esenyurt Subesi
+Esenyurt,Hamam Bocegi,Yuksek,27.3,6,5,TCK Esenyurt Subesi
+Esenyurt,Akrep,Orta,21.1,3,4,TCK Esenyurt Subesi
+Esenyurt,Kene,Yuksek,25.8,6,4,TCK Esenyurt Subesi
+Esenyurt,Tahtakurusu,Orta,27.4,6,4,TCK Esenyurt Subesi
+Esenyurt,Sivrisinek,Orta,22.7,6,3,TCK Esenyurt Subesi
+Avcilar,Fare,Orta,26.8,3,3,TCK Avcilar Subesi
+Avcilar,Bocek,Orta,30.0,6,3,TCK Avcilar Subesi
+Avcilar,Pire,Orta,27.3,6,4,TCK Avcilar Subesi
+Avcilar,Hamam Bocegi,Yuksek,28.0,6,5,TCK Avcilar Subesi
+Avcilar,Akrep,Yuksek,23.4,3,2,TCK Avcilar Subesi
+Avcilar,Kene,Orta,23.1,6,3,TCK Avcilar Subesi
+Avcilar,Tahtakurusu,Yuksek,21.8,6,4,TCK Avcilar Subesi
+Avcilar,Sivrisinek,Orta,25.4,6,3,TCK Avcilar Subesi
+Kucukcekmece,Fare,Yuksek,28.3,3,4,TCK Kucukcekmece Subesi
+Kucukcekmece,Bocek,Yuksek,23.5,6,3,TCK Kucukcekmece Subesi
+Kucukcekmece,Pire,Orta,27.1,6,3,TCK Kucukcekmece Subesi
+Kucukcekmece,Hamam Bocegi,Yuksek,25.3,6,3,TCK Kucukcekmece Subesi
+Kucukcekmece,Akrep,Yuksek,25.8,3,3,TCK Kucukcekmece Subesi
+Kucukcekmece,Kene,Yuksek,29.8,6,3,TCK Kucukcekmece Subesi
+Kucukcekmece,Tahtakurusu,Yuksek,26.8,6,2,TCK Kucukcekmece Subesi
+Kucukcekmece,Sivrisinek,Orta,26.0,6,3,TCK Kucukcekmece Subesi
+Bahcelievler,Fare,Yuksek,22.5,3,5,TCK Bahcelievler Subesi
+Bahcelievler,Bocek,Yuksek,21.1,6,4,TCK Bahcelievler Subesi
+Bahcelievler,Pire,Yuksek,24.8,6,2,TCK Bahcelievler Subesi
+Bahcelievler,Hamam Bocegi,Orta,22.0,6,3,TCK Bahcelievler Subesi
+Bahcelievler,Akrep,Orta,24.2,3,2,TCK Bahcelievler Subesi
+Bahcelievler,Kene,Orta,22.0,6,3,TCK Bahcelievler Subesi
+Bahcelievler,Tahtakurusu,Yuksek,28.9,6,2,TCK Bahcelievler Subesi
+Bahcelievler,Sivrisinek,Orta,27.2,6,5,TCK Bahcelievler Subesi
+Bagcilar,Fare,Yuksek,22.4,3,4,TCK Bagcilar Subesi
+Bagcilar,Bocek,Orta,25.7,6,2,TCK Bagcilar Subesi
+Bagcilar,Pire,Yuksek,28.5,6,5,TCK Bagcilar Subesi
+Bagcilar,Hamam Bocegi,Orta,29.8,6,2,TCK Bagcilar Subesi
+Bagcilar,Akrep,Yuksek,26.2,3,2,TCK Bagcilar Subesi
+Bagcilar,Kene,Yuksek,23.0,6,4,TCK Bagcilar Subesi
+Bagcilar,Tahtakurusu,Yuksek,23.9,6,4,TCK Bagcilar Subesi
+Bagcilar,Sivrisinek,Yuksek,22.3,6,3,TCK Bagcilar Subesi
+Gaziosmanpasa,Fare,Orta,26.8,3,4,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Bocek,Orta,24.4,6,2,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Pire,Yuksek,20.9,6,4,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Hamam Bocegi,Orta,25.2,6,4,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Akrep,Yuksek,28.4,3,3,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Kene,Orta,23.8,6,5,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Tahtakurusu,Orta,28.5,6,3,TCK Gaziosmanpasa Subesi
+Gaziosmanpasa,Sivrisinek,Yuksek,24.7,6,5,TCK Gaziosmanpasa Subesi
+Eyupsultan,Fare,Yuksek,26.4,3,3,TCK Eyupsultan Subesi
+Eyupsultan,Bocek,Yuksek,23.2,6,3,TCK Eyupsultan Subesi
+Eyupsultan,Pire,Orta,27.0,6,5,TCK Eyupsultan Subesi
+Eyupsultan,Hamam Bocegi,Orta,22.9,6,3,TCK Eyupsultan Subesi
+Eyupsultan,Akrep,Yuksek,28.5,3,2,TCK Eyupsultan Subesi
+Eyupsultan,Kene,Orta,29.6,6,5,TCK Eyupsultan Subesi
+Eyupsultan,Tahtakurusu,Yuksek,26.0,6,4,TCK Eyupsultan Subesi
+Eyupsultan,Sivrisinek,Yuksek,22.1,6,4,TCK Eyupsultan Subesi
+Kagithane,Fare,Yuksek,20.8,3,3,TCK Kagithane Subesi
+Kagithane,Bocek,Orta,24.2,6,4,TCK Kagithane Subesi
+Kagithane,Pire,Orta,27.8,6,3,TCK Kagithane Subesi
+Kagithane,Hamam Bocegi,Yuksek,27.1,6,3,TCK Kagithane Subesi
+Kagithane,Akrep,Yuksek,29.5,3,5,TCK Kagithane Subesi
+Kagithane,Kene,Orta,23.3,6,4,TCK Kagithane Subesi
+Kagithane,Tahtakurusu,Orta,25.5,6,5,TCK Kagithane Subesi
+Kagithane,Sivrisinek,Yuksek,28.2,6,5,TCK Kagithane Subesi
+Sile,Fare,Yuksek,20.9,3,5,TCK Sile Subesi
+Sile,Bocek,Yuksek,29.0,6,4,TCK Sile Subesi
+Sile,Pire,Yuksek,23.1,6,5,TCK Sile Subesi
+Sile,Hamam Bocegi,Yuksek,29.9,6,5,TCK Sile Subesi
+Sile,Akrep,Orta,24.7,3,2,TCK Sile Subesi
+Sile,Kene,Orta,27.8,6,4,TCK Sile Subesi
+Sile,Tahtakurusu,Orta,20.1,6,2,TCK Sile Subesi
+Sile,Sivrisinek,Orta,26.5,6,4,TCK Sile Subesi
+Cekmekoy,Fare,Yuksek,22.9,3,3,TCK Cekmekoy Subesi
+Cekmekoy,Bocek,Orta,28.9,6,4,TCK Cekmekoy Subesi
+Cekmekoy,Pire,Orta,25.0,6,3,TCK Cekmekoy Subesi
+Cekmekoy,Hamam Bocegi,Orta,27.9,6,4,TCK Cekmekoy Subesi
+Cekmekoy,Akrep,Yuksek,29.8,3,2,TCK Cekmekoy Subesi
+Cekmekoy,Kene,Orta,21.4,6,5,TCK Cekmekoy Subesi
+Cekmekoy,Tahtakurusu,Orta,25.8,6,5,TCK Cekmekoy Subesi
+Cekmekoy,Sivrisinek,Yuksek,25.2,6,2,TCK Cekmekoy Subesi
+Tuzla,Fare,Orta,28.8,3,4,TCK Tuzla Subesi
+Tuzla,Bocek,Orta,27.7,6,4,TCK Tuzla Subesi
+Tuzla,Pire,Yuksek,23.1,6,4,TCK Tuzla Subesi
+Tuzla,Hamam Bocegi,Yuksek,23.9,6,3,TCK Tuzla Subesi
+Tuzla,Akrep,Orta,22.4,3,2,TCK Tuzla Subesi
+Tuzla,Kene,Orta,29.8,6,2,TCK Tuzla Subesi
+Tuzla,Tahtakurusu,Orta,24.9,6,3,TCK Tuzla Subesi
+Tuzla,Sivrisinek,Orta,25.0,6,2,TCK Tuzla Subesi

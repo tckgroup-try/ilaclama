@@ -32,7 +32,7 @@ export default function Hakkimizda() {
               "@type": "Organization",
               "name": "TCK İlaçlama",
               "url": "https://tckilaclama.com",
-              "logo": "https://tckilaclama.com/images/tck_expert.png",
+              "logo": "https://tckilaclama.com/images/tck_expert.webp",
               "parentOrganization": {
                 "@type": "Organization",
                 "name": "TCK Group"
